@@ -1,14 +1,29 @@
-name: sophos-web-appliance
-priority: 3
-nuclei_tags:
-  - []
-fingerprint:
-  - path: /
-    request_method: get
-    request_headers: {}
-    request_data: ''
-    status_code: 0
-    headers: {}
-    keyword:
-      - url(resources/images/en/login_swa.jpg)
-    favicon_hash: []
+id: sophos-web-appliance
+
+info:
+  name: Sophos Web Appliance
+  author: DhiyaneshDk
+  severity: info
+  reference:
+    - https://docs.sophos.com/nsg/swa/help/en-us/nsg/swa/concepts/AboutYourAppliance.html
+  metadata:
+    max-request: 1
+    verified: true
+    shodan-query: 'http.favicon.hash:-893681401'
+  tags: panel,login,sophos
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '<title>Sophos Web Appliance</title>'
+
+      - type: status
+        status:
+          - 200
