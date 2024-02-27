@@ -4,11 +4,11 @@
 name: update
 
 on:
-  # repository_dispatch:
-  # push:
-  #   branches:
-  #     - main
-  # workflow_dispatch:
+  repository_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
   schedule:
     - cron: "00 01 * * *"
 permissions:
@@ -31,7 +31,6 @@ jobs:
       env: 
          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        python check.py
         python run.py
     - name: Commit and push if changed
       run: |
