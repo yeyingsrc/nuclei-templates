@@ -268,16 +268,19 @@ async def main():
 
     # 搜索项目
     links_2 = search_projects()
-
+    
     # 新GitHub项目链接
     links_3 = [link for link in links_2 if link not in links_1 and link != 'https://github.com/20142995/nuclei-templates']
+    print(f'GitHub项目 {len(links_1)} + {len(links_3)}')
 
     # 克隆GitHub项目到指定目录
     await clone_github_projects(links_1+links_3, temp_directory)
 
     # 统计临时目录中的.yaml文件
     count_1 = count_yaml_files(temp_directory, links_1+links_3)
+    print(count_1)
     links_4 = [link for link in links_3 if count_1.get(link,0) > 0]
+    print(f'有效GitHub项目 {len(links_4)}')
     # 追加写入有效链接
     append_github_links(file_path, links_4)
 
