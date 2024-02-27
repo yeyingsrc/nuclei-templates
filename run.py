@@ -116,6 +116,7 @@ def download_extract_executable(temp_directory):
     # 添加执行权限
     executable_path = os.path.join(extract_dir, "nuclei")
     os.chmod(executable_path, 0o755)
+    print('executable_path',executable_path)
     
     # 返回可执行文件的完整路径
     return executable_path
@@ -271,7 +272,7 @@ async def main():
     
     # 新GitHub项目链接
     links_3 = [link for link in links_2 if link not in links_1 and link != 'https://github.com/20142995/nuclei-templates']
-    print(f'GitHub项目 {len(links_1)} + {len(links_3)}')
+    print(f'GitHub项目 {len(links_1)} + {len(links_3)} ({len(links_2)})')
 
     # 克隆GitHub项目到指定目录
     await clone_github_projects(links_1+links_3, temp_directory)
