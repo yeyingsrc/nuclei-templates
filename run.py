@@ -152,10 +152,7 @@ def process_yaml_files(temp_directory):
 
                     # 复制文件到目标路径
                     shutil.copy2(file_path, target_path)
-                else:
-                    # 复制文件到目标路径
-                    target_path = os.path.join(target_directory, file)
-                    shutil.copy2(file_path, target_path)
+
 
 # 统计临时目录中的.yaml文件
 def count_yaml_files(temp_directory, links):
