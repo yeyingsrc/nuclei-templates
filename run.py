@@ -47,7 +47,7 @@ def search_projects():
     }
     print(token)
     # Send a search request to GitHub API
-    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=2&per_page=100"
+    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=1&per_page=100"
     response = requests.get(search_url, headers=headers,
                             verify=False, allow_redirects=False).json()
     print(response)
@@ -266,12 +266,14 @@ async def main():
     if os.path.exists(data_file):
         try:
             count_old = json.loads(open(data_file,'r',encoding='utf8').read())
-        except:
+        except Exception as e:
+            print(e)
             with open(data_file, 'w',encoding='utf-8') as f:
                 json.dump(count_old, f,ensure_ascii=False,indent = 4)
     else:
         with open(data_file, 'w',encoding='utf-8') as f:
             json.dump(count_old, f,ensure_ascii=False,indent = 4)
+    print(count_old)
     # 表格标题
     table_header = "| templates type | templates conut | change(new) |\n| --- | --- | --- |"
 
