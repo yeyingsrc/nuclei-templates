@@ -47,7 +47,7 @@ def search_projects():
     }
     print(token)
     # Send a search request to GitHub API
-    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=4&per_page=100"
+    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=3&per_page=100"
     response = requests.get(search_url, headers=headers,
                             verify=False, allow_redirects=False).json()
     print(response)
