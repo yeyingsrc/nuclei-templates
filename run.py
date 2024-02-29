@@ -47,7 +47,7 @@ def search_projects():
     }
     print(token)
     # Send a search request to GitHub API
-    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=3&per_page=100"
+    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=2&per_page=100"
     response = requests.get(search_url, headers=headers,
                             verify=False, allow_redirects=False).json()
     print(response)
@@ -225,7 +225,7 @@ async def clone_github_projects(links, temp_directory):
 async def main():
 
     # 输入文件路径
-    file_path = 'links.csv'
+    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'links.csv')
 
     # 创建临时目录
     temp_directory = tempfile.mkdtemp()
@@ -262,7 +262,7 @@ async def main():
     count_new = count_files()
     count_new_list = sorted(count_new.items(), key=lambda x: x[0])
     count_old = {}
-    data_file = 'count.json'
+    data_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),'count.json')
     if os.path.exists(data_file):
         try:
             count_old = json.loads(open(data_file,'r',encoding='utf8').read())
@@ -290,7 +290,7 @@ async def main():
         # 写入表格内容
         for row in table_rows:
             f.write(f"{row}\n")
-    with open('count.json', 'w', encoding='utf-8') as f:
+    with open(data_file, 'w', encoding='utf-8') as f:
         json.dump(count_new, f, ensure_ascii=False, indent=4)
 # 运行主函数
 if __name__ == '__main__':
