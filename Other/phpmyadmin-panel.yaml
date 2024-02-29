@@ -3,7 +3,7 @@ id: phpmyadmin-panel
 info:
   name: phpMyAdmin Panel
   author: pdteam
-  severity: low
+  severity: info
   tags: panel,phpmyadmin
 
 requests:

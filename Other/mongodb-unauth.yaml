@@ -10,8 +10,6 @@ info:
     - https://www.mongodb.com/features/mongodb-authentication
   remediation: Enable Authentication in MongoDB
   tags: network,mongodb,unauth
-  metadata:
-  mongoid: 0000
 
 network:
   - inputs:

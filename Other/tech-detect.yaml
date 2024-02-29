@@ -4,18 +4,15 @@ info:
   name: Wappalyzer Technology Detection
   author: hakluke
   severity: info
-  metadata:
-    max-request: 1
   tags: tech
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"
 
-    host-redirects: true
+    redirects: true
     max-redirects: 2
-
     matchers-condition: or
     matchers:
       - type: regex
@@ -1301,7 +1298,7 @@ http:
         regex:
           - <link[^>]+ href="/?typo3(?:conf|temp)/
           - <img[^>]+ src="/?typo3(?:conf|temp)/
-          - This website is powered by TYPO3
+          - "<!--\n\tThis website is powered by TYPO3"
         condition: or
         part: body
 
@@ -1654,7 +1651,6 @@ http:
         name: react
         regex:
           - <[^>]+data-react
-          - Web site created using create-react-app
         condition: or
         part: body
 
@@ -2985,7 +2981,6 @@ http:
         name: corepublish
         words:
           - 'content="CorePublish'
-
       - type: word
         name: diafan.cms
         words:
@@ -3406,14 +3401,6 @@ http:
         part: header
 
       - type: word
-        name: new_laravel
-        words:
-          - "Set-Cookie: {{DN}}_session="
-          - "Set-Cookie: XSRF-TOKEN="
-        condition: and
-        part: header
-
-      - type: word
         name: express
         words:
           - "X-Powered-By: Express"
@@ -3682,35 +3669,3 @@ http:
           - "<!-- BEGIN PAN_FORM_CONTENT -->"
           - "js/pan/"
         condition: and
-
-      - type: word
-        name: sailsjs
-        part: header
-        words:
-          - "X-Powered-By: Sails"
-
-      - type: word
-        name: tengine
-        part: server
-        words:
-          - "Tengine"
-
-      - type: word
-        name: tornado
-        part: header
-        words:
-          - "TornadoServer/"
-
-      - type: word
-        name: uvicorn
-        part: server
-        words:
-          - "uvicorn"
-
-      - type: word
-        name: istio-envoy
-        part: server
-        words:
-          - "istio-envoy"
-
-# digest: 4b0a00483046022100ab0cb296d21934a5ca1d7a78461aa52087e877fc0cc3414c255a7b3d374554b6022100cc0beaa49fa977a406bfe76accf78e74dd3c1f0c4da4e3ec2737c1af76dac2cb:922c64590222798bb761d5b6d8e72950

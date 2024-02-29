@@ -7,8 +7,6 @@ info:
   reference:
     - https://zookeeper.apache.org/security.html
   tags: network,zookeeper,unauth
-  metadata:
-  mongoid: 0000
 
 network:
   - inputs:

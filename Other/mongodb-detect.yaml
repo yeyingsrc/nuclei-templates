@@ -7,8 +7,6 @@ info:
   reference:
     - https://github.com/orleven/Tentacle
   tags: network,mongodb
-  metadata:
-  mongoid: 0000
 
 network:
   - inputs:

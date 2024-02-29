@@ -7,8 +7,6 @@ info:
   reference:
     - https://redis.io/topics/security
   tags: network,redis,unauth
-  metadata:
-  mongoid: 0000
 
 network:
   - inputs:
