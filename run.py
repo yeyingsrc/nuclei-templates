@@ -86,7 +86,7 @@ def download_extract_executable(temp_directory):
     if system == 'Windows':
         zip_file_path = './nuclei/nuclei_3.1.10_windows_amd64.zip'
     else:
-        zip_file_path = './nuclei/nuclei_3.1.10_windows_amd64.zip'
+        zip_file_path = './nuclei/nuclei_3.1.10_linux_amd64.zip'
 
     # 解压压缩包
     extract_dir = os.path.join(temp_directory, "extracted")
