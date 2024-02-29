@@ -2,13 +2,15 @@ id: activemq-panel
 
 info:
   name: Apache ActiveMQ Exposure
-  author: pd-team
+  author: pdteam
   severity: info
+  tags: panel,activemq,apache
 
 requests:
   - method: GET
     path:
-      - '{{BaseURL}}/'
+      - '{{BaseURL}}'
+
     matchers:
       - type: word
         words:
