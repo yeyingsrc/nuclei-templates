@@ -2,6 +2,7 @@ import os
 import re
 import csv
 import shutil
+import json
 import asyncio
 import tempfile
 import subprocess
@@ -13,10 +14,14 @@ import platform
 requests.packages.urllib3.disable_warnings()
 
 # md5
-def md5(msg,encoding='utf8'):
+
+
+def md5(msg, encoding='utf8'):
     return hashlib.md5(msg.encode(encoding)).hexdigest()
 
 # 从文件中读取GitHub项目链接
+
+
 def read_github_links(file_path):
     links = []
     # 读取CSV文件
@@ -29,6 +34,8 @@ def read_github_links(file_path):
     return links
 
 # 追加写入GitHub项目链接
+
+
 def append_github_links(file_path, links):
     # 追加链接到CSV文件
     with open(file_path, 'a', newline='') as f:
@@ -37,6 +44,8 @@ def append_github_links(file_path, links):
             writer.writerow([link])  # 写入链接
 
 # 搜索项目
+
+
 def search_projects():
     token = os.getenv("GH_TOKEN", "")
     headers = {
@@ -47,28 +56,32 @@ def search_projects():
     print(token)
     # Send a search request to GitHub API
     search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=1&per_page=100"
-    response = requests.get(search_url, headers=headers, verify=False, allow_redirects=False).json()
+    response = requests.get(search_url, headers=headers,
+                            verify=False, allow_redirects=False).json()
     print(response)
-    
+
     # Extract the list of projects from the response
     projects = [i['html_url'] for i in response.get("items", [])]
-    
+
     # Return the list of projects
     return projects
 
 # 校验yaml文件
+
+
 def nuclei_validate(temp_directory):
     # 当前目录路径
     current_directory = os.getcwd()
     nuclei_path = download_extract_executable(temp_directory)
     command = f'{nuclei_path} -validate -t {current_directory}'
     try:
-        output = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT, universal_newlines=True)
+        output = subprocess.check_output(
+            command, shell=True, stderr=subprocess.STDOUT, universal_newlines=True)
     except subprocess.CalledProcessError as e:
         output = e.output
     err_pattern = r"Error occurred (?:loading|parsing) template (.*?)\:"
     for err_match in re.findall(err_pattern, output):
-        file_path = err_match.replace("\\", "/") # 转换文件路径中的反斜杠
+        file_path = err_match.replace("\\", "/")  # 转换文件路径中的反斜杠
         if os.path.exists(file_path):
             os.remove(file_path)
             print(f"Deleted file: {file_path}")
@@ -81,6 +94,8 @@ def nuclei_validate(temp_directory):
             print(f"Renamed file: {old_path} to {new_path}")
 
 # 下载nuclei
+
+
 def download_extract_executable(temp_directory):
     system = platform.system()
     if system == 'Windows':
@@ -92,7 +107,7 @@ def download_extract_executable(temp_directory):
     extract_dir = os.path.join(temp_directory, "extracted")
     with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
         zip_ref.extractall(extract_dir)
-    
+
     # 添加执行权限
     for executable in os.listdir(extract_dir):
         if 'nuclei' in executable:
@@ -103,6 +118,8 @@ def download_extract_executable(temp_directory):
     return executable_path
 
 # 遍历临时目录中的.yaml文件
+
+
 def process_yaml_files(temp_directory):
     # 创建目标文件夹
     target_directory = os.path.join(os.getcwd(), 'Other')
@@ -122,7 +139,7 @@ def process_yaml_files(temp_directory):
                 # 判断文件内容是否包含关键字
                 if len([tag for tag in ['id:', 'info:', 'name:', 'author:', 'severity:', 'description:', 'tags:', 'requests:', 'matchers:'] if tag in content]) > 5:
                     # 判断文件名是否匹配CVE-\d{4}
-                    match = re.match(r'CVE-\d{4}', file,re.I)
+                    match = re.match(r'CVE-\d{4}', file, re.I)
                     if match:
                         target_folder = os.path.join(
                             os.getcwd(), match.group().upper())
@@ -140,7 +157,7 @@ def count_yaml_files(temp_directory, links):
     count = {}
     for link in links:
         # 遍历临时目录
-        for root, _, files in os.walk(os.path.join(temp_directory,md5(link))):
+        for root, _, files in os.walk(os.path.join(temp_directory, md5(link))):
             for file in files:
                 if file.endswith('.yaml'):
                     file_path = os.path.join(root, file)
@@ -151,11 +168,13 @@ def count_yaml_files(temp_directory, links):
                         continue
                     # 判断文件内容是否包含关键字
                     if len([tag for tag in ['id:', 'info:', 'name:', 'author:', 'severity:', 'description:', 'tags:', 'requests:', 'matchers:'] if tag in content]) > 5:
-                        count.setdefault(link,0)
+                        count.setdefault(link, 0)
                         count[link] += 1
     return count
 
 # 扫描冲突的文件并自动删除
+
+
 def handle_filename_conflicts(directory):
     files = os.listdir(directory)
     filename_counts = {}
@@ -171,41 +190,30 @@ def handle_filename_conflicts(directory):
                 filename_counts[filename_lower] = 1
 
 # 统计每个子目录下的文件数量
+
+
 def count_files():
     # 当前目录路径
     current_directory = os.getcwd()
 
     # 获取当前目录下的子目录列表
     subdirectories = [name for name in os.listdir(
-        current_directory) if os.path.isdir(os.path.join(current_directory, name)) and name not in ['.github','.git','nuclei']]
-    
+        current_directory) if os.path.isdir(os.path.join(current_directory, name)) and name not in ['.github', '.git', 'nuclei']]
+
     # 按templates type升序排序
     subdirectories = sorted(subdirectories)
-
-    # 表格标题
-    table_header = "| templates type | templates conut |\n| --- | --- |"
-    table_rows = []
-    total = 0
+    count = {}
     # 遍历子目录并统计文件数量
     for subdir in subdirectories:
         subdir_path = os.path.join(current_directory, subdir)
         handle_filename_conflicts(subdir_path)
         file_count = len(os.listdir(subdir_path))
-        total += file_count
-        table_row = f"| {subdir} | {file_count} |"
-        table_rows.append(table_row)
-    table_row = f"| Total | {total} |"
-    table_rows.append(table_row)
-    # 将结果写入README.md文件
-    with open('README.md', 'w', encoding='utf8') as f:
-        # 写入表格标题
-        f.write(f"{table_header}\n")
-
-        # 写入表格内容
-        for row in table_rows:
-            f.write(f"{row}\n")
+        count[subdir] = file_count
+    return count
 
 # 克隆GitHub项目到指定目录
+
+
 async def clone_github_project(link, save_directory):
     # 提取项目名称
     project_name = link.split('/')[-1].replace('.git', '')
@@ -222,6 +230,8 @@ async def clone_github_project(link, save_directory):
     await process.wait()
 
 # 克隆GitHub项目列表
+
+
 async def clone_github_projects(links, temp_directory):
     tasks = []
     for link in links:
@@ -234,6 +244,8 @@ async def clone_github_projects(links, temp_directory):
     await asyncio.gather(*tasks)
 
 # 主函数
+
+
 async def main():
 
     # 输入文件路径
@@ -248,9 +260,10 @@ async def main():
     # 搜索项目
     # links_2 = search_projects()
     links_2 = []
-    
+
     # 新GitHub项目链接
-    links_3 = [link for link in links_2 if link not in links_1 and link != 'https://github.com/20142995/nuclei-templates']
+    links_3 = [link for link in links_2 if link not in links_1 and link !=
+               'https://github.com/20142995/nuclei-templates']
     print(f'GitHub项目 {len(links_1)} + {len(links_3)} ({len(links_2)})')
 
     # 克隆GitHub项目到指定目录
@@ -259,7 +272,7 @@ async def main():
     # 统计临时目录中的.yaml文件
     count_1 = count_yaml_files(temp_directory, links_1+links_3)
     print(count_1)
-    links_4 = [link for link in links_3 if count_1.get(link,0) > 0]
+    links_4 = [link for link in links_3 if count_1.get(link, 0) > 0]
     print(f'有效GitHub项目 {len(links_4)}')
     # 追加写入有效链接
     append_github_links(file_path, links_4)
@@ -271,9 +284,30 @@ async def main():
     nuclei_validate(temp_directory)
 
     # 统计每个子目录下的文件数量
-    count_files()
+    count_new = count_files()
+    count_new_list = sorted(count_new.items(), key=lambda x: x[0])
+    count_old = json.loads(open('count.json', 'r', encoding='utf8').read())
 
-    
+    # 表格标题
+    table_header = "| templates type | templates conut | change(new) |\n| --- | --- | --- |"
+
+    # 遍历子目录并统计文件数量
+    table_rows = []
+    for subdir, file_count in count_new_list:
+        table_row = f"| {subdir} | {file_count} | {file_count - count_old.get(subdir,0)} |"
+        table_rows.append(table_row)
+    table_row = f"| Total | {sum([v for k,v in count_new_list])} | { sum([v for k,v in count_new_list]) - sum(count_old.values())} |"
+    table_rows.append(table_row)
+    # 将结果写入README.md文件
+    with open('README.md', 'w', encoding='utf8') as f:
+        # 写入表格标题
+        f.write(f"{table_header}\n")
+
+        # 写入表格内容
+        for row in table_rows:
+            f.write(f"{row}\n")
+    with open('count.json', 'w', encoding='utf-8') as f:
+        json.dump(count_new, f, ensure_ascii=False, indent=4)
 # 运行主函数
 if __name__ == '__main__':
     asyncio.run(main())
