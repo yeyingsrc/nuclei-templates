@@ -262,8 +262,17 @@ async def main():
     # 统计每个子目录下的文件数量
     count_new = count_files()
     count_new_list = sorted(count_new.items(), key=lambda x: x[0])
-    count_old = json.loads(open('count.json', 'r', encoding='utf8').read())
-
+    count_old = {}
+    data_file = 'count.json'
+    if os.path.exists(data_file):
+        try:
+            count_old = json.loads(open(data_file,'r',encoding='utf8').read())
+        except:
+            with open(data_file, 'w',encoding='utf-8') as f:
+                json.dump(count_old, f,ensure_ascii=False,indent = 4)
+    else:
+        with open(data_file, 'w',encoding='utf-8') as f:
+            json.dump(count_old, f,ensure_ascii=False,indent = 4)
     # 表格标题
     table_header = "| templates type | templates conut | change(new) |\n| --- | --- | --- |"
 
