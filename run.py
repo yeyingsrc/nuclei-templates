@@ -14,14 +14,10 @@ import platform
 requests.packages.urllib3.disable_warnings()
 
 # md5
-
-
 def md5(msg, encoding='utf8'):
     return hashlib.md5(msg.encode(encoding)).hexdigest()
 
 # 从文件中读取GitHub项目链接
-
-
 def read_github_links(file_path):
     links = []
     # 读取CSV文件
@@ -34,8 +30,6 @@ def read_github_links(file_path):
     return links
 
 # 追加写入GitHub项目链接
-
-
 def append_github_links(file_path, links):
     # 追加链接到CSV文件
     with open(file_path, 'a', newline='') as f:
@@ -44,8 +38,6 @@ def append_github_links(file_path, links):
             writer.writerow([link])  # 写入链接
 
 # 搜索项目
-
-
 def search_projects():
     token = os.getenv("GH_TOKEN", "")
     headers = {
@@ -67,8 +59,6 @@ def search_projects():
     return projects
 
 # 校验yaml文件
-
-
 def nuclei_validate(temp_directory):
     # 当前目录路径
     current_directory = os.getcwd()
@@ -94,8 +84,6 @@ def nuclei_validate(temp_directory):
             print(f"Renamed file: {old_path} to {new_path}")
 
 # 下载nuclei
-
-
 def download_extract_executable(temp_directory):
     system = platform.system()
     if system == 'Windows':
@@ -118,8 +106,6 @@ def download_extract_executable(temp_directory):
     return executable_path
 
 # 遍历临时目录中的.yaml文件
-
-
 def process_yaml_files(temp_directory):
     # 创建目标文件夹
     target_directory = os.path.join(os.getcwd(), 'Other')
@@ -173,8 +159,6 @@ def count_yaml_files(temp_directory, links):
     return count
 
 # 扫描冲突的文件并自动删除
-
-
 def handle_filename_conflicts(directory):
     files = os.listdir(directory)
     filename_counts = {}
@@ -190,8 +174,6 @@ def handle_filename_conflicts(directory):
                 filename_counts[filename_lower] = 1
 
 # 统计每个子目录下的文件数量
-
-
 def count_files():
     # 当前目录路径
     current_directory = os.getcwd()
@@ -212,8 +194,6 @@ def count_files():
     return count
 
 # 克隆GitHub项目到指定目录
-
-
 async def clone_github_project(link, save_directory):
     # 提取项目名称
     project_name = link.split('/')[-1].replace('.git', '')
@@ -230,8 +210,6 @@ async def clone_github_project(link, save_directory):
     await process.wait()
 
 # 克隆GitHub项目列表
-
-
 async def clone_github_projects(links, temp_directory):
     tasks = []
     for link in links:
@@ -244,8 +222,6 @@ async def clone_github_projects(links, temp_directory):
     await asyncio.gather(*tasks)
 
 # 主函数
-
-
 async def main():
 
     # 输入文件路径
