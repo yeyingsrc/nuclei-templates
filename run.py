@@ -8,6 +8,7 @@ import subprocess
 import requests
 import hashlib
 import zipfile
+import platform
 
 requests.packages.urllib3.disable_warnings()
 
@@ -17,6 +18,7 @@ def md5(msg,encoding='utf8'):
 
 # 从文件中读取GitHub项目链接
 def read_github_links(file_path):
+    print('从文件中读取GitHub项目链接')
     links = []
     # 读取CSV文件
     with open(file_path, 'r') as f:
@@ -29,6 +31,7 @@ def read_github_links(file_path):
 
 # 追加写入GitHub项目链接
 def append_github_links(file_path, links):
+    print('追加链接到CSV文件')
     # 追加链接到CSV文件
     with open(file_path, 'a', newline='') as f:
         writer = csv.writer(f)
@@ -37,16 +40,18 @@ def append_github_links(file_path, links):
 
 # 搜索项目
 def search_projects():
+    print('搜索项目')
     token = os.getenv("GH_TOKEN", "")
     headers = {
-        "Authorization": f"Bearer {token}",
+        "Authorization": f"{token}",
         "Connection": "close",
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36",
     }
-    
+    print(token)
     # Send a search request to GitHub API
     search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=1&per_page=100"
     response = requests.get(search_url, headers=headers, verify=False, allow_redirects=False).json()
+    print(response)
     
     # Extract the list of projects from the response
     projects = [i['html_url'] for i in response.get("items", [])]
@@ -56,6 +61,7 @@ def search_projects():
 
 # 校验yaml文件
 def nuclei_validate(temp_directory):
+    print('校验yaml文件')
     # 当前目录路径
     current_directory = os.getcwd()
     nuclei_path = download_extract_executable(temp_directory)
@@ -80,9 +86,10 @@ def nuclei_validate(temp_directory):
 
 # 下载nuclei
 def download_extract_executable(temp_directory):
+    print('下载nuclei')
     token = os.getenv("GH_TOKEN", "")
     headers = {
-        "Authorization": f"Bearer {token}",
+        "Authorization": f"{token}",
         "Connection": "close",
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36",
     }
@@ -90,10 +97,18 @@ def download_extract_executable(temp_directory):
     release_info = requests.get("https://api.github.com/repos/projectdiscovery/nuclei/releases/latest",headers=headers,verify=False,allow_redirects=False).json()
     assets = release_info.get('assets', [])
     download_url = None
+    system = platform.system()
+    
     for asset in assets:
-        if asset.get('name', '').endswith("linux_amd64.zip"):
-            download_url = asset.get('browser_download_url')
-            break
+        if system == 'Windows':
+            if asset.get('name', '').endswith("windows_amd64.zip"):
+                download_url = asset.get('browser_download_url')
+                break
+        else:
+            if asset.get('name', '').endswith("linux_amd64.zip"):
+                download_url = asset.get('browser_download_url')
+                break
+        
     if not download_url:
         return None
     
@@ -114,15 +129,16 @@ def download_extract_executable(temp_directory):
         zip_ref.extractall(extract_dir)
     
     # 添加执行权限
-    executable_path = os.path.join(extract_dir, "nuclei")
-    os.chmod(executable_path, 0o755)
-    print('executable_path',executable_path)
-    
+    for executable in os.listdir(extract_dir):
+        executable_path = os.path.join(extract_dir, executable)
+        os.chmod(executable_path, 0o755)
+
     # 返回可执行文件的完整路径
     return executable_path
 
 # 遍历临时目录中的.yaml文件
 def process_yaml_files(temp_directory):
+    print('遍历临时目录中的.yaml文件')
     # 创建目标文件夹
     target_directory = os.path.join(os.getcwd(), 'Other')
     os.makedirs(target_directory, exist_ok=True)
@@ -156,6 +172,7 @@ def process_yaml_files(temp_directory):
 
 # 统计临时目录中的.yaml文件
 def count_yaml_files(temp_directory, links):
+    print('统计临时目录中的.yaml文件')
     count = {}
     for link in links:
         # 遍历临时目录
@@ -176,6 +193,7 @@ def count_yaml_files(temp_directory, links):
 
 # 扫描冲突的文件并自动删除
 def handle_filename_conflicts(directory):
+    print('扫描冲突的文件并自动删除')
     files = os.listdir(directory)
     filename_counts = {}
 
@@ -191,6 +209,7 @@ def handle_filename_conflicts(directory):
 
 # 统计每个子目录下的文件数量
 def count_files():
+    print('统计每个子目录下的文件数量')
     # 当前目录路径
     current_directory = os.getcwd()
 
@@ -226,6 +245,7 @@ def count_files():
 
 # 克隆GitHub项目到指定目录
 async def clone_github_project(link, save_directory):
+    print('克隆GitHub项目到指定目录')
     # 提取项目名称
     project_name = link.split('/')[-1].replace('.git', '')
 
@@ -242,6 +262,7 @@ async def clone_github_project(link, save_directory):
 
 # 克隆GitHub项目列表
 async def clone_github_projects(links, temp_directory):
+    print('克隆GitHub项目')
     tasks = []
     for link in links:
         # 创建每个克隆任务的协程对象
