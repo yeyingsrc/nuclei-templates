@@ -7,17 +7,14 @@ info:
   description: Nortek Linear eMerge panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
+    cvss-score: 0.0
     cwe-id: CWE-200
   metadata:
     verified: true
-    max-request: 1
     shodan-query: http.title:"eMerge"
-    vendor: nortekcontrol
-    product: linear_emerge_essential_firmware
   tags: panel,emerge,nortek
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"
@@ -34,4 +31,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 490a0046304402201d7fec2d9013c9db7b45eca8e7fe4453c386fb2721c938bbbb14f50f11e5db1b0220592b173ca9ecf78a15157a2c84d1b6d869223bb750aa310dea82ad5752619bc6:922c64590222798bb761d5b6d8e72950
+
+# Enhanced by md on 2022/11/11

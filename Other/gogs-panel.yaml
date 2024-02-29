@@ -9,18 +9,15 @@ info:
     - https://gogs.io/
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
+    cvss-score: 0.0
     cwe-id: CWE-200
   metadata:
     verified: true
-    max-request: 1
     shodan-query: title:"Sign In - Gogs"
-    vendor: gogits
-    product: gogs
     google-query: intitle:"Sign In - Gogs"
   tags: panel,gogs
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/user/login'
@@ -43,4 +40,5 @@ http:
         group: 1
         regex:
           - 'Version: ([0-9.]+) Page:'
-# digest: 4a0a0047304502202f4d89ad02b022759b0d0985de19d0a70b44f3a7a6211fcbab27049373ba3ef20221009b5f381e06524dcafc9ad8a5f4fc3cc352718dbb4a4d3a4aa0fa290fe117ad87:922c64590222798bb761d5b6d8e72950
+
+# Enhanced by md on 2022/11/16
