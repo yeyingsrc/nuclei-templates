@@ -47,7 +47,7 @@ def search_projects():
     }
     print(token)
     # Send a search request to GitHub API
-    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=2&per_page=100"
+    search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=4&per_page=100"
     response = requests.get(search_url, headers=headers,
                             verify=False, allow_redirects=False).json()
     print(response)
@@ -234,8 +234,7 @@ async def main():
     links_1 = read_github_links(file_path)
 
     # 搜索项目
-    # links_2 = search_projects()
-    links_2 = []
+    links_2 = search_projects()
 
     # 新GitHub项目链接
     links_3 = [link for link in links_2 if link not in links_1 and link !=
