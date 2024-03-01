@@ -262,7 +262,7 @@ async def main():
     count_new = count_files()
     count_new_list = sorted(count_new.items(), key=lambda x: x[0])
     count_old = {}
-    data_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),'count.json')
+    data_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),'count.txt')
     if os.path.exists(data_file):
         try:
             count_old = json.loads(open(data_file,'r',encoding='utf8').read())
