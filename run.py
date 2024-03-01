@@ -61,7 +61,7 @@ def search_projects():
 # 校验yaml文件
 def nuclei_validate(temp_directory):
     # 当前目录路径
-    current_directory = os.getcwd()
+    current_directory = os.path.join(os.getcwd(),'nuclei-templates')
     nuclei_path = download_extract_executable(temp_directory)
     command = f'{nuclei_path} -validate -t {current_directory}'
     try:
@@ -108,7 +108,7 @@ def download_extract_executable(temp_directory):
 # 遍历临时目录中的.yaml文件
 def process_yaml_files(temp_directory):
     # 创建目标文件夹
-    target_directory = os.path.join(os.getcwd(), 'Other')
+    target_directory = os.path.join(os.getcwd(),'nuclei-templates', 'Other')
     os.makedirs(target_directory, exist_ok=True)
 
     # 遍历临时目录
@@ -128,7 +128,7 @@ def process_yaml_files(temp_directory):
                     match = re.match(r'CVE-\d{4}', file, re.I)
                     if match:
                         target_folder = os.path.join(
-                            os.getcwd(), match.group().upper())
+                            os.getcwd(),'nuclei-templates', match.group().upper())
                         os.makedirs(target_folder, exist_ok=True)
                         target_path = os.path.join(target_folder, file)
                     else:
@@ -176,11 +176,11 @@ def handle_filename_conflicts(directory):
 # 统计每个子目录下的文件数量
 def count_files():
     # 当前目录路径
-    current_directory = os.getcwd()
+    current_directory = os.path.join(os.getcwd(),'nuclei-templates')
 
     # 获取当前目录下的子目录列表
     subdirectories = [name for name in os.listdir(
-        current_directory) if os.path.isdir(os.path.join(current_directory, name)) and name not in ['.github', '.git', 'nuclei']]
+        current_directory) if os.path.isdir(os.path.join(current_directory, name))]
 
     # 按templates type升序排序
     subdirectories = sorted(subdirectories)
@@ -246,7 +246,6 @@ async def main():
 
     # 统计临时目录中的.yaml文件
     count_1 = count_yaml_files(temp_directory, links_1+links_3)
-    print(count_1)
     links_4 = [link for link in links_3 if count_1.get(link, 0) > 0]
     print(f'有效GitHub项目 {len(links_4)}')
     # 追加写入有效链接
@@ -267,14 +266,11 @@ async def main():
         try:
             count_old = json.loads(open(data_file,'r',encoding='utf8').read())
         except Exception as e:
-            print(e)
             with open(data_file, 'w',encoding='utf-8') as f:
                 json.dump(count_old, f,ensure_ascii=False,indent = 4)
     else:
-        print(data_file,os.getcwd(),list(os.listdir()))
         with open(data_file, 'w',encoding='utf-8') as f:
             json.dump(count_old, f,ensure_ascii=False,indent = 4)
-    print(count_old)
     # 表格标题
     table_header = "| templates type | templates conut | change(new) |\n| --- | --- | --- |"
 
@@ -297,5 +293,4 @@ async def main():
         json.dump(count_new, f, ensure_ascii=False, indent=4)
 # 运行主函数
 if __name__ == '__main__':
-    print(os.getcwd(),list(os.listdir()))
     asyncio.run(main())
