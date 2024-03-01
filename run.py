@@ -271,6 +271,7 @@ async def main():
             with open(data_file, 'w',encoding='utf-8') as f:
                 json.dump(count_old, f,ensure_ascii=False,indent = 4)
     else:
+        print(data_file,os.getcwd())
         with open(data_file, 'w',encoding='utf-8') as f:
             json.dump(count_old, f,ensure_ascii=False,indent = 4)
     print(count_old)
