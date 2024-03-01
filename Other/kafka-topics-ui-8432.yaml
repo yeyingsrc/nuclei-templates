@@ -2,15 +2,13 @@ id: kafka-topics-ui
 
 info:
   name: Apache Kafka Topics UI Exposure
-  author: pdteam
+  author: pd-team
   severity: low
-  tags: panel
 
 requests:
   - method: GET
     path:
-      - '{{BaseURL}}'
-
+      - '{{BaseURL}}/'
     matchers:
       - type: word
         words:
