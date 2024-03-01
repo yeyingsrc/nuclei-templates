@@ -2,10 +2,8 @@ id: kong-detect
 info:
   name: Detect Kong
   author: geeknik
-  description: The Cloud-Native API Gateway
-  reference: https://github.com/Kong/kong
+  description: The Cloud-Native API Gateway - https://github.com/Kong/kong
   severity: info
-  tags: tech,kong
 
 requests:
   - method: GET
@@ -18,10 +16,10 @@ requests:
       - type: regex
         part: header
         regex:
-          - "[Ss]erver: [Kk]ong+"
+          - kong+
 
     extractors:
       - type: kval
         part: header
         kval:
-          - server
+          - Server

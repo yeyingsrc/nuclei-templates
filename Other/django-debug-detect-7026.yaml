@@ -1,26 +1,29 @@
 id: django-debug
 
 info:
-  name: Django Debug Exposure
-  author: geeknik
-  reference: https://twitter.com/Alra3ees/status/1397660633928286208
-  severity: high
-  tags: django
+  name: Django Debug Method Enabled
+  author: dhiyaneshDK
+  severity: medium
 
 requests:
-  - method: POST
+  - method: GET
     path:
-      - "{{BaseURL}}/admin/login/?next=/admin/"
+      - "{{BaseURL}}"
+      - "{{BaseURL}}:8000"
+      - "{{BaseURL}}:8080"
+      - "{{BaseURL}}:8001"
+      - "{{BaseURL}}:9080"
+      - "{{BaseURL}}:8443"
+      - "{{BaseURL}}:8060"
 
     matchers-condition: and
     matchers:
+      - type: word
+        words:
+          - URLconf defined
+          - Page not found
+        condition: and
+
       - type: status
         status:
-          - 500
-      - type: word
-        part: body
-        words:
-          - "DB_HOST"
-          - "DB_NAME"
-          - "DJANGO"
-        condition: and
+          - 404
