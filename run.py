@@ -297,4 +297,5 @@ async def main():
         json.dump(count_new, f, ensure_ascii=False, indent=4)
 # 运行主函数
 if __name__ == '__main__':
+    print(os.getcwd(),list(os.listdir()))
     asyncio.run(main())
