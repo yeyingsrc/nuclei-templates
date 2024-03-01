@@ -19,7 +19,6 @@ info:
   name: Linkerd SSRF detection
   author: dudez
   severity: info
-  tags: ssrf,linkerd
 
 requests:
   - method: GET
