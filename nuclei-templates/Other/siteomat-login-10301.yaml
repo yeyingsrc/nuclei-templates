@@ -6,7 +6,7 @@ info:
   severity: info
   reference:
     - https://www.exploit-db.com/ghdb/6624
-  tags: siteomat,login,edb,panel
+  tags: panel,siteomat,login
 
 requests:
   - method: GET
