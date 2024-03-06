@@ -5,12 +5,11 @@ info:
   author: pentest_swissky & geeknik
   severity: low
   description: Discover history for bash, ksh, sh, and zsh
-  tags: config
 
 requests:
   - method: GET
     redirects: true
-    max-redirects: 1
+    max-redirects: 5
     path:
       - "{{BaseURL}}/.bash_history"
       - "{{BaseURL}}/.ksh_history"
@@ -22,23 +21,6 @@ requests:
       - type: word
         words:
           - "chmod "
-          - "exit"
-          - "kill "
-          - "nano "
-          - "vim "
-          - "pico "
-          - "sudo "
-          - "rm "
-          - "cd "
-          - "ps aux "
-        condition: or
-
       - type: status
         status:
           - 200
-
-      - type: word
-        words:
-          - "<html"
-        part: body
-        negative: true
