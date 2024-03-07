@@ -2,14 +2,18 @@ id: generic-tokens
 
 info:
   name: Generic Tokens
-  author: nadino & geeknik
+  author: nadino
   severity: info
-  tags: exposure,token
 
 requests:
   - method: GET
     path:
       - '{{BaseURL}}'
+
+# Notes:-
+# This template requires manual inspection once found valid match.
+# Generic token could be anything matching below regex.
+# Impact of leaked token depends on validation of leaked token.
 
     matchers-condition: and
     matchers:
@@ -21,15 +25,6 @@ requests:
           - regex("SECRET[\\-|_|A-Z0-9]*(\'|\")?(:|=)(\'|\")?[\\-|_|A-Z0-9]{10}",replace(toupper(body),"",""))
           - regex("AUTHORIZATION[\\-|_|A-Z0-9]*(\'|\")?(:|=)(\'|\")?[\\-|_|A-Z0-9]{10}",replace(toupper(body),"",""))
           - regex("PASSWORD[\\-|_|A-Z0-9]*(\'|\")?(:|=)(\'|\")?[\\-|_|A-Z0-9]{10}",replace(toupper(body),"",""))
-
-      - type: regex
-        part: body
-        regex:
-          - (K|k)ey(up|down|press)
-          - (K|k)eyboard(N|n)avigation
-        condition: or
-        negative: true
-
     extractors:
       - type: regex
         part: body
