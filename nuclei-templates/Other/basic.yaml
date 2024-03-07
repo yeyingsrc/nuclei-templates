@@ -1,14 +1,18 @@
-id: basic-ssl
+id: basic-network-request
 
 info:
-  name: Basic SSL Request
+  name: Basic Network Request
   author: pdteam
   severity: info
 
-ssl:
-  - address: "{{Host}}:{{Port}}"
-
+network:
+  - host: 
+      - "{{Hostname}}"
+    inputs:
+      - data: "PING\r\n"
+    read-size: 4
     matchers:
-      - type: dsl
-        dsl:
-          - "probe_status == true"
+      - type: word
+        part: data
+        words:
+          - "PONG"

