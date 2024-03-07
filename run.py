@@ -45,7 +45,6 @@ def search_projects():
         "Connection": "close",
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36",
     }
-    print(token)
     # Send a search request to GitHub API
     search_url = "https://api.github.com/search/repositories?q=nuclei-templates&sort=updated&page=1&per_page=100"
     response = requests.get(search_url, headers=headers,
