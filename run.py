@@ -7,6 +7,7 @@ import asyncio
 import tempfile
 import subprocess
 import requests
+import time
 import hashlib
 import zipfile
 import platform
@@ -271,15 +272,25 @@ async def main():
         with open(data_file, 'w',encoding='utf-8') as f:
             json.dump(count_old, f,ensure_ascii=False,indent = 4)
     # 表格标题
-    table_header = "| templates type | templates conut | change(new) |\n| --- | --- | --- |"
-
+    table_header = "| templates type | templates conut | \n| --- | --- | "
+    date = time.strftime("%Y-%m-%d")
     # 遍历子目录并统计文件数量
     table_rows = []
     for subdir, file_count in count_new_list:
-        table_row = f"| {subdir} | {file_count} | {file_count - count_old.get(subdir,0)} |"
+        table_row = f"| {subdir} | {file_count} |"
         table_rows.append(table_row)
-    table_row = f"| Total | {sum([v for k,v in count_new_list])} | { sum([v for k,v in count_new_list]) - sum(count_old.values())} |"
+    # table_row = f"| Total | {sum([v for k,v in count_new_list])} |"
+    # table_rows.append(table_row)
+    count_old[date] = sum([v for k,v in count_new_list])
+    table_rows.append('')
+    table_rows.append('')
+    count_old_list = sorted(count_old.items(), key=lambda x: x[0])
+    print(count_old_list)
+    table_row = '|' + ' | '.join([k for k,v in count_old_list[-7:]]) + '|\n' + '|' + '--- | ---'*(len([k for k,v in count_old_list[-7:]])-1) + '|'
     table_rows.append(table_row)
+    table_row = '|' + ' | '.join([str(v) for k,v in count_old_list[-7:]]) + '|'
+    table_rows.append(table_row)
+
     # 将结果写入README.md文件
     with open('README.md', 'w', encoding='utf8') as f:
         # 写入表格标题
@@ -289,7 +300,7 @@ async def main():
         for row in table_rows:
             f.write(f"{row}\n")
     with open(data_file, 'w', encoding='utf-8') as f:
-        json.dump(count_new, f, ensure_ascii=False, indent=4)
+        json.dump(count_old, f, ensure_ascii=False, indent=4)
 # 运行主函数
 if __name__ == '__main__':
     asyncio.run(main())
