@@ -10,14 +10,11 @@ info:
     - https://www.tenable.com/plugins/nessus/70658
   metadata:
     verified: true
-    max-request: 2
+    max-request: 1
     shodan-query: product:"OpenSSH"
-  tags: js,enum,ssh,misconfig,network
-
+  tags: javascript,ssh,misconfig,network
 javascript:
-  - pre-condition: |
-      isPortOpen(Host,Port)
-    code: |
+  - code: |
       let m = require("nuclei/ssh");
       let c = m.SSHClient();
       let response = c.ConnectSSHInfoMode(Host, Port);
@@ -43,4 +40,5 @@ javascript:
           - "blowfish-cbc"
           - "cast128-cbc"
         condition: or
-# digest: 4b0a0048304602210082687c326b5c8ec0803ad1e07fd7d94f166ac53dad501f5ad325daf42d789045022100e7525130e591163bc997cca9eac1c1b757c6099e892becc2e9b546f12298d13d:922c64590222798bb761d5b6d8e72950
+
+# digest: 4b0a004830460221009eb43fae8fb12cc3b7b4f1cf120edf86a1903a6af3000e53f6ee5723142b92530221009105b9ce572438f5b7c0149683838fd34c0c13aa29bb750989dabd18eb1a7700:922c64590222798bb761d5b6d8e72950

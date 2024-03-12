@@ -1,18 +1,17 @@
-id: basic-network-request
+id: basic-dns-example
 
 info:
-  name: Basic Network Request
+  name: Test DNS Template
   author: pdteam
   severity: info
 
-network:
-  - host: 
-      - "{{Hostname}}"
-    inputs:
-      - data: "PING\r\n"
-    read-size: 4
+dns:
+  - name: "{{FQDN}}"
+    type: A
+    class: inet
+    recursion: true
+    retries: 3
     matchers:
       - type: word
-        part: data
         words:
-          - "PONG"
+          - "1.1.1.1"
