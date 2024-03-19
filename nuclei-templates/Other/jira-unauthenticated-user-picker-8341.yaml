@@ -2,18 +2,14 @@ id: jira-unauthenticated-user-picker
 
 info:
   name: Jira Unauthenticated User Picker
-  author: TechbrunchFR
-  severity: info
-  metadata:
-    max-request: 1
-    shodan-query: http.component:"Atlassian Jira"
-  tags: atlassian,jira
+  author: medbsq
+  severity: medium
 
-http:
+requests:
   - method: GET
     path:
-      - "{{BaseURL}}/secure/popups/UserPickerBrowser.jspa"
+      - "{{BaseURL}}/rest/api/user/picker?query=admin"
     matchers:
-      - type: word
-        words:
-          - 'user-picker'
+      - type: status
+        status: 
+          - 200

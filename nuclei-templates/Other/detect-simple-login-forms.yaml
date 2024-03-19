@@ -1,0 +1,18 @@
+id: detect-simple-login-forms
+
+info:
+  name: Detect Simple Login Forms
+  author: takitakitanana
+  severity: info
+  description: Checks if a webpage contains a simple login form by looking for input fields of type similar to "password".
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers:
+      - type: word
+        words:
+          - "type=\"password\""
+        part: body
