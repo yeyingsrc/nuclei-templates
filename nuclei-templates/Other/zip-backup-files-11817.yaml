@@ -1,51 +1,17 @@
 id: zip-backup-files
-
 info:
-  name: Compressed Backup File - Detect
-  author: toufik-airane,dwisiswant0,ffffffff0x,pwnhxl
+  name: Compressed Backup File
+  author: toufik-airane,dwisiswant0,ffffffff0x
   severity: medium
-  description: Multiple compressed backup files were detected.
-  classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-    cvss-score: 5.3
-    cwe-id: CWE-200
-  metadata:
-    max-request: 625
   tags: exposure,backup
-
-http:
+requests:
   - method: GET
     path:
-      - "{{BaseURL}}/{{FILENAME}}.{{EXT}}"
-
-    attack: clusterbomb
+      - "{{BaseURL}}/{{FQDN}}.{{EXT}}" # www.example.com
+      - "{{BaseURL}}/{{RDN}}.{{EXT}}" # example.com
+      - "{{BaseURL}}/{{DN}}.{{EXT}}" # example
+    attack: pitchfork
     payloads:
-      FILENAME:
-        - "{{FQDN}}" # www.example.com
-        - "{{RDN}}" # example.com
-        - "{{DN}}" # example
-        - "{{SD}}" # www
-        - "{{date_time('%Y')}}" # 2023
-        - "ROOT" # tomcat
-        - "wwwroot"
-        - "htdocs"
-        - "www"
-        - "html"
-        - "web"
-        - "webapps"
-        - "public"
-        - "public_html"
-        - "uploads"
-        - "website"
-        - "api"
-        - "test"
-        - "app"
-        - "backup"
-        - "bin"
-        - "bak"
-        - "old"
-        - "Release"
-        - "inetpub"
       EXT:
         - "7z"
         - "bz2"
@@ -53,7 +19,6 @@ http:
         - "lz"
         - "rar"
         - "tar.gz"
-        - "tar.bz2"
         - "xz"
         - "zip"
         - "z"
@@ -71,9 +36,7 @@ http:
         - "sql.zip"
         - "sql.z"
         - "sql.tar.z"
-        - "war"
     max-size: 500 # Size in bytes - Max Size to read from server response
-
     matchers-condition: and
     matchers:
       - type: binary
@@ -91,14 +54,10 @@ http:
           - "504B0304" # zip
         condition: or
         part: body
-
       - type: regex
         regex:
           - "application/[-\\w.]+"
         part: header
-
       - type: status
         status:
           - 200
-
-# digest: 4b0a00483046022100c5d5034a82beeefe3aab1ed46ff6bc1cb753680a0f9940cc0aff7425f47dc0ae022100bb8aeb1b8c1a84c13b54e77a83c347f84b0b0b90727ccfcede6225d433712814:922c64590222798bb761d5b6d8e72950
