@@ -11,7 +11,3 @@ workflows:
       - name: laravel
         subtemplates:
           - tags: laravel
-
-      - name: new_laravel
-        subtemplates:
-          - tags: laravel

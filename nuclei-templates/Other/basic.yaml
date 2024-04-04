@@ -1,18 +1,18 @@
-id: basic-dns-example
+id: basic-network-request
 
 info:
-  name: Basic DNS Request
+  name: Basic Network Request
   author: pdteam
   severity: info
 
-dns:
-  - name: "{{FQDN}}"
-    type: CNAME
-    class: inet
-    recursion: true
-    retries: 3
+network:
+  - host: 
+      - "{{Hostname}}"
+    inputs:
+      - data: "PING\r\n"
+    read-size: 4
     matchers:
       - type: word
+        part: data
         words:
-          # The response must contains a CNAME record
-          - "IN\tCNAME"
+          - "PONG"
