@@ -9,8 +9,8 @@ info:
   reference:
     - https://www.emqx.io/
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"EMQX Dashboard"
   tags: panel,emqx,login,detect
 

@@ -9,8 +9,8 @@ info:
   reference:
     - https://www.bynder.com/en/
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.favicon.hash:1017650009
   tags: panel,bynder,login,detect
 

@@ -9,8 +9,8 @@ info:
   reference:
     - https://www.atlassian.com/software/bamboo
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"Bamboo"
   tags: panel,bamboo,login,detect
 

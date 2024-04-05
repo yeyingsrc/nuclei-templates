@@ -9,8 +9,8 @@ info:
   reference:
     - https://www.lockself.com/en/
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"LockSelf"
   tags: panel,lockself,login,detect
 

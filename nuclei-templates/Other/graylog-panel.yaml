@@ -9,8 +9,8 @@ info:
   reference:
     - https://graylog.org/
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"Graylog Web Interface"
   tags: panel,graylog,login,detect
 

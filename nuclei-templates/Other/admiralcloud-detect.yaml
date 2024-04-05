@@ -9,8 +9,8 @@ info:
   reference:
     - https://www.admiralcloud.com/en/
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"AdmiralCloud"
   tags: tech,admiralcloud,detect
 

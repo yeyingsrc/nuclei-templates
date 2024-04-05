@@ -12,10 +12,10 @@ info:
     cvss-score: 0
     cwe-id: CWE-200
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.favicon.hash:1653394551
-  tags: edb,panel,dahua,detect
+  tags: edb,panel,dahua,panel,detect
 
 http:
   - method: GET

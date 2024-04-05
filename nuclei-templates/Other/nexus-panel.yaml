@@ -9,8 +9,8 @@ info:
   reference:
     - https://www.sonatype.com/products/sonatype-nexus-repository
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"Sonatype Nexus Repository"
   tags: panel,nexus,login,detect
 

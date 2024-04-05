@@ -8,8 +8,8 @@ info:
   reference:
     - https://www.objectplanet.com/opinio/
   metadata:
-    verified: true
     max-request: 2
+    verified: true
     shodan-query: http.title:"Opinio"
   tags: panel,opinio,login,detect
 

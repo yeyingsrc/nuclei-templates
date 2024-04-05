@@ -7,8 +7,10 @@ info:
   reference:
     - https://twitter.com/Alra3ees/status/1397660633928286208
   tags: django,exposure
+  metadata:
+    max-request: 1
 
-requests:
+http:
   - method: POST
     path:
       - "{{BaseURL}}/admin/login/?next=/admin/"

@@ -9,10 +9,10 @@ info:
   reference:
     - https://github.com/dataease/dataease
   metadata:
-    verified: true
-    max-request: 1
     vendor: dataease
     product: dataease
+    verified: true
+    max-request: 1
     shodan-query: html:"Dataease"
   tags: login,panel,dataease
 

@@ -9,8 +9,8 @@ info:
   reference:
     - https://moodle.com/solutions/workplace/
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.html:"moodle"
   tags: panel,moodle,login,detect
 
