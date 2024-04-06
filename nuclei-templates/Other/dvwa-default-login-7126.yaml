@@ -10,10 +10,8 @@ info:
   classification:
     cwe-id: CWE-798
   tags: dvwa,default-login
-  metadata:
-    max-request: 2
 
-http:
+requests:
   - raw:
       - |
         GET /login.php HTTP/1.1
@@ -53,7 +51,7 @@ http:
         kval:
           - PHPSESSID
 
-    host-redirects: true
+    redirects: true
     matchers:
       - type: word
         words:

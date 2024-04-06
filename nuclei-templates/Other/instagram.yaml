@@ -1,39 +1,28 @@
-id: instagram
+id: api-instagramgraph
 
 info:
-  name: Instagram User Name Information - Detect
-  author: dwisiswant0
+  name: Instagram Graph API Test
+  author: zzeitlin
   severity: info
-  description: Instagram user name information check was conducted.
-  classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
-    cwe-id: CWE-200
+  reference:
+    - https://developers.facebook.com/docs/instagram-api/getting-started
   metadata:
     max-request: 1
-  tags: osint,osint-social,instagram
+  tags: token-spray,instagram,graph,facebook
 
 self-contained: true
 
 http:
   - method: GET
     path:
-      - "https://www.instagram.com/{{user}}"
+      - "https://graph.facebook.com/v12.0/me/accounts?access_token={{token}}"
 
-    host-redirects: true
-    max-redirects: 2
-
-    matchers-condition: and
     matchers:
       - type: word
         part: body
         words:
-          - '{"username":"{{user}}"}'
-          - 'Instagram photos and videos from'
+          - '"data":'
+          - '"access_token":'
+          - '"name":'
         condition: and
-
-      - type: status
-        status:
-          - 200
-
-# digest: 4a0a0047304502206f1f90d0ae6e87ffabb1bc19701bebc732a900faf42983eb19ef61612390649c022100e4c2da1597598563b42ecb16fbd584af21937dc9ae4aefbdc7ce0304708b816d:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203ade6d8603824d6cee1aba09cec32aa8fdb19ff6847894922c028078f4d19c5702204b02d9e4c9bb446c965ef0dbbae2e9dc8ea6d22df0c12c3eee97bbd9a970683f:922c64590222798bb761d5b6d8e72950
