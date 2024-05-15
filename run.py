@@ -158,6 +158,43 @@ def count_yaml_files(temp_directory, links):
                         count[link] += 1
     return count
 
+# 清理文件
+def clear_file():
+    # 当前目录路径
+    current_directory = os.path.join(os.getcwd(),'nuclei-templates')
+    # 递归遍历文件
+    for root, dirs, files in os.walk(current_directory):
+        for file in files:
+            full_file = os.path.join(root, file)
+            if re.match('.*?-[0-9a-fA-F]{32}',file):
+                new_file = re.sub('-[0-9a-fA-F]{32}','',file)
+                new_full_file = os.path.join(root,new_file)
+                if os.path.exists(new_full_file):
+                    os.remove(full_file)
+                    continue
+                else:
+                    poc_code = open(full_file,'r',encoding='utf8').read()
+                    poc_code = poc_code.replace(os.path.splitext(file)[0],os.path.splitext(new_file)[0])
+                    with open(new_full_file,'w',encoding='utf8') as f:
+                        f.write(poc_code)
+
+    for dir1 in os.listdir(current_directory):
+        if dir1.lower().startswith('cve'):
+            for file in os.listdir(os.path.join(current_directory,dir1)):
+                if re.match('^cve-\d+-\d+\.yaml$',file,re.I):
+                    continue
+                if re.match('cve-\d+-\d+',file,re.I):
+                    new_file = re.findall('(cve-\d+-\d+)',file,re.I)[0] + '.yaml'
+                    if os.path.exists(os.path.join(current_directory,dir1,new_file)):
+                        os.remove(os.path.join(current_directory,dir1,file))
+                    try:
+                        os.rename(os.path.join(current_directory,dir1,file),os.path.join(current_directory,dir1,new_file))
+                        # print(f'rename {file} -> {new_file} ok')
+                    except:
+                        print(f'rename {file} -> {new_file} error')
+
+            
+
 # 扫描冲突的文件并自动删除
 def handle_filename_conflicts(directory):
     files = os.listdir(directory)
@@ -253,9 +290,14 @@ async def main():
 
     # 遍历临时目录中的.yaml文件
     process_yaml_files(temp_directory)
+    # 清理
+    clear_file()
 
     # 校验yaml文件
     nuclei_validate(temp_directory)
+
+    # 再次清理
+    clear_file()
 
     # 统计每个子目录下的文件数量
     count_new = count_files()
@@ -304,3 +346,4 @@ async def main():
 # 运行主函数
 if __name__ == '__main__':
     asyncio.run(main())
+    
