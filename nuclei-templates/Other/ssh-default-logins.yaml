@@ -1,4 +1,4 @@
-id: ssh-default-logins
+id: ssh-weak-credentials
 
 info:
   name: SSH - Default Logins
@@ -7,7 +7,7 @@ info:
   metadata:
     max-request: 223
     shodan-query: port:1433
-  tags: js,ssh,default-login,network,fuzz
+  tags: js,ssh,default-login,network,brute-force
 
 javascript:
   - pre-condition: |
@@ -37,4 +37,4 @@ javascript:
           - "response == true"
           - "success == true"
         condition: and
-# digest: 4a0a00473045022014aa9c1a1b17b3914b4ba3f3233452eebae9a55538d97c0e80eda65e1d207f4d022100bb2595041170eae66cc6dd5fcbf9b33a0b3d61a92fe5a77c1aa48a600f8f420c:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100a783d49e58473772388814b83e7806a89888dd6b2cf9f2e73bd4cc63e3d37cf70220153f5cf901fd9c82a549ee83ff79d0af26275bbcfc702c919f65dd9fc58ffcb5:922c64590222798bb761d5b6d8e72950
