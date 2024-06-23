@@ -1,9 +1,10 @@
 id: symfony-database-config
+
 info:
   name: Symfony Database Configuration Exposure
-  author: pdteam
+  author: pd-team
   severity: high
-  tags: config,exposure
+
 requests:
   - method: GET
     path:
