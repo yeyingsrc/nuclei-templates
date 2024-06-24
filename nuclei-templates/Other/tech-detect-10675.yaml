@@ -3,11 +3,11 @@ info:
   name: Wappalyzer Technology Detection
   author: hakluke
   severity: info
-  tags: tech
 requests:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     redirects: true
     max-redirects: 2
     matchers-condition: or
@@ -18,6 +18,7 @@ requests:
           - <img[^>]+\.mollom\.com
         condition: or
         part: body
+
       - type: word
         name: atlassian-jira
         words:
@@ -25,6 +26,7 @@ requests:
           - "atlassian.com/software/jira"
         condition: and
         part: body
+
       - type: regex
         name: genexus
         regex:
@@ -262,6 +264,14 @@ requests:
         condition: or
         part: body
       - type: regex
+        name: prestashop
+        regex:
+          - Powered by <a\s+[^>]+>PrestaShop
+          - <!-- /Block [a-z ]+ module (?:HEADER|TOP)?\s?-->
+          - <!-- /Module Block [a-z ]+ -->
+        condition: or
+        part: body
+      - type: regex
         name: youtrack
         regex:
           - no-title="YouTrack">
@@ -334,6 +344,12 @@ requests:
         name: smart-ad-server
         regex:
           - <img[^>]+smartadserver\.com\/call
+        condition: or
+        part: body
+      - type: regex
+        name: wordpress-super-cache
+        regex:
+          - <!--[^>]+WP-Super-Cache
         condition: or
         part: body
       - type: regex
@@ -923,6 +939,13 @@ requests:
         condition: or
         part: body
       - type: regex
+        name: wordpress
+        regex:
+          - <link rel=["']stylesheet["'] [^>]+/wp-(?:content|includes)/
+          - <link[^>]+s\d+\.wp\.com
+        condition: or
+        part: body
+      - type: regex
         name: pygments
         regex:
           - <link[^>]+pygments\.css["']
@@ -950,6 +973,12 @@ requests:
         name: elog
         regex:
           - <title>ELOG Logbook Selection</title>
+        condition: or
+        part: body
+      - type: regex
+        name: drupal-commerce
+        regex:
+          - <[^>]+(?:id="block[_-]commerce[_-]cart[_-]cart|class="commerce[_-]product[_-]field)
         condition: or
         part: body
       - type: regex
@@ -1693,6 +1722,7 @@ requests:
           - <a href="http://www\.liveinternet\.ru/click"
         condition: or
         part: body
+
       - type: regex
         name: sdl-tridion
         regex:
@@ -1806,6 +1836,15 @@ requests:
         condition: or
         part: body
       - type: regex
+        name: drupal
+        regex:
+          - <(?:link|style)[^>]+"/sites/(?:default|all)/(?:themes|modules)/
+          - "X-Drupal"
+          - "x-drupal"
+          - "X-Generator: Drupal"
+        condition: or
+        part: all
+      - type: regex
         name: webxpay
         regex:
           - Powered by <a href="https://www\.webxpay\.com">WEBXPAY<
@@ -1899,6 +1938,12 @@ requests:
         regex:
           - <body[^>]+govuk-template__body
           - <a[^>]+govuk-link
+        condition: or
+        part: body
+      - type: regex
+        name: yoast-seo
+        regex:
+          - <!-- This site is optimized with the Yoast (?:WordPress )?SEO plugin v([\d.]+) -
         condition: or
         part: body
       - type: regex
@@ -2443,32 +2488,38 @@ requests:
           - " <a [^>]+Powered by Lithium"
         condition: or
         part: body
+
       - type: word
         name: clockwork
         words:
           - "X-Clockwork-Id:"
           - "X-Clockwork-Version:"
         part: header
+
       - type: word
         name: symfony
         words:
           - "Set-Cookie: symfony="
         part: header
+
       - type: word
         name: laravel
         words:
           - "Set-Cookie: laravel_session="
         part: header
+
       - type: word
         name: express
         words:
           - "X-Powered-By: Express"
         part: header
+
       - type: word
         name: rails
         words:
           - 'meta content="authenticity_token" name="csrf-param'
         part: body
+
       - type: word
         name: angular
         words:
@@ -2478,6 +2529,12 @@ requests:
           - "ng-controller="
         condition: or
         part: body
+
+      - type: word
+        name: apache
+        words:
+          - "Apache"
+        part: header
       - type: word
         name: lighttpd
         words:
@@ -2519,6 +2576,11 @@ requests:
           - "Microsoft-HTTPAPI"
         part: header
       - type: word
+        name: tomcat
+        words:
+          - "Tomcat"
+        part: header
+      - type: word
         name: darkhttpd
         words:
           - "darkhttpd"
@@ -2543,11 +2605,13 @@ requests:
         words:
           - "Jetty"
         part: header
+
       - type: word
         name: nginx
         words:
           - "Server: nginx"
         part: header
+
       - type: word
         name: php
         words:
@@ -2569,11 +2633,13 @@ requests:
           - "CPython/3."
         condition: or
         part: header
+
       - type: word
         name: jenkins
         words:
           - "X-Jenkins"
         part: header
+
       - type: word
         name: cloudflare
         words:
@@ -2611,26 +2677,31 @@ requests:
           - "ArvanCloud"
           - "AR-Request-ID:"
         part: header
+
       - type: word
         name: aem_cms
         words:
           - "/etc/clientlibs/"
           - "/content/dam/"
         part: body
+
       - type: word
         name: lotus-domino
         words:
           - "Server: Lotus-Domino"
         part: header
+
       - type: word
         name: mongo-express-web-gui
         words:
           - "Set-Cookie: mongo-express="
         part: header
+
       - type: word
         name: pf-sense-ui
         words:
           - "Login to pfSense"
+
       - type: word
         name: weave-scope-dashboard
         words:
@@ -2639,6 +2710,7 @@ requests:
           - "__CSRF_TOKEN_PLACEHOLDER__"
         condition: and
         part: body
+
       - type: word
         name: mida-eframework
         words:
@@ -2646,6 +2718,7 @@ requests:
           - "Server: Mida eFramework"
         condition: or
         part: all
+
       - type: word
         name: SEEEMS-CMS
         words:
@@ -2653,11 +2726,13 @@ requests:
           - "SEEEMS.FRAMEWORK"
         condition: or
         part: body
+
       - type: regex
         name: awselb
         regex:
           - 'awselb'
         part: header
+
       - type: word
         name: pfsense
         words:
@@ -2666,13 +2741,9 @@ requests:
           - "maintained by Netgate"
         part: body
         condition: and
+
       - type: word
         name: monit
         part: header
         words:
           - 'Server: monit'
-      - type: word
-        name: thinkphp
-        words:
-          - "ThinkPHP"
-        part: header

@@ -2,13 +2,15 @@ id: kafka-monitoring
 
 info:
   name: Apache Kafka Monitor Exposure
-  author: pd-team
+  author: pdteam
   severity: low
+  tags: panel
 
 requests:
   - method: GET
     path:
-      - '{{BaseURL}}/'
+      - '{{BaseURL}}'
+
     matchers:
       - type: word
         words:

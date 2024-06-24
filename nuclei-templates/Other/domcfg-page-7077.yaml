@@ -3,8 +3,10 @@ info:
   name: Lotus Domino Configuration Page
   author: gevakun
   severity: low
-  reference: https://twitter.com/Wh11teW0lf/status/1295594085445709824
-  tags: exposure
+
+  # Reference:
+  # https://twitter.com/Wh11teW0lf/status/1295594085445709824
+  # Do not test any website without permission
 
 requests:
   - method: GET
