@@ -230,6 +230,30 @@ def count_files():
         count[subdir] = file_count
     return count
 
+# 获取新增加文件 PDD
+def get_new_add_file():
+    data = {}
+    data_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),'data1.json')
+    if os.path.exists(data_file):
+        try:
+            data = json.loads(open(data_file,'r',encoding='utf8').read())
+        except Exception as e:
+            with open(data_file, 'w',encoding='utf-8') as f:
+                json.dump(data, f,ensure_ascii=False,indent = 4)
+    else:
+        with open(data_file, 'w',encoding='utf-8') as f:
+            json.dump(data, f,ensure_ascii=False,indent = 4)
+    current_directory = os.path.join(os.getcwd(),'nuclei-templates')
+    new_files = []
+    for root, dirs, files in os.walk(current_directory):
+        for file in files:
+            if file not in data:
+                data[file] = time.strftime("%Y-%m-%d %H:%M:%S")
+                new_files.append(file)
+    with open(data_file, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4) 
+    return new_files
+
 # 克隆GitHub项目到指定目录
 async def clone_github_project(link, save_directory):
     # 提取项目名称
@@ -267,39 +291,41 @@ async def main():
     # 创建临时目录
     temp_directory = tempfile.mkdtemp()
 
-    # 读取GitHub项目链接
-    links_1 = read_github_links(file_path)
+    # # 更新部分
+    # ## 读取GitHub项目链接
+    # links_1 = read_github_links(file_path)
 
-    # 搜索项目
-    links_2 = search_projects()
+    # ## 搜索项目
+    # links_2 = search_projects()
 
-    # 新GitHub项目链接
-    links_3 = [link for link in links_2 if link not in links_1 and link !=
-               'https://github.com/20142995/nuclei-templates']
-    print(f'GitHub项目 {len(links_1)} + {len(links_3)} ({len(links_2)})')
+    # ## 新GitHub项目链接
+    # links_3 = [link for link in links_2 if link not in links_1 and link !=
+    #            'https://github.com/20142995/nuclei-templates']
+    # print(f'GitHub项目 {len(links_1)} + {len(links_3)} ({len(links_2)})')
 
-    # 克隆GitHub项目到指定目录
-    await clone_github_projects(links_1+links_3, temp_directory)
+    # ## 克隆GitHub项目到指定目录
+    # await clone_github_projects(links_1+links_3, temp_directory)
 
-    # 统计临时目录中的.yaml文件
-    count_1 = count_yaml_files(temp_directory, links_1+links_3)
-    links_4 = [link for link in links_3 if count_1.get(link, 0) > 0]
-    print(f'有效GitHub项目 {len(links_4)}')
-    # 追加写入有效链接
-    append_github_links(file_path, links_4)
+    # ## 统计临时目录中的.yaml文件
+    # count_1 = count_yaml_files(temp_directory, links_1+links_3)
+    # links_4 = [link for link in links_3 if count_1.get(link, 0) > 0]
+    # print(f'有效GitHub项目 {len(links_4)}')
+    # ## 追加写入有效链接
+    # append_github_links(file_path, links_4)
 
-    # 遍历临时目录中的.yaml文件
-    process_yaml_files(temp_directory)
-    # 清理
-    clear_file()
+    # ## 遍历临时目录中的.yaml文件
+    # process_yaml_files(temp_directory)
+    # ## 清理
+    # clear_file()
 
-    # 校验yaml文件
-    nuclei_validate(temp_directory)
+    # ## 校验yaml文件
+    # nuclei_validate(temp_directory)
 
-    # 再次清理
-    clear_file()
+    # ## 再次清理
+    # clear_file()
 
-    # 统计每个子目录下的文件数量
+    # 展示部分
+    ## 统计每个子目录下的文件数量
     count_new = count_files()
     count_new_list = sorted(count_new.items(), key=lambda x: x[0])
     count_old = {}
@@ -313,32 +339,29 @@ async def main():
     else:
         with open(data_file, 'w',encoding='utf-8') as f:
             json.dump(count_old, f,ensure_ascii=False,indent = 4)
-    # 表格标题
-    table_header = "| templates type | templates conut | \n| --- | --- | "
-    date = time.strftime("%Y-%m-%d")
-    # 遍历子目录并统计文件数量
     table_rows = []
+    table_rows.append("## 分类统计")
+    table_rows.append("| templates type | templates conut | \n| --- | --- |")
+    date = time.strftime("%Y-%m-%d")
+    ## 遍历子目录并统计文件数量
     for subdir, file_count in count_new_list:
         table_row = f"| {subdir} | {file_count} |"
         table_rows.append(table_row)
-    # table_row = f"| Total | {sum([v for k,v in count_new_list])} |"
-    # table_rows.append(table_row)
+    table_rows.append("## 近几天数量变化情况")
     count_old[date] = sum([v for k,v in count_new_list])
-    table_rows.append('')
-    table_rows.append('')
     count_old_list = sorted(count_old.items(), key=lambda x: x[0])
-    print(count_old_list)
     table_row = '|' + ' | '.join([k for k,v in count_old_list[-7:]]) + '|\n' + '|' + '--- | ---'*(len([k for k,v in count_old_list[-7:]])-1) + '|'
     table_rows.append(table_row)
     table_row = '|' + ' | '.join([str(v) for k,v in count_old_list[-7:]]) + '|'
     table_rows.append(table_row)
-
-    # 将结果写入README.md文件
+    table_rows.append("## 最近新增文件")
+    new_files = get_new_add_file()
+    table_rows.append("| templates name | \n| --- |")
+    for filename in new_files:
+        table_row = f"| {filename} |"
+        table_rows.append(table_row)
+    ## 将结果写入README.md文件
     with open('README.md', 'w', encoding='utf8') as f:
-        # 写入表格标题
-        f.write(f"{table_header}\n")
-
-        # 写入表格内容
         for row in table_rows:
             f.write(f"{row}\n")
     with open(data_file, 'w', encoding='utf-8') as f:
