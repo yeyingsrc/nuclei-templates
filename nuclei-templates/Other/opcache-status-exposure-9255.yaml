@@ -1,9 +1,10 @@
 id: opcache-status-exposure
+
 info:
   name: OPcache Status Exposure
-  author: pdteam
+  author: pd-team
   severity: low
-  tags: config,exposure
+
 requests:
   - method: GET
     path:

@@ -1,9 +1,10 @@
 id: yarn-manager-exposure
+
 info:
   name: Apache Yarn ResourceManager Exposure / Unauthenticated Access
-  author: pdteam
+  author: pd-team
   severity: low
-  tags: panel
+
 requests:
   - method: GET
     path:
