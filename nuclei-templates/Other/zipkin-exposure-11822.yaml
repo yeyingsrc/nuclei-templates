@@ -1,9 +1,10 @@
 id: zipkin-exposure
+
 info:
   name: Zipkin Exposure
-  author: pdteam
+  author: pd-team
   severity: low
-  tags: panel
+
 requests:
   - method: GET
     path:
