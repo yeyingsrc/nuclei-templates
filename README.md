@@ -20,72 +20,52 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 396 |
 | CVE-2018 | 445 |
-| CVE-2019 | 511 |
-| CVE-2020 | 594 |
+| CVE-2019 | 512 |
+| CVE-2020 | 593 |
 | CVE-2021 | 1728 |
-| CVE-2022 | 2454 |
-| CVE-2023 | 4707 |
-| CVE-2024 | 3884 |
+| CVE-2022 | 2455 |
+| CVE-2023 | 4709 |
+| CVE-2024 | 3883 |
 | Other | 23142 |
 ## 近几天数量变化情况
-|2024-07-08 | 2024-07-09 | 2024-07-10 | 2024-07-11 | 2024-07-12 | 2024-07-13 | 2024-07-14|
+|2024-07-09 | 2024-07-10 | 2024-07-11 | 2024-07-12 | 2024-07-13 | 2024-07-14 | 2024-07-15|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|38020 | 40124 | 40199 | 39679 | 39774 | 39825 | 39828|
+|40124 | 40199 | 39679 | 39774 | 39825 | 39828 | 39830|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-6465.yaml |
-| CVE-2024-6574.yaml |
-| CVE-2024-5902.yaml |
-| CVE-2020-10546.yaml |
-| cve-2020-8209.yaml |
-| cve-2020-16139.yaml |
-| cve-2020-27191.yaml |
-| cve-2020-23517.yaml |
-| cve-2020-9490.yaml |
-| cve-2017-14849.yaml |
-| cve-2010-1534.yaml |
-| cve-2010-1491.yaml |
-| CVE-2021-3129.yaml |
-| cve-2021-40978.yaml |
-| sql-injection-vulnerability.yaml |
-| apiman-panel-463.yaml |
-| open-redirect-vulnerability.yaml |
-| weblogic-weak-login-11156.yaml |
-| oauth2-detect.yaml |
-| gespage-detect.yaml |
-| xss-reflected-vulnerability.yaml |
-| panasonic-network-management-9448.yaml |
-| sphider-login-10410.yaml |
-| dell-idrac-default-login-6942.yaml |
-| sqli_header-10504.yaml |
-| unauthenticated-varnish-cache-purge.yaml |
-| adobe-connect-username-exposure-100.yaml |
-| laposta.yaml |
-| octobercms-detect.yaml |
-| vmware-vrealize.yaml |
-| wordpress-wordfence-lfi-11349.yaml |
-| goip-1-lfi-7761.yaml |
-| bullwark-momentum-lfi.yaml |
-| chevereto-detect.yaml |
-| cache-poisoning.yaml |
-| rhymix-cms-detect.yaml |
-| Path-Traversal.yaml |
-| feifeicms-lfr-7464.yaml |
-| nuuo-file-inclusion.yaml |
-| yapi-detect.yaml |
-| confluence-ssrf-sharelinks.yaml |
-| dom-xss-7078.yaml |
-| exposed-nomad.yaml |
-| qi-anxin-netkang-next-generation-firewall-rce-9758.yaml |
-| tileserver-gl.yaml |
-| dbeaver-credentials.yaml |
-| getsimple-cms-detector.yaml |
-| custom_nuclei-1.yaml |
-| jenkins-default.yaml |
-| android-debug-database-exposed-316.yaml |
-| favicon-detection-7444.yaml |
-| CVE-2016-7552.yaml |
-| CVE-2015-2080.yaml |
-| CVE-2019-8446.yaml |
-| cve-2019-8451.yaml |
+| cve-2020-8771.yaml |
+| cve-2018-1335.yaml |
+| cve-2018-8033.yaml |
+| cve-2018-10823.yaml |
+| cve-2010-4231.yaml |
+| cve-2011-2744.yaml |
+| cve-2021-24342.yaml |
+| h2csmuggle-nuclei.yaml |
+| weblogic-t3-detect.yaml |
+| flir-path-traversal-7523.yaml |
+| openerp-database-9275.yaml |
+| horizon.yaml |
+| salesforce-aura-9984.yaml |
+| basic-xss-prober-698.yaml |
+| trilithic-viewpoint-login-10839.yaml |
+| phpok-sqli.yaml |
+| bigbluebutton-detect.yaml |
+| olivetti-crf-detect.yaml |
+| extract-urls-7369.yaml |
+| fastjson-version.yaml |
+| pingdom-takeover-9586.yaml |
+| oracle-business-control-9346.yaml |
+| splunk-login-10418.yaml |
+| oracle-siebel-xss-9400.yaml |
+| simple-info-disclosure.yaml |
+| concrete-xss.yaml |
+| mongodb-unauth-8928.yaml |
+| log4jshell.yaml |
+| thinkphp-501-rce.yaml |
+| wp-multiple-theme-ssrf-11510.yaml |
+| monitorix-exposure-8933.yaml |
+| hasura-graphql-ssrf.yaml |
+| nginx-config-9099.yaml |
+| clockwatch-enterprise-rce-1010.yaml |
+| CVE-2015-3306.yaml |
