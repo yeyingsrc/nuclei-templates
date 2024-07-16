@@ -20,52 +20,56 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 396 |
 | CVE-2018 | 445 |
-| CVE-2019 | 512 |
+| CVE-2019 | 511 |
 | CVE-2020 | 593 |
 | CVE-2021 | 1728 |
-| CVE-2022 | 2455 |
-| CVE-2023 | 4709 |
-| CVE-2024 | 3883 |
-| Other | 23142 |
+| CVE-2022 | 2454 |
+| CVE-2023 | 4712 |
+| CVE-2024 | 3886 |
+| Other | 23154 |
 ## 近几天数量变化情况
-|2024-07-09 | 2024-07-10 | 2024-07-11 | 2024-07-12 | 2024-07-13 | 2024-07-14 | 2024-07-15|
+|2024-07-10 | 2024-07-11 | 2024-07-12 | 2024-07-13 | 2024-07-14 | 2024-07-15 | 2024-07-16|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|40124 | 40199 | 39679 | 39774 | 39825 | 39828 | 39830|
+|40199 | 39679 | 39774 | 39825 | 39828 | 39830 | 39846|
 ## 最近新增文件
 | templates name | 
 | --- |
-| cve-2020-8771.yaml |
-| cve-2018-1335.yaml |
-| cve-2018-8033.yaml |
-| cve-2018-10823.yaml |
-| cve-2010-4231.yaml |
-| cve-2011-2744.yaml |
-| cve-2021-24342.yaml |
-| h2csmuggle-nuclei.yaml |
-| weblogic-t3-detect.yaml |
-| flir-path-traversal-7523.yaml |
-| openerp-database-9275.yaml |
-| horizon.yaml |
-| salesforce-aura-9984.yaml |
-| basic-xss-prober-698.yaml |
-| trilithic-viewpoint-login-10839.yaml |
-| phpok-sqli.yaml |
-| bigbluebutton-detect.yaml |
-| olivetti-crf-detect.yaml |
-| extract-urls-7369.yaml |
-| fastjson-version.yaml |
-| pingdom-takeover-9586.yaml |
-| oracle-business-control-9346.yaml |
-| splunk-login-10418.yaml |
-| oracle-siebel-xss-9400.yaml |
-| simple-info-disclosure.yaml |
-| concrete-xss.yaml |
-| mongodb-unauth-8928.yaml |
-| log4jshell.yaml |
-| thinkphp-501-rce.yaml |
-| wp-multiple-theme-ssrf-11510.yaml |
-| monitorix-exposure-8933.yaml |
-| hasura-graphql-ssrf.yaml |
-| nginx-config-9099.yaml |
-| clockwatch-enterprise-rce-1010.yaml |
-| CVE-2015-3306.yaml |
+| CVE-2024-5217.yaml |
+| CVE-2024-4879.yaml |
+| cve-2020-11930.yaml |
+| axigen-webadmin-660.yaml |
+| custom_nuclei-6.yaml |
+| yonyou-u8-cloud-measquery-sqli.yaml |
+| huawei-hg532e-default-router-login-8064.yaml |
+| samba-detect-9989.yaml |
+| weaver-ecology-workflowservicexml-sqli.yaml |
+| metinfo-lfi-8838.yaml |
+| plesk-obsidian.yaml |
+| metadata-azure-8814.yaml |
+| adiscon-loganalyzer-68.yaml |
+| wp-vault-lfi.yaml |
+| wowza-streaming-engine.yaml |
+| apache-ozone-conf.yaml |
+| fastjson-1-2-62-rce.yaml |
+| cnvd-2019-01348-1042.yaml |
+| servicenow-title-injection.yaml |
+| detect-sentry.yaml |
+| w3c-total-cache-ssrf-11080.yaml |
+| wp-mstore-plugin-listing-11501.yaml |
+| default-movable-page.yaml |
+| nagios-default-login-8991.yaml |
+| open-mjpg-streamer.yaml |
+| falcosidekick-panel.yaml |
+| venustech-vpn-download-file-read.yaml |
+| hb-audio-lfi-7913.yaml |
+| tp5010.yaml |
+| security-10122.yaml |
+| landray-oa-fileread-8571.yaml |
+| phpinfo-files.yaml |
+| d-link-arbitary-fileread-7044.yaml |
+| apache-ozone-detect.yaml |
+| log4j-fuzz2.yaml |
+| CVE-2023-48728.yaml |
+| CVE-2023-29204.yaml |
+| CVE-2023-4450.yaml |
+| CVE-2019-12725.yaml |
