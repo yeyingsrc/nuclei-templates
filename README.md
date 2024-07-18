@@ -20,103 +20,54 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 396 |
 | CVE-2018 | 445 |
-| CVE-2019 | 512 |
+| CVE-2019 | 511 |
 | CVE-2020 | 593 |
 | CVE-2021 | 1729 |
-| CVE-2022 | 2454 |
-| CVE-2023 | 4713 |
-| CVE-2024 | 3941 |
-| Other | 23162 |
+| CVE-2022 | 2455 |
+| CVE-2023 | 4714 |
+| CVE-2024 | 3958 |
+| Other | 23169 |
 ## 近几天数量变化情况
-|2024-07-11 | 2024-07-12 | 2024-07-13 | 2024-07-14 | 2024-07-15 | 2024-07-16 | 2024-07-17|
+|2024-07-12 | 2024-07-13 | 2024-07-14 | 2024-07-15 | 2024-07-16 | 2024-07-17 | 2024-07-18|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|39679 | 39774 | 39825 | 39828 | 39830 | 39846 | 39912|
+|39774 | 39825 | 39828 | 39830 | 39846 | 39912 | 39937|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-5882.yaml |
-| CVE-2024-5883.yaml |
-| CVE-2024-37920.yaml |
-| CVE-2024-37938.yaml |
-| CVE-2024-37935.yaml |
-| CVE-2024-37933.yaml |
-| CVE-2024-38762.yaml |
-| CVE-2024-6621.yaml |
-| CVE-2024-6289.yaml |
-| CVE-2024-6720.yaml |
-| CVE-2024-34351.yaml |
-| CVE-2024-5852.yaml |
-| CVE-2024-37940.yaml |
-| CVE-2024-37564.yaml |
-| CVE-2024-38760.yaml |
-| CVE-2024-6496.yaml |
-| CVE-2024-37928.yaml |
-| CVE-2024-37927.yaml |
-| CVE-2024-4257.yaml |
-| CVE-2024-37925.yaml |
-| CVE-2024-37561.yaml |
-| CVE-2024-6457.yaml |
-| CVE-2024-37939.yaml |
-| CVE-2024-38766.yaml |
-| CVE-2024-3587.yaml |
-| CVE-2024-2691.yaml |
-| CVE-2024-37930.yaml |
-| CVE-2024-37919.yaml |
-| CVE-2024-1937.yaml |
-| CVE-2024-5630.yaml |
-| CVE-2024-6159.yaml |
-| CVE-2024-4780.yaml |
-| CVE-2024-37918.yaml |
-| CVE-2024-37565.yaml |
-| CVE-2024-37932.yaml |
-| CVE-2024-37931.yaml |
-| CVE-2024-37563.yaml |
-| CVE-2024-37926.yaml |
-| CVE-2024-37929.yaml |
-| CVE-2024-37560.yaml |
-| CVE-2024-6579.yaml |
-| CVE-2024-6529.yaml |
-| CVE-2024-6565.yaml |
-| CVE-2024-38763.yaml |
-| CVE-2024-37936.yaml |
-| CVE-2024-6557.yaml |
-| CVE-2024-6570.yaml |
-| CVE-2024-37941.yaml |
-| CVE-2024-37562.yaml |
-| CVE-2024-6559.yaml |
-| CVE-2024-38765.yaml |
-| CVE-2024-38764.yaml |
-| CVE-2024-38761.yaml |
-| Grafana-file-read.yaml |
-| identity-services-engine.yaml |
-| plugin-notes-plus.yaml |
-| sociallyviral.yaml |
-| ultimate-classified-listings.yaml |
-| hiboss-rce.yaml |
-| point.yaml |
-| tabs-for-visual-composer.yaml |
-| woocommerce-openpos.yaml |
-| smartmag-responsive-retina-wordpress-magazine.yaml |
-| azkaban-web-client-680.yaml |
-| popularis-verse.yaml |
-| aforms-form-builder-for-price-calculator-cost-estimation.yaml |
-| graphql-detect-7830.yaml |
-| sharecenter-login.yaml |
-| rack-mini-profiler-9791.yaml |
-| public-tomcat-manager-9709.yaml |
-| fastjson-1-2-43-rce.yaml |
-| tochat-be.yaml |
-| timeline-for-beaver-builder.yaml |
-| patricia-lite.yaml |
-| wp-phpfreechat-xss-11528.yaml |
-| plesk-onyx-login.yaml |
-| i-transform.yaml |
-| light-poll.yaml |
-| CNVD-2020-56167.yaml |
-| oceanic.yaml |
-| seraphinite-accelerator-ext.yaml |
-| circarlife-setup-917.yaml |
-| front-page-misconfig-7545.yaml |
-| d-link-wireless-7048.yaml |
-| pacs-connexion-utilisateur-9427.yaml |
-| campaignmonitor-842.yaml |
+| CVE-2024-38748.yaml |
+| CVE-2024-5251.yaml |
+| CVE-2024-38719.yaml |
+| CVE-2024-5703.yaml |
+| CVE-2024-38720.yaml |
+| CVE-2024-6220.yaml |
+| CVE-2024-5252.yaml |
+| CVE-2024-38777.yaml |
+| CVE-2024-6467.yaml |
+| CVE-2024-5582.yaml |
+| CVE-2024-38736.yaml |
+| CVE-2024-38721.yaml |
+| CVE-2024-5253.yaml |
+| CVE-2024-38746.yaml |
+| CVE-2024-6660.yaml |
+| CVE-2024-38734.yaml |
+| CVE-2024-5255.yaml |
+| CVE-2024-6669.yaml |
+| CVE-2024-5254.yaml |
+| CVE-2024-38701.yaml |
+| CVE-2024-6033.yaml |
+| cve-2020-15227.yaml |
+| hjtcloud-arbitrary-file-read-7971.yaml |
+| adcs-certificate.yaml |
+| surveygizmo-takeover-10582.yaml |
+| crlf-injection.yaml |
+| keydatas.yaml |
+| cache-poisoning-821.yaml |
+| 3g-wireless-gateway-6.yaml |
+| moodle-filter-jmol-lfi-8937.yaml |
+| cisco-network-config-949.yaml |
+| yonyou-grp-cloud-selectGlaDatasourcePreview-sqli.yaml |
+| exposed-zookeeper-7363.yaml |
+| eoffice-v10-leave-record-sqli.yaml |
+| d-link-arbitary-fileread-7042.yaml |
+| ups-status-10985.yaml |
+| wishpond-takeover-11217.yaml |
