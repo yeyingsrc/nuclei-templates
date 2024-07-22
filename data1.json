@@ -47547,5 +47547,20 @@
     "xenforo-login-11670.yaml": "2024-07-21 02:20:42",
     "mashery-takeover-8786.yaml": "2024-07-21 02:20:42",
     "tomcat-exposed.yaml": "2024-07-21 02:20:42",
-    "liferay-portal-detect.yaml": "2024-07-21 02:20:42"
+    "liferay-portal-detect.yaml": "2024-07-21 02:20:42",
+    "firebase-config-exposure-7487.yaml": "2024-07-22 02:15:50",
+    "ncast-lfi.yaml": "2024-07-22 02:15:50",
+    "wordpress-wordfence-lfi-11350.yaml": "2024-07-22 02:15:50",
+    "gpon-router-detection.yaml": "2024-07-22 02:15:50",
+    "tplink-router-detection.yaml": "2024-07-22 02:15:50",
+    "yisaitong-NoticeAjax-sqli.yaml": "2024-07-22 02:15:50",
+    "SQLi_essl_time_trackLite.yaml": "2024-07-22 02:15:50",
+    "cache_piossing.yaml": "2024-07-22 02:15:50",
+    "yisaitong-netsec-sqli.yaml": "2024-07-22 02:15:50",
+    "glodon-linkworks-ArchiveWebService-xxe.yaml": "2024-07-22 02:15:50",
+    "flyrise-fe-uploadAttachmentServlet-uploadfile.yaml": "2024-07-22 02:15:50",
+    "admin-panel-detection.yaml": "2024-07-22 02:15:50",
+    "CNVD-2023-72138.yaml": "2024-07-22 02:15:50",
+    "sidekiq-dashboard-10239.yaml": "2024-07-22 02:15:50",
+    "wifisky7-rce.yaml": "2024-07-22 02:15:50"
 }

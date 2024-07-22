@@ -20,41 +20,32 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 396 |
 | CVE-2018 | 445 |
-| CVE-2019 | 512 |
-| CVE-2020 | 592 |
+| CVE-2019 | 511 |
+| CVE-2020 | 595 |
 | CVE-2021 | 1729 |
-| CVE-2022 | 2452 |
-| CVE-2023 | 4713 |
+| CVE-2022 | 2454 |
+| CVE-2023 | 4714 |
 | CVE-2024 | 4096 |
-| Other | 23230 |
+| Other | 23234 |
 ## 近几天数量变化情况
-|2024-07-15 | 2024-07-16 | 2024-07-17 | 2024-07-18 | 2024-07-19 | 2024-07-20 | 2024-07-21|
+|2024-07-16 | 2024-07-17 | 2024-07-18 | 2024-07-19 | 2024-07-20 | 2024-07-21 | 2024-07-22|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|39830 | 39846 | 39912 | 39937 | 40037 | 40117 | 40132|
+|39846 | 39912 | 39937 | 40037 | 40117 | 40132 | 40141|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-6635.yaml |
-| CVE-2024-6848.yaml |
-| CVE-2024-5804.yaml |
-| CVE-2024-6489.yaml |
-| CVE-2024-2337.yaml |
-| CVE-2024-6497.yaml |
-| CVE-2024-6636.yaml |
-| CVE-2024-3934.yaml |
-| CVE-2024-6560.yaml |
-| CVE-2024-4260.yaml |
-| CVE-2024-6637.yaml |
-| CVE-2024-6694.yaml |
-| CVE-2024-6491.yaml |
-| wordpress-takeover.yaml |
-| wp-woocommerce-email-verification-11618.yaml |
-| hp-device-info-detect.yaml |
-| addonify-quick-view.yaml |
-| sonicwall-management-panel-10387.yaml |
-| telerik-fileupload-detect-10692.yaml |
-| default-openresty.yaml |
-| xenforo-login-11670.yaml |
-| mashery-takeover-8786.yaml |
-| tomcat-exposed.yaml |
-| liferay-portal-detect.yaml |
+| firebase-config-exposure-7487.yaml |
+| ncast-lfi.yaml |
+| wordpress-wordfence-lfi-11350.yaml |
+| gpon-router-detection.yaml |
+| tplink-router-detection.yaml |
+| yisaitong-NoticeAjax-sqli.yaml |
+| SQLi_essl_time_trackLite.yaml |
+| cache_piossing.yaml |
+| yisaitong-netsec-sqli.yaml |
+| glodon-linkworks-ArchiveWebService-xxe.yaml |
+| flyrise-fe-uploadAttachmentServlet-uploadfile.yaml |
+| admin-panel-detection.yaml |
+| CNVD-2023-72138.yaml |
+| sidekiq-dashboard-10239.yaml |
+| wifisky7-rce.yaml |
