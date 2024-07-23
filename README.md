@@ -21,31 +21,25 @@
 | CVE-2017 | 396 |
 | CVE-2018 | 445 |
 | CVE-2019 | 511 |
-| CVE-2020 | 595 |
-| CVE-2021 | 1729 |
-| CVE-2022 | 2454 |
-| CVE-2023 | 4714 |
+| CVE-2020 | 594 |
+| CVE-2021 | 1730 |
+| CVE-2022 | 2453 |
+| CVE-2023 | 4715 |
 | CVE-2024 | 4096 |
-| Other | 23234 |
+| Other | 23242 |
 ## 近几天数量变化情况
-|2024-07-16 | 2024-07-17 | 2024-07-18 | 2024-07-19 | 2024-07-20 | 2024-07-21 | 2024-07-22|
+|2024-07-17 | 2024-07-18 | 2024-07-19 | 2024-07-20 | 2024-07-21 | 2024-07-22 | 2024-07-23|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|39846 | 39912 | 39937 | 40037 | 40117 | 40132 | 40141|
+|39912 | 39937 | 40037 | 40117 | 40132 | 40141 | 40149|
 ## 最近新增文件
 | templates name | 
 | --- |
-| firebase-config-exposure-7487.yaml |
-| ncast-lfi.yaml |
-| wordpress-wordfence-lfi-11350.yaml |
-| gpon-router-detection.yaml |
-| tplink-router-detection.yaml |
-| yisaitong-NoticeAjax-sqli.yaml |
-| SQLi_essl_time_trackLite.yaml |
-| cache_piossing.yaml |
-| yisaitong-netsec-sqli.yaml |
-| glodon-linkworks-ArchiveWebService-xxe.yaml |
-| flyrise-fe-uploadAttachmentServlet-uploadfile.yaml |
-| admin-panel-detection.yaml |
-| CNVD-2023-72138.yaml |
-| sidekiq-dashboard-10239.yaml |
-| wifisky7-rce.yaml |
+| hal-management-panel.yaml |
+| netflow-analyzer-panel.yaml |
+| gargoyle-router-detect.yaml |
+| jamf-panel-8215.yaml |
+| yonyou-crm-import-file-upload.yaml |
+| seeyon-analyticscloud-lfi.yaml |
+| default-apache-test-page-6816.yaml |
+| elasticsearch-7193.yaml |
+| robots-9887.yaml |

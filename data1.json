@@ -47562,5 +47562,14 @@
     "admin-panel-detection.yaml": "2024-07-22 02:15:50",
     "CNVD-2023-72138.yaml": "2024-07-22 02:15:50",
     "sidekiq-dashboard-10239.yaml": "2024-07-22 02:15:50",
-    "wifisky7-rce.yaml": "2024-07-22 02:15:50"
+    "wifisky7-rce.yaml": "2024-07-22 02:15:50",
+    "hal-management-panel.yaml": "2024-07-23 02:12:31",
+    "netflow-analyzer-panel.yaml": "2024-07-23 02:12:31",
+    "gargoyle-router-detect.yaml": "2024-07-23 02:12:31",
+    "jamf-panel-8215.yaml": "2024-07-23 02:12:31",
+    "yonyou-crm-import-file-upload.yaml": "2024-07-23 02:12:31",
+    "seeyon-analyticscloud-lfi.yaml": "2024-07-23 02:12:31",
+    "default-apache-test-page-6816.yaml": "2024-07-23 02:12:31",
+    "elasticsearch-7193.yaml": "2024-07-23 02:12:31",
+    "robots-9887.yaml": "2024-07-23 02:12:31"
 }
