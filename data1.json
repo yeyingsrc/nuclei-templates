@@ -47571,5 +47571,19 @@
     "seeyon-analyticscloud-lfi.yaml": "2024-07-23 02:12:31",
     "default-apache-test-page-6816.yaml": "2024-07-23 02:12:31",
     "elasticsearch-7193.yaml": "2024-07-23 02:12:31",
-    "robots-9887.yaml": "2024-07-23 02:12:31"
+    "robots-9887.yaml": "2024-07-23 02:12:31",
+    "CVE-2024-4885.yaml": "2024-07-24 02:12:04",
+    "CVE-2024-6828.yaml": "2024-07-24 02:12:04",
+    "CVE-2024-40348.yaml": "2024-07-24 02:12:04",
+    "CVE-2024-6885.yaml": "2024-07-24 02:12:04",
+    "mongod-exposure.yaml": "2024-07-24 02:12:04",
+    "gpon-router-detect.yaml": "2024-07-24 02:12:04",
+    "jan-file-upload.yaml": "2024-07-24 02:12:04",
+    "maxi-blocks.yaml": "2024-07-24 02:12:04",
+    "admin-panel-detect.yaml": "2024-07-24 02:12:04",
+    "sftpgo-admin-setup.yaml": "2024-07-24 02:12:04",
+    "netflow-default-login.yaml": "2024-07-24 02:12:04",
+    "tplink-router-detect.yaml": "2024-07-24 02:12:04",
+    "intercom-takeover-8169.yaml": "2024-07-24 02:12:04",
+    "CVE-2022-38322.yaml": "2024-07-24 02:12:04"
 }

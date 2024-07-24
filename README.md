@@ -21,25 +21,30 @@
 | CVE-2017 | 396 |
 | CVE-2018 | 445 |
 | CVE-2019 | 511 |
-| CVE-2020 | 594 |
-| CVE-2021 | 1730 |
-| CVE-2022 | 2453 |
-| CVE-2023 | 4715 |
-| CVE-2024 | 4096 |
-| Other | 23242 |
+| CVE-2020 | 592 |
+| CVE-2021 | 1728 |
+| CVE-2022 | 2454 |
+| CVE-2023 | 4714 |
+| CVE-2024 | 4100 |
+| Other | 23253 |
 ## 近几天数量变化情况
-|2024-07-17 | 2024-07-18 | 2024-07-19 | 2024-07-20 | 2024-07-21 | 2024-07-22 | 2024-07-23|
+|2024-07-18 | 2024-07-19 | 2024-07-20 | 2024-07-21 | 2024-07-22 | 2024-07-23 | 2024-07-24|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|39912 | 39937 | 40037 | 40117 | 40132 | 40141 | 40149|
+|39937 | 40037 | 40117 | 40132 | 40141 | 40149 | 40160|
 ## 最近新增文件
 | templates name | 
 | --- |
-| hal-management-panel.yaml |
-| netflow-analyzer-panel.yaml |
-| gargoyle-router-detect.yaml |
-| jamf-panel-8215.yaml |
-| yonyou-crm-import-file-upload.yaml |
-| seeyon-analyticscloud-lfi.yaml |
-| default-apache-test-page-6816.yaml |
-| elasticsearch-7193.yaml |
-| robots-9887.yaml |
+| CVE-2024-4885.yaml |
+| CVE-2024-6828.yaml |
+| CVE-2024-40348.yaml |
+| CVE-2024-6885.yaml |
+| mongod-exposure.yaml |
+| gpon-router-detect.yaml |
+| jan-file-upload.yaml |
+| maxi-blocks.yaml |
+| admin-panel-detect.yaml |
+| sftpgo-admin-setup.yaml |
+| netflow-default-login.yaml |
+| tplink-router-detect.yaml |
+| intercom-takeover-8169.yaml |
+| CVE-2022-38322.yaml |
