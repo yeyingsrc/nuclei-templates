@@ -20,64 +20,58 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 396 |
 | CVE-2018 | 444 |
-| CVE-2019 | 511 |
-| CVE-2020 | 593 |
-| CVE-2021 | 1730 |
+| CVE-2019 | 510 |
+| CVE-2020 | 592 |
+| CVE-2021 | 1729 |
 | CVE-2022 | 2455 |
-| CVE-2023 | 4713 |
-| CVE-2024 | 4167 |
-| Other | 23313 |
+| CVE-2023 | 4714 |
+| CVE-2024 | 4194 |
+| Other | 23328 |
 ## 近几天数量变化情况
-|2024-07-21 | 2024-07-22 | 2024-07-23 | 2024-07-24 | 2024-07-25 | 2024-07-26 | 2024-07-27|
+|2024-07-22 | 2024-07-23 | 2024-07-24 | 2024-07-25 | 2024-07-26 | 2024-07-27 | 2024-07-28|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|40132 | 40141 | 40149 | 40160 | 40242 | 40257 | 40289|
+|40141 | 40149 | 40160 | 40242 | 40257 | 40289 | 40329|
 ## 最近新增文件
 | templates name | 
 | --- |
-| wp-simple-fields-lfi.yaml |
-| category-posts.yaml |
-| chinaunicom-default-login.yaml |
-| uipress-lite.yaml |
-| jetwoo-widgets-for-elementor.yaml |
-| formlift.yaml |
-| tongda-oa-action-upload-file-upload.yaml |
-| term-and-category-based-posts-widget.yaml |
-| substack.yaml |
-| getresponse-takeover-7607.yaml |
-| smartsupp-live-chat.yaml |
-| yonyou-ksoa-previewkpqt-sqli.yaml |
-| cozipress.yaml |
-| phpmyadmin-setup(1).yaml |
-| yonyou-u9-umwebservice-fileread.yaml |
-| wordpress-emails-verification-for-woocommerce-1.yaml |
-| tongda-oa-privateupload-file-upload.yaml |
-| cve-2021-35336.yaml |
-| cve-2021-37704.yaml |
-| cve-2021-20090.yaml |
-| cve-2021-26475.yaml |
-| cve-2008-6668.yaml |
-| cve-2020-10548.yaml |
-| cve-2020-15129.yaml |
-| cve-2020-2096.yaml |
-| cve-2020-26073.yaml |
-| CVE-2024-38774.yaml |
-| CVE-2024-38788.yaml |
-| CVE-2024-38783.yaml |
-| CVE-2024-38771.yaml |
-| CVE-2024-38781.yaml |
-| CVE-2024-38776.yaml |
-| CVE-2024-5604.yaml |
-| CVE-2024-38786.yaml |
-| CVE-2024-38784.yaml |
-| CVE-2024-38769.yaml |
-| CVE-2024-6158.yaml |
-| CVE-2024-38778.yaml |
-| CVE-2024-38790.yaml |
-| CVE-2024-38789.yaml |
-| CVE-2024-38773.yaml |
-| CVE-2024-38785.yaml |
-| CVE-2024-38782.yaml |
-| CVE-2024-38772.yaml |
-| CVE-2024-38775.yaml |
-| cve-2019-7543.yaml |
-| cve-2015-3648.yaml |
+| athemes-starter-sites.yaml |
+| flipbox-builder.yaml |
+| admin-post-navigation.yaml |
+| mastercurrency-wp.yaml |
+| tutor-lms-migration-tool.yaml |
+| one-click-close-comments.yaml |
+| media-net-ads-manager.yaml |
+| aramex-shipping-woocommerce.yaml |
+| paritypress.yaml |
+| intelligence.yaml |
+| gsoap-lfl(1).yaml |
+| admin-trim-interface.yaml |
+| add-admin-css.yaml |
+| add-admin-javascript.yaml |
+| cve-2021-29203.yaml |
+| cve-2020-2140.yaml |
+| CVE-2024-5969.yaml |
+| CVE-2024-1804.yaml |
+| CVE-2024-6591.yaml |
+| CVE-2024-6566.yaml |
+| CVE-2024-6549.yaml |
+| CVE-2024-1798.yaml |
+| CVE-2024-6521.yaml |
+| CVE-2024-6520.yaml |
+| CVE-2024-6546.yaml |
+| CVE-2024-6545.yaml |
+| CVE-2024-6431.yaml |
+| CVE-2024-4410.yaml |
+| CVE-2024-6661.yaml |
+| CVE-2024-6152.yaml |
+| CVE-2024-6573.yaml |
+| CVE-2024-6627.yaml |
+| CVE-2024-6458.yaml |
+| CVE-2024-6547.yaml |
+| CVE-2024-6569.yaml |
+| CVE-2024-6518.yaml |
+| CVE-2024-6548.yaml |
+| CVE-2024-6897.yaml |
+| CVE-2024-5614.yaml |
+| CVE-2024-6634.yaml |
+| CVE-2024-6703.yaml |
