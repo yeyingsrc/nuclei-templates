@@ -47826,5 +47826,12 @@
     "CVE-2024-5614.yaml": "2024-07-28 02:16:55",
     "CVE-2024-6634.yaml": "2024-07-28 02:16:55",
     "CVE-2024-6703.yaml": "2024-07-28 02:16:55",
-    "CVE-2021-43008.yaml": "2024-07-29 02:15:16"
+    "CVE-2021-43008.yaml": "2024-07-29 02:15:16",
+    "esafenet-noticeajax-sqli.yaml": "2024-07-30 02:12:29",
+    "landray-oa-replaceextend-rce.yaml": "2024-07-30 02:12:29",
+    "esafenet-netsecconfigajax-sqli.yaml": "2024-07-30 02:12:29",
+    "deployment-interface-exposed.yaml": "2024-07-30 02:12:29",
+    "uptimerobot-takeover-10987.yaml": "2024-07-30 02:12:29",
+    "CVE-2023-44393.yaml": "2024-07-30 02:12:29",
+    "cve-2017-5521.yaml": "2024-07-30 02:12:29"
 }
