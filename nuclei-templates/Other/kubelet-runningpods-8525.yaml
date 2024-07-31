@@ -1,63 +1,25 @@
 id: kubelet-scan
-
 info:
-  name: Kubelet Scan
+  name: Kubelet Running Pods
   author: sharath
   severity: info
-  description: Scans all open urls of kubelet; nuclei -t kubelet-scan.yaml -target http://<ip>:10250
+  description: Scans for kubelet running pods
+  tags: tech,k8s,kubernetes,devops,kubelet
 
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/stats"
-    matchers:
-      - type: status
-        status:
-          - 200
-  - method: GET
-    path:
-      - "{{BaseURL}}/pods"
-    matchers:
-      - type: status
-        status:
-          - 200
-  - method: GET
-    path:
-      - "{{BaseURL}}/stats/summary"
-    matchers:
-      - type: status
-        status:
-          - 200
-  - method: GET
-    path:
-      - "{{BaseURL}}/metrics"
-    matchers:
-      - type: status
-        status:
-          - 200
-  - method: GET
-    path:
-      - "{{BaseURL}}/runningpods"
-    matchers:
-      - type: status
-        status:
-          - 200
-  - method: GET
-    path:
-      - "{{BaseURL}}/logs"
-    matchers:
-      - type: status
-        status:
-          - 200
-  - method: GET
-    path:
-      - "{{BaseURL}}/healthz"
-    matchers:
-      - type: status
-        status:
-          - 200
-  
+      - "{{BaseURL}}/runningpods/"
 
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
 
-
-
+      - type: word
+        part: body
+        words:
+          - '"PodList":'
+          - '"items":'
+        condition: and
