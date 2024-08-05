@@ -1,33 +1,23 @@
 id: robots-txt
-
 info:
   name: robots.txt file
-  author: CasperGN,TheZakMan
+  author: CasperGN
   severity: info
-  tags: misc,generic
-  metadata:
-    max-request: 1
-
-http:
+  tags: misc
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/robots.txt"
-
-    host-redirects: true
-    max-redirects: 2
     matchers-condition: and
+    redirects: true
     matchers:
       - type: word
         words:
-          - 'User-agent:'
-          - 'Disallow:'
-          - 'Allow:'
-
+          - "Disallow:"
       - type: word
-        part: header
         words:
           - text/plain
-
+        part: header
       - type: dsl
         dsl:
           - "len(body)>=140 && status_code==200"
