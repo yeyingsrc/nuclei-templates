@@ -1,26 +1,19 @@
 id: pingdom-takeover
 
 info:
-  name: Pingdom Takeover Detection
+  name: pingdom takeover detection
   author: pdteam
   severity: high
   reference:
-    - https://github.com/EdOverflow/can-i-take-over-xyz/issues/144
-  tags: takeover,pingdom
-  metadata:
-    max-request: 1
+    - https://github.com/EdOverflow/can-i-take-over-xyz
+  tags: takeover
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"
 
-    matchers-condition: and
     matchers:
-      - type: dsl
-        dsl:
-          - Host != ip
-
       - type: word
         words:
           - Public Report Not Activated

@@ -24,20 +24,32 @@
 | CVE-2020 | 588 |
 | CVE-2021 | 1723 |
 | CVE-2022 | 2454 |
-| CVE-2023 | 4719 |
-| CVE-2024 | 4282 |
-| Other | 23632 |
+| CVE-2023 | 4720 |
+| CVE-2024 | 4291 |
+| Other | 23637 |
 ## 近几天数量变化情况
-|2024-07-31 | 2024-08-01 | 2024-08-02 | 2024-08-03 | 2024-08-04 | 2024-08-05 | 2024-08-06|
+|2024-08-01 | 2024-08-02 | 2024-08-03 | 2024-08-04 | 2024-08-05 | 2024-08-06 | 2024-08-07|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|40349 | 40386 | 40680 | 40674 | 40708 | 40712 | 40706|
+|40386 | 40680 | 40674 | 40708 | 40712 | 40706 | 40721|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2021-41182.yaml |
-| cve-2019-14312.yaml |
-| cache.yaml |
-| unencrypted-bigip-ltm-cookie.yaml |
-| springboot-heapdump.yaml |
-| cve-2017-9841.yaml |
-| cve-2018-16763.yaml |
+| CVE-2023-5000.yaml |
+| gitlab-ci-yml.yaml |
+| cp450_firmware.yaml |
+| Springboot-Heapdump.yaml |
+| blox-page-builder.yaml |
+| cucm-username-enumeration.yaml |
+| horizontal-scrolling-announcements.yaml |
+| cve-2017-12611.yaml |
+| CVE-2024-6315.yaml |
+| CVE-2024-5709.yaml |
+| CVE-2024-6782.yaml |
+| CVE-2024-6781.yaml |
+| CVE-2024-7484.yaml |
+| CVE-2024-38856.yaml |
+| CVE-2024-7317.yaml |
+| CVE-2024-7340.yaml |
+| CVE-2024-5708.yaml |
+| CVE-2024-7485.yaml |
+| CVE-2024-7332.yaml |
