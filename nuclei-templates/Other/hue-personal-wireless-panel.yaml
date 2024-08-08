@@ -5,11 +5,10 @@ info:
   author: Hardik-Solanki
   severity: info
   metadata:
-    max-request: 1
     shodan-query: title:"hue personal wireless lighting"
   tags: hue,iot,wireless
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}'

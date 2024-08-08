@@ -7,11 +7,10 @@ info:
   description: |
     The website defines a Global Privacy Control policy.
   metadata:
-    max-request: 2
-    verified: true
+    verified: "true"
   tags: misc,generic,gpc
 
-http:
+requests:
   - method: GET
     path:
       - "{{RootURL}}/.well-known/gpc.json"

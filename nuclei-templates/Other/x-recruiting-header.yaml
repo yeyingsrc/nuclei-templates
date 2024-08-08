@@ -8,12 +8,11 @@ info:
   reference:
     - https://webtechsurvey.com/response-header/x-recruiting
   metadata:
-    max-request: 1
     verified: true
     shodan-query: "X-Recruiting:"
   tags: misc,hiring,jobs,employment
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"
@@ -27,6 +26,7 @@ http:
           - 'X-Recruiting:'
 
     extractors:
-      - type: dsl
-        dsl:
-          - 'x_recruiting'
+      - type: regex
+        part: header
+        regex:
+          - 'X-Recruiting:.*'

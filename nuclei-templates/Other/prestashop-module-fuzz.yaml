@@ -1,14 +1,10 @@
 id: prestashop-module-fuzz
-
 info:
   name: Prestashop Modules Enumeration
   author: meme-lord
   severity: info
   tags: fuzz,prestashop
-  metadata:
-    max-request: 639
-
-http:
+requests:
   - raw:
       - |
         GET /modules/{{path}}/config.xml HTTP/1.1
@@ -16,10 +12,8 @@ http:
         Accept: application/json, text/plain, */*
         Accept-Language: en-US,en;q=0.5
         Referer: {{BaseURL}}
-
     payloads:
       path: helpers/wordlists/prestashop-modules.txt
-
     threads: 50
     matchers-condition: and
     matchers:
@@ -31,11 +25,9 @@ http:
           - "<displayName>"
           - "<is_configurable>"
           - "</module>"
-
       - type: status
         status:
           - 200
-
     extractors:
       - type: regex
         part: body

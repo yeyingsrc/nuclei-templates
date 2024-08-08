@@ -4,9 +4,8 @@ info:
   name: Loqate API Test
   author: zzeitlin
   severity: info
-  reference:
-    - https://www.loqate.com/resources/support/apis/Capture/Interactive/Find/1.1/
-  tags: token-spray,loqate
+  reference: https://www.loqate.com/resources/support/apis/Capture/Interactive/Find/1.1/
+ 
 
 self-contained: true
 requests:
@@ -17,8 +16,6 @@ requests:
     matchers:
       - type: word
         part: body
+        negative: true
         words:
-          - '"Id":'
-          - '"Type":'
-          - '"Text":'
-        condition: and
+          - 'Unknown key'

@@ -1,19 +1,14 @@
 id: firebase-database-extractor
-
 info:
   name: Firebase Database Extract Check
   author: rafaelwdornelas
   severity: info
   description: Extract Firebase Database
   tags: firebase,misc
-  metadata:
-    max-request: 1
-
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"
-
     extractors:
       - type: regex
         part: body
