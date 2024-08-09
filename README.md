@@ -21,53 +21,117 @@
 | CVE-2017 | 395 |
 | CVE-2018 | 445 |
 | CVE-2019 | 511 |
-| CVE-2020 | 592 |
-| CVE-2021 | 1731 |
+| CVE-2020 | 591 |
+| CVE-2021 | 1732 |
 | CVE-2022 | 2456 |
-| CVE-2023 | 4724 |
-| CVE-2024 | 4295 |
-| Other | 23673 |
+| CVE-2023 | 4723 |
+| CVE-2024 | 4335 |
+| Other | 23731 |
 ## 近几天数量变化情况
-|2024-08-02 | 2024-08-03 | 2024-08-04 | 2024-08-05 | 2024-08-06 | 2024-08-07 | 2024-08-08|
+|2024-08-03 | 2024-08-04 | 2024-08-05 | 2024-08-06 | 2024-08-07 | 2024-08-08 | 2024-08-09|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|40680 | 40674 | 40708 | 40712 | 40706 | 40721 | 40790|
+|40674 | 40708 | 40712 | 40706 | 40721 | 40790 | 40887|
 ## 最近新增文件
 | templates name | 
 | --- |
-| PeopleSoft-XXE-1.yaml |
-| Jenkins-RCE.yaml |
-| hikvision-detection-1.yaml |
-| sensitive-storage-data-exposure-3.yaml |
-| sensitive-storage-data-exposure-6.yaml |
-| OpenTSDB-RCE-1.yaml |
-| ApacheSolr-SSRF-1.yaml |
-| ApacheSolr-SSRF-6.yaml |
-| sensitive-storage-data-exposure-2.yaml |
-| exposed-nomad-7329.yaml |
-| ApacheStruts-RCE.yaml |
-| ApacheSolr-SSRF-4.yaml |
-| Confluence-SSRF.yaml |
-| ApacheSolr-SSRF-5.yaml |
-| PeopleSoft-XXE-2.yaml |
-| php-proxy-detect-1.yaml |
-| ApacheSolr-SSRF-2.yaml |
-| ApacheSolr-SSRF-3.yaml |
-| Shellshock-RCE-1.yaml |
-| sensitive-storage-data-exposure-5.yaml |
-| JBoss-SSRF.yaml |
-| OpenTSDB-RCE-2.yaml |
-| sensitive-storage-data-exposure-1.yaml |
-| sensitive-storage-data-exposure-4.yaml |
-| CVE-2023-0285.yaml |
-| CVE-2023-47238.yaml |
-| cve-2020-4463.yaml |
-| CVE-2020-29164.yaml |
-| CVE-2020-11034.yaml |
-| CVE-2020-14179.yaml |
-| CVE-2024-6522.yaml |
-| cve-2024-3400.yaml |
-| CVE-2024-7355.yaml |
-| CVE-2024-7353.yaml |
-| CVE-2022-1617.yaml |
-| cve-2021-32030.yaml |
-| cve-2021-28918.yaml |
+| sysaid-help-desk.yaml |
+| 帆软数据决策系统.yaml |
+| dahua-智慧园区综合管理平台.yaml |
+| panabit-panalog.yaml |
+| 天问物业erp系统.yaml |
+| 致远a8n.yaml |
+| tin-canny-learndash-reporting.yaml |
+| 东方通tongweb应用服务器.yaml |
+| 金蝶apusic应用服务器.yaml |
+| 致远a6s协同管理软件.yaml |
+| 大华智能物联icc综合管理平台.yaml |
+| 瑞友应用虚拟化系统.yaml |
+| news-flash.yaml |
+| inspur-政务系统.yaml |
+| tos.yaml |
+| 宇视vs-isc5000-e.yaml |
+| 拓尔思was.yaml |
+| multipurpose.yaml |
+| 企望制造erp系统.yaml |
+| 奥威亚视屏云平台.yaml |
+| dokmee ecm.yaml |
+| netflow-analyzer-zoho-traffic-management.yaml |
+| the-next.yaml |
+| 帆软报表.yaml |
+| apollo-adminservice.yaml |
+| kubio.yaml |
+| kingdee-eas.yaml |
+| 致远a6-s协同管理软件.yaml |
+| h3c secpath 运维审计系统.yaml |
+| Cache_to_xss.yaml |
+| 致远协创a6协同办公软件.yaml |
+| 海翔云平台.yaml |
+| 泛普建筑工程施工oa.yaml |
+| 致远g6-n多组织版.yaml |
+| nagios-status-page-3.yaml |
+| readynas_surveillance.yaml |
+| 广联达oa.yaml |
+| 致远a8-v5协同管理软件.yaml |
+| 用友致远a6协同办公软件.yaml |
+| 铭飞mcms.yaml |
+| linkerd-service-detect.yaml |
+| 云时空社会化商业erp系统.yaml |
+| casbin.yaml |
+| 致远g6-sc多组织版.yaml |
+| 微宏oa.yaml |
+| tamronos iptv系统.yaml |
+| kingdee产品.yaml |
+| 致远a6-m协同管理软件.yaml |
+| orchid-store.yaml |
+| 拓尔思sso.yaml |
+| 慧点oa.yaml |
+| cf7-message-filter.yaml |
+| 指掌易.yaml |
+| 泛微-oa e-cology8.yaml |
+| openrefine.yaml |
+| vmware-vsphere-web-client.yaml |
+| 致远a8-m企业集团版.yaml |
+| officeweb365.yaml |
+| 用友-fe协作办公平台.yaml |
+| 汉得srm云平台.yaml |
+| cve-2017-7615.yaml |
+| CVE-2024-39646.yaml |
+| CVE-2024-6987.yaml |
+| CVE-2024-7560.yaml |
+| CVE-2024-38693.yaml |
+| CVE-2024-6824.yaml |
+| CVE-2024-6869.yaml |
+| CVE-2024-5975.yaml |
+| CVE-2024-6254.yaml |
+| CVE-2024-39656.yaml |
+| CVE-2024-7561.yaml |
+| CVE-2024-5668.yaml |
+| CVE-2024-7548.yaml |
+| CVE-2024-39663.yaml |
+| CVE-2024-39668.yaml |
+| CVE-2024-39661.yaml |
+| CVE-2024-39649.yaml |
+| CVE-2024-39653.yaml |
+| CVE-2024-39665.yaml |
+| CVE-2024-7486.yaml |
+| CVE-2024-39643.yaml |
+| CVE-2024-5226.yaml |
+| CVE-2024-6552.yaml |
+| CVE-2024-7150.yaml |
+| CVE-2024-5057.yaml |
+| CVE-2024-39651.yaml |
+| CVE-2024-7008.yaml |
+| CVE-2024-41628.yaml |
+| CVE-2024-39660.yaml |
+| CVE-2024-39652.yaml |
+| CVE-2024-39648.yaml |
+| CVE-2024-39658.yaml |
+| CVE-2024-7492.yaml |
+| CVE-2024-39641.yaml |
+| CVE-2024-40422.yaml |
+| CVE-2024-39655.yaml |
+| CVE-2024-39647.yaml |
+| CVE-2024-7350.yaml |
+| CVE-2024-39664.yaml |
+| CVE-2024-39659.yaml |
+| CVE-2024-39642.yaml |
