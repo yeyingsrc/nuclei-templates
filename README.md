@@ -21,32 +21,48 @@
 | CVE-2017 | 395 |
 | CVE-2018 | 445 |
 | CVE-2019 | 512 |
-| CVE-2020 | 590 |
+| CVE-2020 | 591 |
 | CVE-2021 | 1732 |
 | CVE-2022 | 2457 |
-| CVE-2023 | 4726 |
-| CVE-2024 | 4439 |
+| CVE-2023 | 4727 |
+| CVE-2024 | 4467 |
 | Other | 23766 |
 ## 近几天数量变化情况
-|2024-08-08 | 2024-08-09 | 2024-08-10 | 2024-08-11 | 2024-08-12 | 2024-08-13 | 2024-08-14|
+|2024-08-09 | 2024-08-10 | 2024-08-11 | 2024-08-12 | 2024-08-13 | 2024-08-14 | 2024-08-15|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|40790 | 40887 | 40913 | 41016 | 41017 | 41017 | 41032|
+|40887 | 40913 | 41016 | 41017 | 41017 | 41032 | 41062|
 ## 最近新增文件
 | templates name | 
 | --- |
-| metube-panel.yaml |
-| airos-panel.yaml |
-| searxng-detect.yaml |
-| whatsup-gold-panel.yaml |
-| apache-ofbiz-detect.yaml |
-| openedge-panel.yaml |
-| apache-shenyu-detect.yaml |
-| CVE-2024-7339.yaml |
-| CVE-2024-6133.yaml |
-| CVE-2024-7094.yaml |
-| CVE-2024-6136.yaml |
-| CVE-2024-6823.yaml |
-| CVE-2024-6134.yaml |
-| CVE-2024-7388.yaml |
-| CVE-2024-7247.yaml |
-| CVE-2024-7092.yaml |
+| send-emails-with-mandrill.yaml |
+| sheet-to-wp-table-for-google-sheet.yaml |
+| jetgridbuilder.yaml |
+| CVE-2024-43219.yaml |
+| CVE-2024-43236.yaml |
+| CVE-2024-43214.yaml |
+| CVE-2024-43235.yaml |
+| CVE-2024-43215.yaml |
+| CVE-2024-43225.yaml |
+| CVE-2024-43218.yaml |
+| CVE-2024-7588.yaml |
+| CVE-2024-43230.yaml |
+| CVE-2024-43227.yaml |
+| CVE-2024-43229.yaml |
+| CVE-2024-43216.yaml |
+| CVE-2024-4389.yaml |
+| CVE-2024-43224.yaml |
+| CVE-2024-43232.yaml |
+| CVE-2024-43212.yaml |
+| CVE-2024-43209.yaml |
+| CVE-2024-43231.yaml |
+| CVE-2024-43217.yaml |
+| CVE-2024-43207.yaml |
+| CVE-2024-43221.yaml |
+| CVE-2024-43210.yaml |
+| CVE-2024-43226.yaml |
+| CVE-2024-6532.yaml |
+| CVE-2024-43220.yaml |
+| CVE-2024-43208.yaml |
+| CVE-2024-43223.yaml |
+| CVE-2024-43213.yaml |
+| CVE-2024-43233.yaml |
