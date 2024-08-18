@@ -21,44 +21,50 @@
 | CVE-2017 | 395 |
 | CVE-2018 | 445 |
 | CVE-2019 | 513 |
-| CVE-2020 | 592 |
-| CVE-2021 | 1732 |
-| CVE-2022 | 2458 |
-| CVE-2023 | 4728 |
-| CVE-2024 | 4553 |
-| Other | 23786 |
+| CVE-2020 | 593 |
+| CVE-2021 | 1730 |
+| CVE-2022 | 2461 |
+| CVE-2023 | 4744 |
+| CVE-2024 | 4562 |
+| Other | 23791 |
 ## 近几天数量变化情况
-|2024-08-11 | 2024-08-12 | 2024-08-13 | 2024-08-14 | 2024-08-15 | 2024-08-16 | 2024-08-17|
+|2024-08-12 | 2024-08-13 | 2024-08-14 | 2024-08-15 | 2024-08-16 | 2024-08-17 | 2024-08-18|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|41016 | 41017 | 41017 | 41032 | 41062 | 41155 | 41172|
+|41017 | 41017 | 41032 | 41062 | 41155 | 41172 | 41204|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2004-2687.yaml |
-| photoprism-panel.yaml |
-| fossbilling-panel.yaml |
-| flaming-forms.yaml |
-| privategpt-detect.yaml |
-| servicenow-db-exploit.yaml |
-| fossbilling-installer.yaml |
-| dn-popup.yaml |
-| CVE-2023-7049.yaml |
-| CVE-2023-5863.yaml |
-| CVE-2024-7692.yaml |
-| CVE-2024-7501.yaml |
-| CVE-2024-7136.yaml |
-| CVE-2024-7147.yaml |
-| CVE-2024-6711.yaml |
-| CVE-2024-7630.yaml |
-| CVE-2024-7690.yaml |
-| CVE-2024-7422.yaml |
-| CVE-2024-38288.yaml |
-| CVE-2024-7145.yaml |
-| CVE-2024-7144.yaml |
-| CVE-2024-7146.yaml |
-| CVE-2024-7301.yaml |
-| CVE-2024-7691.yaml |
-| CVE-2024-5936.yaml |
-| CVE-2024-38514.yaml |
-| CVE-2022-3869.yaml |
-| CVE-2022-3399.yaml |
+| procore-panel.yaml |
+| woo-inpost.yaml |
+| admission-appmanager.yaml |
+| inpost-for-woocommerce.yaml |
+| woo-mini-cart-drawer.yaml |
+| benevolent.yaml |
+| td-subscription.yaml |
+| wp-skitter-slideshow.yaml |
+| CVE-2023-4730.yaml |
+| CVE-2023-45649.yaml |
+| CVE-2023-1604.yaml |
+| CVE-2023-0714.yaml |
+| CVE-2023-4024.yaml |
+| CVE-2023-3521.yaml |
+| CVE-2023-47694.yaml |
+| CVE-2023-4025.yaml |
+| CVE-2023-4507.yaml |
+| CVE-2023-3419.yaml |
+| CVE-2023-5505.yaml |
+| CVE-2023-45061.yaml |
+| CVE-2023-4604.yaml |
+| CVE-2023-4027.yaml |
+| CVE-2023-3408.yaml |
+| CVE-2023-3409.yaml |
+| CVE-2023-3416.yaml |
+| CVE-2024-6500.yaml |
+| CVE-2024-5420.yaml |
+| CVE-2024-6893.yaml |
+| CVE-2024-5421.yaml |
+| CVE-2024-43211.yaml |
+| CVE-2024-37450.yaml |
+| CVE-2024-7703.yaml |
+| CVE-2022-1751.yaml |
+| CVE-2022-4532.yaml |
