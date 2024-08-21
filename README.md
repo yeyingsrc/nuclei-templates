@@ -22,22 +22,79 @@
 | CVE-2018 | 445 |
 | CVE-2019 | 513 |
 | CVE-2020 | 592 |
-| CVE-2021 | 1731 |
-| CVE-2022 | 2461 |
-| CVE-2023 | 4743 |
-| CVE-2024 | 4563 |
-| Other | 23800 |
+| CVE-2021 | 1733 |
+| CVE-2022 | 2462 |
+| CVE-2023 | 4745 |
+| CVE-2024 | 4620 |
+| Other | 23806 |
 ## 近几天数量变化情况
-|2024-08-14 | 2024-08-15 | 2024-08-16 | 2024-08-17 | 2024-08-18 | 2024-08-19 | 2024-08-20|
+|2024-08-15 | 2024-08-16 | 2024-08-17 | 2024-08-18 | 2024-08-19 | 2024-08-20 | 2024-08-21|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|41032 | 41062 | 41155 | 41172 | 41204 | 41207 | 41213|
+|41062 | 41155 | 41172 | 41204 | 41207 | 41213 | 41281|
 ## 最近新增文件
 | templates name | 
 | --- |
-| kiali-panel.yaml |
-| lidarr-dashboard-unauth.yaml |
-| radarr-dashboard-unauth.yaml |
-| sonarr-dashboard-unauth.yaml |
-| whisparr-dashboard-unauth.yaml |
-| readarr-dashboard-unauth.yaml |
-| prowlarr-dashboard-unauth.yaml |
+| hello-agency.yaml |
+| bravada.yaml |
+| dark-mode-for-wp-dashboard.yaml |
+| snapshot-backup.yaml |
+| custom-layouts.yaml |
+| CVE-2024-43287.yaml |
+| CVE-2024-43304.yaml |
+| CVE-2024-43277.yaml |
+| CVE-2024-43316.yaml |
+| CVE-2024-7780.yaml |
+| CVE-2024-43337.yaml |
+| CVE-2024-43323.yaml |
+| CVE-2024-5576.yaml |
+| CVE-2024-43317.yaml |
+| CVE-2024-43290.yaml |
+| CVE-2024-43339.yaml |
+| CVE-2024-7850.yaml |
+| CVE-2024-43341.yaml |
+| CVE-2024-43347.yaml |
+| CVE-2024-43349.yaml |
+| CVE-2024-43331.yaml |
+| CVE-2024-43340.yaml |
+| CVE-2024-43305.yaml |
+| CVE-2024-43299.yaml |
+| CVE-2024-7054.yaml |
+| CVE-2024-43291.yaml |
+| CVE-2024-43336.yaml |
+| CVE-2024-43293.yaml |
+| CVE-2024-43302.yaml |
+| CVE-2024-7782.yaml |
+| CVE-2024-43315.yaml |
+| CVE-2024-43332.yaml |
+| CVE-2024-5932.yaml |
+| CVE-2024-43356.yaml |
+| CVE-2024-43320.yaml |
+| CVE-2024-43325.yaml |
+| CVE-2024-43314.yaml |
+| CVE-2024-7702.yaml |
+| CVE-2024-5940.yaml |
+| CVE-2024-43324.yaml |
+| CVE-2024-43301.yaml |
+| CVE-2024-43298.yaml |
+| CVE-2024-7775.yaml |
+| CVE-2024-43343.yaml |
+| CVE-2024-43285.yaml |
+| CVE-2024-5763.yaml |
+| CVE-2024-43351.yaml |
+| CVE-2024-43330.yaml |
+| CVE-2024-43355.yaml |
+| CVE-2024-6864.yaml |
+| CVE-2024-43312.yaml |
+| CVE-2024-5939.yaml |
+| CVE-2024-6575.yaml |
+| CVE-2024-5941.yaml |
+| CVE-2024-7827.yaml |
+| CVE-2024-43326.yaml |
+| CVE-2024-43295.yaml |
+| CVE-2024-43329.yaml |
+| CVE-2024-43294.yaml |
+| CVE-2024-43297.yaml |
+| CVE-2024-43310.yaml |
+| CVE-2024-7777.yaml |
+| CVE-2024-7689.yaml |
+| CVE-2022-1206.yaml |
