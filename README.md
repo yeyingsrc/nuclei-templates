@@ -20,81 +20,44 @@
 | CVE-2016 | 249 |
 | CVE-2017 | 395 |
 | CVE-2018 | 445 |
-| CVE-2019 | 513 |
+| CVE-2019 | 512 |
 | CVE-2020 | 592 |
-| CVE-2021 | 1733 |
+| CVE-2021 | 1734 |
 | CVE-2022 | 2462 |
 | CVE-2023 | 4745 |
-| CVE-2024 | 4620 |
-| Other | 23806 |
+| CVE-2024 | 4632 |
+| Other | 23818 |
 ## 近几天数量变化情况
-|2024-08-15 | 2024-08-16 | 2024-08-17 | 2024-08-18 | 2024-08-19 | 2024-08-20 | 2024-08-21|
+|2024-08-16 | 2024-08-17 | 2024-08-18 | 2024-08-19 | 2024-08-20 | 2024-08-21 | 2024-08-22|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|41062 | 41155 | 41172 | 41204 | 41207 | 41213 | 41281|
+|41155 | 41172 | 41204 | 41207 | 41213 | 41281 | 41305|
 ## 最近新增文件
 | templates name | 
 | --- |
-| hello-agency.yaml |
-| bravada.yaml |
-| dark-mode-for-wp-dashboard.yaml |
-| snapshot-backup.yaml |
-| custom-layouts.yaml |
-| CVE-2024-43287.yaml |
-| CVE-2024-43304.yaml |
-| CVE-2024-43277.yaml |
-| CVE-2024-43316.yaml |
-| CVE-2024-7780.yaml |
-| CVE-2024-43337.yaml |
-| CVE-2024-43323.yaml |
-| CVE-2024-5576.yaml |
-| CVE-2024-43317.yaml |
-| CVE-2024-43290.yaml |
-| CVE-2024-43339.yaml |
-| CVE-2024-7850.yaml |
-| CVE-2024-43341.yaml |
-| CVE-2024-43347.yaml |
-| CVE-2024-43349.yaml |
-| CVE-2024-43331.yaml |
-| CVE-2024-43340.yaml |
-| CVE-2024-43305.yaml |
-| CVE-2024-43299.yaml |
-| CVE-2024-7054.yaml |
-| CVE-2024-43291.yaml |
-| CVE-2024-43336.yaml |
-| CVE-2024-43293.yaml |
-| CVE-2024-43302.yaml |
-| CVE-2024-7782.yaml |
-| CVE-2024-43315.yaml |
-| CVE-2024-43332.yaml |
-| CVE-2024-5932.yaml |
-| CVE-2024-43356.yaml |
-| CVE-2024-43320.yaml |
-| CVE-2024-43325.yaml |
-| CVE-2024-43314.yaml |
-| CVE-2024-7702.yaml |
-| CVE-2024-5940.yaml |
-| CVE-2024-43324.yaml |
-| CVE-2024-43301.yaml |
-| CVE-2024-43298.yaml |
-| CVE-2024-7775.yaml |
-| CVE-2024-43343.yaml |
-| CVE-2024-43285.yaml |
-| CVE-2024-5763.yaml |
-| CVE-2024-43351.yaml |
-| CVE-2024-43330.yaml |
-| CVE-2024-43355.yaml |
-| CVE-2024-6864.yaml |
-| CVE-2024-43312.yaml |
-| CVE-2024-5939.yaml |
-| CVE-2024-6575.yaml |
-| CVE-2024-5941.yaml |
-| CVE-2024-7827.yaml |
-| CVE-2024-43326.yaml |
-| CVE-2024-43295.yaml |
-| CVE-2024-43329.yaml |
-| CVE-2024-43294.yaml |
-| CVE-2024-43297.yaml |
-| CVE-2024-43310.yaml |
-| CVE-2024-7777.yaml |
-| CVE-2024-7689.yaml |
-| CVE-2022-1206.yaml |
+| phlox-pro.yaml |
+| wp-testimonial-widget.yaml |
+| responsive-video.yaml |
+| woo-inquiry.yaml |
+| flamix-bitrix24-and-contact-forms-7-integrations.yaml |
+| wordsurvey.yaml |
+| ota-sync-booking-engine-widget.yaml |
+| jackett-installer.yaml |
+| hide-my-site.yaml |
+| readymade-unilevel-xss.yaml |
+| CVE-2023-40504.yaml |
+| CVE-2024-7651.yaml |
+| CVE-2024-7647.yaml |
+| CVE-2024-7390.yaml |
+| CVE-2024-6339.yaml |
+| CVE-2024-5335.yaml |
+| CVE-2024-7090.yaml |
+| CVE-2024-7134.yaml |
+| CVE-2024-5880.yaml |
+| CVE-2024-7928.yaml |
+| CVE-2024-7030.yaml |
+| CVE-2024-7629.yaml |
+| CVE-2024-6568.yaml |
+| CVE-2024-7854.yaml |
+| CVE-2024-7032.yaml |
+| CVE-2024-6767.yaml |
+| CVE-2024-6883.yaml |
