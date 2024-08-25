@@ -5,7 +5,7 @@ info:
   author: zzeitlin
   severity: info
   reference: https://developer.spotify.com/documentation/general/guides/authorization-guide/
- 
+  tags: token-spray,spotify
 
 self-contained: true
 requests:
