@@ -49022,5 +49022,12 @@
     "CVE-2024-6095.yaml": "2024-08-25 02:20:21",
     "CVE-2024-6499.yaml": "2024-08-25 02:20:21",
     "CVE-2024-6631.yaml": "2024-08-25 02:20:21",
-    "CVE-2024-8120.yaml": "2024-08-25 02:20:21"
+    "CVE-2024-8120.yaml": "2024-08-25 02:20:21",
+    "ispconfig-admin-default-login.yaml": "2024-08-26 02:15:58",
+    "elgg-install.yaml": "2024-08-26 02:15:58",
+    "spip-detect.yaml": "2024-08-26 02:15:58",
+    "ivanti-traffic-manager-panel.yaml": "2024-08-26 02:15:58",
+    "fuji-xerox-default-login.yaml": "2024-08-26 02:15:58",
+    "ispconfig-hcp-default-login.yaml": "2024-08-26 02:15:58",
+    "readymade-unilevel-sqli.yaml": "2024-08-26 02:15:58"
 }
