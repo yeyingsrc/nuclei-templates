@@ -49029,5 +49029,9 @@
     "ivanti-traffic-manager-panel.yaml": "2024-08-26 02:15:58",
     "fuji-xerox-default-login.yaml": "2024-08-26 02:15:58",
     "ispconfig-hcp-default-login.yaml": "2024-08-26 02:15:58",
-    "readymade-unilevel-sqli.yaml": "2024-08-26 02:15:58"
+    "readymade-unilevel-sqli.yaml": "2024-08-26 02:15:58",
+    "xui-default-login.yaml": "2024-08-27 02:16:21",
+    "cookie-consent-detection.yaml": "2024-08-27 02:16:21",
+    "anything-llm.yaml": "2024-08-27 02:16:21",
+    "CVE-2024-6842.yaml": "2024-08-27 02:16:21"
 }

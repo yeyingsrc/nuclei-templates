@@ -20,24 +20,21 @@
 | CVE-2016 | 249 |
 | CVE-2017 | 395 |
 | CVE-2018 | 445 |
-| CVE-2019 | 513 |
-| CVE-2020 | 591 |
-| CVE-2021 | 1732 |
+| CVE-2019 | 512 |
+| CVE-2020 | 592 |
+| CVE-2021 | 1733 |
 | CVE-2022 | 2462 |
 | CVE-2023 | 4747 |
-| CVE-2024 | 4732 |
-| Other | 23845 |
+| CVE-2024 | 4733 |
+| Other | 23846 |
 ## 近几天数量变化情况
-|2024-08-20 | 2024-08-21 | 2024-08-22 | 2024-08-23 | 2024-08-24 | 2024-08-25 | 2024-08-26|
+|2024-08-21 | 2024-08-22 | 2024-08-23 | 2024-08-24 | 2024-08-25 | 2024-08-26 | 2024-08-27|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|41213 | 41281 | 41305 | 41313 | 41401 | 41421 | 41432|
+|41281 | 41305 | 41313 | 41401 | 41421 | 41432 | 41435|
 ## 最近新增文件
 | templates name | 
 | --- |
-| ispconfig-admin-default-login.yaml |
-| elgg-install.yaml |
-| spip-detect.yaml |
-| ivanti-traffic-manager-panel.yaml |
-| fuji-xerox-default-login.yaml |
-| ispconfig-hcp-default-login.yaml |
-| readymade-unilevel-sqli.yaml |
+| xui-default-login.yaml |
+| cookie-consent-detection.yaml |
+| anything-llm.yaml |
+| CVE-2024-6842.yaml |
