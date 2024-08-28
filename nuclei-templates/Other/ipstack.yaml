@@ -5,7 +5,7 @@ info:
   author: zzeitlin
   severity: info
   reference: https://ipstack.com/documentation
-  tags: token-spray,ipstack
+ 
 
 self-contained: true
 requests:
