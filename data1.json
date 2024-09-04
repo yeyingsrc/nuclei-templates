@@ -49205,5 +49205,7 @@
     "fastbee-arbitrary-file-read.yaml": "2024-09-03 02:18:37",
     "fastbee.yaml": "2024-09-03 02:18:37",
     "CVE-2023-34105.yaml": "2024-09-03 02:18:37",
-    "CVE-2024-6670.yaml": "2024-09-03 02:18:37"
+    "CVE-2024-6670.yaml": "2024-09-03 02:18:37",
+    "zoneminder-time-based-sql-injection.yaml": "2024-09-04 02:20:00",
+    "tongdaoa-auth-bypass.yaml": "2024-09-04 02:20:00"
 }
