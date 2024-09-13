@@ -49519,5 +49519,21 @@
     "Shopify-shared-secret.yaml": "2024-09-12 02:21:27",
     "8.2.1.yaml": "2024-09-12 02:21:27",
     "custom-css-js-php.yaml": "2024-09-12 02:21:27",
-    "9.1.2.yaml": "2024-09-12 02:21:27"
+    "9.1.2.yaml": "2024-09-12 02:21:27",
+    "cve-2019-17503.yaml": "2024-09-13 02:22:33",
+    "cve-2019-5127.yaml": "2024-09-13 02:22:33",
+    "cve-2018-1000671.yaml": "2024-09-13 02:22:33",
+    "cve-2017-7269.yaml": "2024-09-13 02:22:33",
+    "kubernetes-api-detect.yaml": "2024-09-13 02:22:33",
+    "opengear-detect.yaml": "2024-09-13 02:22:33",
+    "403-bypass_method.yaml": "2024-09-13 02:22:33",
+    "generic-rfi.yaml": "2024-09-13 02:22:33",
+    "parametros-preguicosos.yaml": "2024-09-13 02:22:33",
+    "exposed-pii.yaml": "2024-09-13 02:22:33",
+    "403-bypass_xrewriteurl.yaml": "2024-09-13 02:22:33",
+    "403-bypass_xheaders.yaml": "2024-09-13 02:22:33",
+    "setPreferences-xss.yaml": "2024-09-13 02:22:33",
+    "contact-form-7-plugin.yaml": "2024-09-13 02:22:33",
+    "SquirrelMail.yaml": "2024-09-13 02:22:33",
+    "cve-2020-11547.yaml": "2024-09-13 02:22:33"
 }
