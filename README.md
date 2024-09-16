@@ -20,39 +20,20 @@
 | CVE-2016 | 249 |
 | CVE-2017 | 397 |
 | CVE-2018 | 446 |
-| CVE-2019 | 514 |
+| CVE-2019 | 513 |
 | CVE-2020 | 594 |
 | CVE-2021 | 1733 |
 | CVE-2022 | 2469 |
-| CVE-2023 | 4762 |
-| CVE-2024 | 5051 |
-| Other | 24286 |
+| CVE-2023 | 4763 |
+| CVE-2024 | 5054 |
+| Other | 24282 |
 ## 近几天数量变化情况
-|2024-09-09 | 2024-09-10 | 2024-09-11 | 2024-09-12 | 2024-09-13 | 2024-09-14 | 2024-09-15|
+|2024-09-10 | 2024-09-11 | 2024-09-12 | 2024-09-13 | 2024-09-14 | 2024-09-15 | 2024-09-16|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|41798 | 41800 | 41825 | 41851 | 41783 | 42206 | 42224|
+|41800 | 41825 | 41851 | 41783 | 42206 | 42224 | 42223|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-8669.yaml |
-| CVE-2024-34750.yaml |
-| CVE-2024-8271.yaml |
-| CVE-2024-6482.yaml |
-| CVE-2024-8797.yaml |
-| CVE-2024-8479.yaml |
-| CVE-2024-6409.yaml |
-| CVE-2024-8246.yaml |
-| CVE-2024-40725.yaml |
-| CVE-2024-43044.yaml |
-| CVE-2024-8724.yaml |
-| CVE-2022-3459.yaml |
-| intank-iiot.yaml |
-| gavazzi-automation.yaml |
-| ssrf-detect.yaml |
-| rockwell-plc-detect.yaml |
-| frontpage-exposure.yaml |
-| woocommerce-multiple-free-gift.yaml |
-| siemens-simatic.yaml |
-| hipcam-detect.yaml |
-| noauth-vnc.yaml |
-| CVE-2023-3410.yaml |
+| magento.yaml |
+| 304220827.yaml |
+| wordpress-theme-detect.yaml |
