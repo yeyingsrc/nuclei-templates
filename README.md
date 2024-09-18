@@ -21,35 +21,32 @@
 | CVE-2017 | 397 |
 | CVE-2018 | 446 |
 | CVE-2019 | 513 |
-| CVE-2020 | 594 |
-| CVE-2021 | 1732 |
-| CVE-2022 | 2468 |
-| CVE-2023 | 4760 |
-| CVE-2024 | 5054 |
-| Other | 24303 |
+| CVE-2020 | 595 |
+| CVE-2021 | 1734 |
+| CVE-2022 | 2469 |
+| CVE-2023 | 4765 |
+| CVE-2024 | 5055 |
+| Other | 24308 |
 ## 近几天数量变化情况
-|2024-09-11 | 2024-09-12 | 2024-09-13 | 2024-09-14 | 2024-09-15 | 2024-09-16 | 2024-09-17|
+|2024-09-12 | 2024-09-13 | 2024-09-14 | 2024-09-15 | 2024-09-16 | 2024-09-17 | 2024-09-18|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|41825 | 41851 | 41783 | 42206 | 42224 | 42223 | 42239|
+|41851 | 41783 | 42206 | 42224 | 42223 | 42239 | 42254|
 ## 最近新增文件
 | templates name | 
 | --- |
-| sangforrce-220331-222605.yaml |
-| shipped100-220331-222640.yaml |
-| CVE202127562-220331-222408.yaml |
-| esaitongdocmanagementrce-220331-222541.yaml |
-| icewarprce-220331-222842.yaml |
-| omigod-220331-223015.yaml |
-| mpsecfileread-220331-222738.yaml |
-| shopxo-220331-222700.yaml |
-| jeewmsfileread-220331-222758.yaml |
-| gitlistnew-220331-222623.yaml |
-| akamaiarl-220331-222955.yaml |
-| jiracve202036289-220331-222715.yaml |
-| locomotivesubdomaintakeover-220331-222520.yaml |
-| ibmqradarssrf-220331-222931.yaml |
-| tg8preauthrce-220331-222435.yaml |
-| ciscoasaxss-220331-222901.yaml |
-| wordpressconfig210604203646-220331-222211.yaml |
-| php8devrce-220331-222821.yaml |
-| laravelphpunitrce-220331-222918.yaml |
+| CVE-2024-8490.yaml |
+| CVE-2024-8761.yaml |
+| CVE-2024-8752.yaml |
+| domibus-detect.yaml |
+| djangodebug-220331-222254.yaml |
+| motic-dsm-arbitrary-file-read.yaml |
+| bonita-default-login.yaml |
+| linux.yaml |
+| nginx-proxy-manager-default-login.yaml |
+| webiq.yaml |
+| owncast.yaml |
+| bonita-portal-panel.yaml |
+| media-suite.yaml |
+| apachesolrlfissrf-220331-222316.yaml |
+| CVE-2023-3188.yaml |
+| CVE-2023-39024.yaml |

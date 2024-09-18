@@ -49929,5 +49929,21 @@
     "ciscoasaxss-220331-222901.yaml": "2024-09-17 02:02:51",
     "wordpressconfig210604203646-220331-222211.yaml": "2024-09-17 02:02:51",
     "php8devrce-220331-222821.yaml": "2024-09-17 02:02:51",
-    "laravelphpunitrce-220331-222918.yaml": "2024-09-17 02:02:51"
+    "laravelphpunitrce-220331-222918.yaml": "2024-09-17 02:02:51",
+    "CVE-2024-8490.yaml": "2024-09-18 02:22:09",
+    "CVE-2024-8761.yaml": "2024-09-18 02:22:09",
+    "CVE-2024-8752.yaml": "2024-09-18 02:22:09",
+    "domibus-detect.yaml": "2024-09-18 02:22:09",
+    "djangodebug-220331-222254.yaml": "2024-09-18 02:22:09",
+    "motic-dsm-arbitrary-file-read.yaml": "2024-09-18 02:22:09",
+    "bonita-default-login.yaml": "2024-09-18 02:22:09",
+    "linux.yaml": "2024-09-18 02:22:09",
+    "nginx-proxy-manager-default-login.yaml": "2024-09-18 02:22:09",
+    "webiq.yaml": "2024-09-18 02:22:09",
+    "owncast.yaml": "2024-09-18 02:22:09",
+    "bonita-portal-panel.yaml": "2024-09-18 02:22:09",
+    "media-suite.yaml": "2024-09-18 02:22:09",
+    "apachesolrlfissrf-220331-222316.yaml": "2024-09-18 02:22:09",
+    "CVE-2023-3188.yaml": "2024-09-18 02:22:09",
+    "CVE-2023-39024.yaml": "2024-09-18 02:22:09"
 }
