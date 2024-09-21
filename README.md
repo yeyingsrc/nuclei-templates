@@ -8,7 +8,7 @@
 | CVE-2004 | 5 |
 | CVE-2005 | 15 |
 | CVE-2006 | 19 |
-| CVE-2007 | 63 |
+| CVE-2007 | 62 |
 | CVE-2008 | 74 |
 | CVE-2009 | 45 |
 | CVE-2010 | 139 |
@@ -20,60 +20,27 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 396 |
 | CVE-2018 | 446 |
-| CVE-2019 | 513 |
+| CVE-2019 | 512 |
 | CVE-2020 | 593 |
-| CVE-2021 | 1726 |
-| CVE-2022 | 2470 |
-| CVE-2023 | 4762 |
-| CVE-2024 | 5082 |
-| Other | 25295 |
+| CVE-2021 | 1727 |
+| CVE-2022 | 2471 |
+| CVE-2023 | 4767 |
+| CVE-2024 | 5085 |
+| Other | 25291 |
 ## 近几天数量变化情况
-|2024-09-14 | 2024-09-15 | 2024-09-16 | 2024-09-17 | 2024-09-18 | 2024-09-19 | 2024-09-20|
+|2024-09-15 | 2024-09-16 | 2024-09-17 | 2024-09-18 | 2024-09-19 | 2024-09-20 | 2024-09-21|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|42206 | 42224 | 42223 | 42239 | 42254 | 43216 | 43253|
+|42224 | 42223 | 42239 | 42254 | 43216 | 43253 | 43257|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2022-4533.yaml |
-| CVE-2023-6275.yaml |
-| CVE-2023-43654.yaml |
-| dolibarr-detect.yaml |
-| torchserve.yaml |
-| fuzz-reflection-lfi.yaml |
-| bedita-detect.yaml |
-| open-web-analytics-installer.yaml |
-| jf3-maintenance-mode.yaml |
-| flipping-cards.yaml |
-| torchserve-detect.yaml |
-| fatpipe-warp-detect.yaml |
-| fuzz-reflection-rce.yaml |
-| open-web-analytics-panel.yaml |
-| avantfax-detect.yaml |
-| ivanti-csa-detect.yaml |
-| fuzz-reflection-openredir.yaml |
-| fuzz-sqli-detection.yaml |
-| CVE-2024-0507.yaml |
-| CVE-2024-45507.yaml |
-| CVE-2024-8503.yaml |
-| CVE-2024-45453.yaml |
-| CVE-2024-0986.yaml |
-| CVE-2024-44006.yaml |
-| CVE-2024-1301.yaml |
-| CVE-2024-45622.yaml |
-| CVE-2024-45458.yaml |
-| CVE-2024-0040.yaml |
-| CVE-2024-45459.yaml |
-| CVE-2024-28397.yaml |
-| CVE-2024-1112.yaml |
-| CVE-2024-45455.yaml |
-| CVE-2024-45456.yaml |
-| CVE-2024-0030.yaml |
-| CVE-2024-43237.yaml |
-| CVE-2024-8190.yaml |
-| CVE-2024-0023.yaml |
-| CVE-2024-38812.yaml |
-| CVE-2024-8850.yaml |
-| CVE-2024-8364.yaml |
-| CVE-2024-45457.yaml |
-| CVE-2024-0015.yaml |
-| CVE-2024-45460.yaml |
+| cve-2021-31602.yaml |
+| CVE-2023-27847.yaml |
+| CVE-2023-39650.yaml |
+| crossdomin-xml.yaml |
+| filecatalyst-panel.yaml |
+| unauthorized-brother-access-detect.yaml |
+| webo-facto-connector.yaml |
+| aviatrix-detect.yaml |
+| CVE-2024-8853.yaml |
+| CVE-2024-36683.yaml |
