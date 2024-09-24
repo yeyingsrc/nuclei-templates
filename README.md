@@ -20,18 +20,30 @@
 | CVE-2016 | 248 |
 | CVE-2017 | 395 |
 | CVE-2018 | 446 |
-| CVE-2019 | 512 |
-| CVE-2020 | 592 |
-| CVE-2021 | 1727 |
-| CVE-2022 | 2471 |
-| CVE-2023 | 4769 |
-| CVE-2024 | 5085 |
-| Other | 25300 |
+| CVE-2019 | 513 |
+| CVE-2020 | 591 |
+| CVE-2021 | 1724 |
+| CVE-2022 | 2470 |
+| CVE-2023 | 4768 |
+| CVE-2024 | 5087 |
+| Other | 25315 |
 ## 近几天数量变化情况
-|2024-09-17 | 2024-09-18 | 2024-09-19 | 2024-09-20 | 2024-09-21 | 2024-09-22 | 2024-09-23|
+|2024-09-18 | 2024-09-19 | 2024-09-20 | 2024-09-21 | 2024-09-22 | 2024-09-23 | 2024-09-24|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|42239 | 42254 | 43216 | 43253 | 43257 | 43266 | 43267|
+|42254 | 43216 | 43253 | 43257 | 43266 | 43267 | 43279|
 ## 最近新增文件
 | templates name | 
 | --- |
-| hikvision-detection-2.yaml |
+| CVE-2023-3578.yaml |
+| cve202120837-220331-223044.yaml |
+| topaccess-default-login.yaml |
+| pcoweb-default-login.yaml |
+| pcoweb-unauth.yaml |
+| centreon-detect.yaml |
+| tplink-wR940n-default-login.yaml |
+| canon-iradv-c3325.yaml |
+| pcoweb-panel.yaml |
+| tplink-r470t-panel.yaml |
+| filegator-panel.yaml |
+| topaccess-panel.yaml |
+| filegator-default-login.yaml |
