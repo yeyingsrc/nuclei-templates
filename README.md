@@ -15,74 +15,86 @@
 | CVE-2011 | 91 |
 | CVE-2012 | 145 |
 | CVE-2013 | 169 |
-| CVE-2014 | 422 |
+| CVE-2014 | 421 |
 | CVE-2015 | 528 |
 | CVE-2016 | 248 |
 | CVE-2017 | 398 |
-| CVE-2018 | 446 |
+| CVE-2018 | 445 |
 | CVE-2019 | 515 |
-| CVE-2020 | 593 |
-| CVE-2021 | 1727 |
-| CVE-2022 | 2473 |
-| CVE-2023 | 4771 |
-| CVE-2024 | 5214 |
-| Other | 25413 |
+| CVE-2020 | 594 |
+| CVE-2021 | 1726 |
+| CVE-2022 | 2472 |
+| CVE-2023 | 4770 |
+| CVE-2024 | 5251 |
+| Other | 25445 |
 ## 近几天数量变化情况
-|2024-09-25 | 2024-09-26 | 2024-09-27 | 2024-09-28 | 2024-09-29 | 2024-09-30 | 2024-10-01|
+|2024-09-26 | 2024-09-27 | 2024-09-28 | 2024-09-29 | 2024-09-30 | 2024-10-01 | 2024-10-02|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43315 | 43396 | 43436 | 43455 | 43462 | 43468 | 43520|
+|43396 | 43436 | 43455 | 43462 | 43468 | 43520 | 43585|
 ## 最近新增文件
 | templates name | 
 | --- |
-| Nsfocus-SAS-read-GetFile.yaml |
-| jinher-oa-sql-time-GetTreeDate.yaml |
-| yongyou-ksoa-sql-servletimagefield.yaml |
-| camaleon-panel.yaml |
-| yongyou-grp-u8-sql-time-bx_historyDataCheck.yaml |
-| seeyon-M1Server-rce-userTokenService.yaml |
-| geoserver-rce-cve-2024-30641.yaml |
-| qiwang-erp-sql-comboxstore.yaml |
-| Nsfocus-SAS-rce-Exec.yaml |
-| jumpserver-session-unauth.yaml |
-| NewCapec-rce-service.yaml |
-| pgadmin4.yaml |
-| ruijie-switch-configuration-leak.yaml |
-| js-version-dompurify_3-0-11.yaml |
-| yongyou-ksoa-sql-time-PayBill.yaml |
-| wanhu-ezOFFICE-sql-time-productlist.yaml |
-| wanhu-ezOFFICE-upload-wpsservlet.yaml |
-| anheng-DAS-USM-SSRF-xmlrpc.yaml |
-| camaleon_cms.yaml |
-| qax-SecGate-3600_upload_upfile.yaml |
-| Esafenet-CDG-upload-UploadFileFromClientServiceForClient.yaml |
-| yongyou-ksoa-sql-time-TaskRequestServlet.yaml |
-| chanjet-Tplus-rce-oob-GetStoreWarehouseByStore.yaml |
-| Kingdee-Cloud-rce-kdsvc.yaml |
-| Kingdee-Cloud-read-CommonFileServer.yaml |
-| yongyou-u8-crm-upload-getemaildata.yaml |
-| mingyuanyun-ERP-upload-ApiUpdate.yaml |
-| anheng-DAS-Gateway-rce-suffix.yaml |
-| wecrm-crm-sql-SmsDataList.yaml |
-| kinpan-wechat-unauthorized-getsysteminfo.yaml |
-| finereport_data_decision_system_unserialize.yaml |
-| Nsfocus-SAS-login-bypass-local_user.yaml |
-| weaver-E-Office-upload-upload.yaml |
-| chanjet-Tplus-upload-Upload.yaml |
-| yongyou-nc-cloud-upload-jsinvoke.yaml |
-| camaleon-default-login.yaml |
-| yongyou-u8-crm-fileread-getemaildata.yaml |
-| HJSOFT-HCM-upload-OfficeServer.yaml |
-| glodon-linkworks-sql-GetIMDictionary.yaml |
-| tongda-oa-rce-moare.yaml |
-| docuware-panel.yaml |
-| hikvision_isecure_center_unauth_upload_files.yaml |
-| yongyou-mobile-upload-uploadApk.yaml |
-| cnpower-oa-sql-workFlowService.yaml |
-| lobechat-detect.yaml |
-| HJSOFT-HCM-sql-codesettree.yaml |
-| dahua-loginpass-leak.yaml |
-| jinher-oa-sql-GetSqlData.yaml |
-| CVE-2024-9014.yaml |
-| CVE-2024-6845.yaml |
-| CVE-2024-30269.yaml |
-| CVE-2024-46986.yaml |
+| svg-complete.yaml |
+| avif-support.yaml |
+| hello-world.yaml |
+| pdf-image-generator.yaml |
+| auto-featured-image-from-title.yaml |
+| stars-testimonials-with-slider-and-masonry-grid.yaml |
+| dk-pdf.yaml |
+| r-animated-icon.yaml |
+| relogo.yaml |
+| loggedin.yaml |
+| qs-dark-mode.yaml |
+| guten-post-layout.yaml |
+| opt-in-hound.yaml |
+| unseen-blog.yaml |
+| locateandfilter.yaml |
+| easy-load-more.yaml |
+| wechat-social-login.yaml |
+| rss-feed-post-generator-echo.yaml |
+| lh-copy-media-file.yaml |
+| ultrapress.yaml |
+| gravity-forms-toolbar.yaml |
+| elastik-page-builder.yaml |
+| wp-wc-affiliate-program.yaml |
+| soumettre-fr.yaml |
+| empowerment.yaml |
+| CVE-2024-9272.yaml |
+| CVE-2024-9209.yaml |
+| CVE-2024-8981.yaml |
+| CVE-2024-7432.yaml |
+| CVE-2024-8107.yaml |
+| CVE-2024-9224.yaml |
+| CVE-2024-8799.yaml |
+| CVE-2024-8727.yaml |
+| CVE-2024-9060.yaml |
+| CVE-2024-8718.yaml |
+| CVE-2024-8793.yaml |
+| CVE-2024-9289.yaml |
+| CVE-2024-9108.yaml |
+| CVE-2024-9118.yaml |
+| CVE-2024-9241.yaml |
+| CVE-2024-8324.yaml |
+| CVE-2024-9228.yaml |
+| CVE-2024-9269.yaml |
+| CVE-2024-9274.yaml |
+| CVE-2024-7869.yaml |
+| CVE-2024-7433.yaml |
+| CVE-2024-8288.yaml |
+| CVE-2024-8786.yaml |
+| CVE-2024-9220.yaml |
+| CVE-2024-7434.yaml |
+| CVE-2024-8990.yaml |
+| CVE-2024-9106.yaml |
+| CVE-2024-9304.yaml |
+| CVE-2024-8430.yaml |
+| CVE-2024-8548.yaml |
+| CVE-2024-8675.yaml |
+| CVE-2024-9119.yaml |
+| CVE-2024-9267.yaml |
+| CVE-2024-8989.yaml |
+| CVE-2024-8720.yaml |
+| CVE-2024-8728.yaml |
+| CVE-2024-9265.yaml |
+| CVE-2024-8632.yaml |
+| CVE-2024-9018.yaml |
