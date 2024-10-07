@@ -15,77 +15,94 @@
 | CVE-2011 | 91 |
 | CVE-2012 | 145 |
 | CVE-2013 | 169 |
-| CVE-2014 | 422 |
+| CVE-2014 | 421 |
 | CVE-2015 | 528 |
 | CVE-2016 | 248 |
 | CVE-2017 | 399 |
-| CVE-2018 | 445 |
+| CVE-2018 | 446 |
 | CVE-2019 | 515 |
-| CVE-2020 | 597 |
-| CVE-2021 | 1725 |
+| CVE-2020 | 596 |
+| CVE-2021 | 1727 |
 | CVE-2022 | 2472 |
 | CVE-2023 | 4772 |
-| CVE-2024 | 5418 |
-| Other | 25555 |
+| CVE-2024 | 5416 |
+| Other | 25621 |
 ## 近几天数量变化情况
-|2024-09-30 | 2024-10-01 | 2024-10-02 | 2024-10-03 | 2024-10-04 | 2024-10-05 | 2024-10-06|
+|2024-10-01 | 2024-10-02 | 2024-10-03 | 2024-10-04 | 2024-10-05 | 2024-10-06 | 2024-10-07|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43468 | 43520 | 43585 | 43603 | 43701 | 43818 | 43868|
+|43520 | 43585 | 43603 | 43701 | 43818 | 43868 | 43933|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2019-19411.yaml |
-| accordion-image-menu.yaml |
-| datagerry.yaml |
-| WOOYUN-2010-080723.yaml |
-| activeadmin-exposure.yaml |
-| apache-flink.yaml |
-| usg9500.yaml |
-| adstxt.yaml |
-| aspnetcore-dev-env.yaml |
-| wp-cleanup-and-basic-functions.yaml |
-| wiki-js-detect.yaml |
-| datagerry-default-login.yaml |
-| api-intigriti.yaml |
-| concrete5-xss.yaml |
-| retool-svg-xss.yaml |
-| phpshe-sqli.yaml |
-| adicons.yaml |
-| posts-reminder.yaml |
-| CVE-2024-43969.yaml |
-| CVE-2024-9455.yaml |
-| CVE-2024-8758.yaml |
-| CVE-2024-9417.yaml |
-| CVE-2024-6850.yaml |
-| CVE-2024-9528.yaml |
-| CVE-2024-45440.yaml |
-| CVE-2024-5799.yaml |
-| CVE-2024-47641.yaml |
-| CVE-2024-44009.yaml |
-| CVE-2024-3163.yaml |
-| CVE-2024-32964.yaml |
-| CVE-2024-8743.yaml |
-| CVE-2024-44062.yaml |
-| CVE-2024-42404.yaml |
-| CVE-2024-5170.yaml |
-| CVE-2024-7129.yaml |
-| CVE-2024-7892.yaml |
-| CVE-2024-46627.yaml |
-| CVE-2024-9385.yaml |
-| CVE-2024-7766.yaml |
-| CVE-2024-6723.yaml |
-| CVE-2024-8092.yaml |
-| CVE-2024-8239.yaml |
-| CVE-2024-47330.yaml |
-| CVE-2024-7878.yaml |
-| CVE-2024-9161.yaml |
-| CVE-2024-8093.yaml |
-| CVE-2024-7133.yaml |
-| CVE-2024-9314.yaml |
-| CVE-2024-8379.yaml |
-| CVE-2024-44051.yaml |
-| CVE-2024-7859.yaml |
-| CVE-2024-44008.yaml |
-| CVE-2024-7846.yaml |
-| CVE-2024-7713.yaml |
-| CVE-2024-8486.yaml |
+| iKuai-sqli.yaml |
+| xinhu-oa-leakWeak.yaml |
+| DFE-SCADA-fileInclude.yaml |
+| natshell-fileRead.yaml |
+| phpcms-v9.6-sqli.yaml |
+| mingyu_fileRead.yaml |
+| SpringCorePoC.yaml |
+| topsec-leakage.yaml |
+| qilai-oa-sqli.yaml |
+| XYCMS-news-sqli.yaml |
+| mingyu_rce.yaml |
+| PBOOTCMS-rce.yaml |
+| xunrui-cms-sqli.yaml |
+| euseStudy-sqli.yaml |
+| TopApp-fileRead.yaml |
+| frServer-leakage.yaml |
+| WSO2-upload.yaml |
+| finecms-fileDownload.yaml |
+| CTOP-get_file-fileRead.yaml |
+| H3C-SecPath-unauth.yaml |
+| Jinher-OA-fileRead.yaml |
+| eofffie-upload.yaml |
+| huigao-oa-sqli.yaml |
+| php7cms-write-rce.yaml |
+| tpshop-orderby-sqli.yaml |
+| Turkish-cms-sqli.yaml |
+| wangyu_vpn_rce.yaml |
+| RUVAR-OA-sqli.yaml |
+| unauthenticated-jenkins-rce.yaml |
+| jsoa-fileRead.yaml |
+| dahua-jiankong-fileRead.yaml |
+| bohuatech-default-login.yaml |
+| HUAWEI-iBMC-default-login.yaml |
+| MetInfo-sqli.yaml |
+| xiangrikui-rce.yaml |
+| redmin-cli-detect.yaml |
+| anbo-fileRead.yaml |
+| NS-ASG-fileRead.yaml |
+| exposed-filezilla.yaml |
+| eyou-list-export-sqli.yaml |
+| lezhixing-sqli.yaml |
+| RuoYi-fileInclude.yaml |
+| ClusterEngine-sysShell-rce.yaml |
+| Landray-oa-sqli.yaml |
+| Panabit-rce.yaml |
+| avcon-rce.yaml |
+| generic_fileRead.yaml |
+| adtsec-vpn-default-login.yaml |
+| avcon-fileRead.yaml |
+| ai-yuyin-fileRead.yaml |
+| Shop7Z-unauth-upload.yaml |
+| telecom-epon-login.yaml |
+| frServer-fileRead.yaml |
+| wangyu-vpn-upload.yaml |
+| webgrind-fileRead.yaml |
+| xunchi-fileRead.yaml |
+| koal-wangguan-rce.yaml |
+| netentsec-ngfw-rce.yaml |
+| qilai-oa-sqli1.yaml |
+| topsec-include.yaml |
+| dedecms-sqli.yaml |
+| Ecology-sqli.yaml |
+| spring-gateway-rce.yaml |
+| robotstxtandadminloginpaneldedector.yaml |
+| leadsec-preview-rce.yaml |
+| WordPress-modelPHP-sqli.yaml |
+| tg-net-rce.yaml |
+| eyoumail-rce.yaml |
+| delver-sqli.yaml |
+| docker-api-uauth.yaml |
+| uwsgi-fileRead.yaml |
+| CVE-2018-1880.yaml |
