@@ -21,68 +21,45 @@
 | CVE-2017 | 399 |
 | CVE-2018 | 447 |
 | CVE-2019 | 515 |
-| CVE-2020 | 595 |
-| CVE-2021 | 1726 |
-| CVE-2022 | 2471 |
-| CVE-2023 | 4774 |
-| CVE-2024 | 5421 |
+| CVE-2020 | 597 |
+| CVE-2021 | 1727 |
+| CVE-2022 | 2473 |
+| CVE-2023 | 4776 |
+| CVE-2024 | 5435 |
 | Other | 25662 |
 ## 近几天数量变化情况
-|2024-10-02 | 2024-10-03 | 2024-10-04 | 2024-10-05 | 2024-10-06 | 2024-10-07 | 2024-10-08|
+|2024-10-03 | 2024-10-04 | 2024-10-05 | 2024-10-06 | 2024-10-07 | 2024-10-08 | 2024-10-09|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43585 | 43603 | 43701 | 43818 | 43868 | 43933 | 43979|
+|43603 | 43701 | 43818 | 43868 | 43933 | 43979 | 44000|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2021-40272.yaml |
-| CVE-2023-0676.yaml |
-| CVE-2023-27641.yaml |
-| twig-runtime-error.yaml |
-| improper-certificate-validation.yaml |
-| microsoft-runtime-error.yaml |
-| api-delighted.yaml |
-| network-security-config.yaml |
-| dynamic-registered-broadcast-receiver.yaml |
-| strut-debug-mode.yaml |
-| workspace-one-uem-ssp.yaml |
-| enablix-panel.yaml |
-| netdisco-unauth.yaml |
-| seeyon_v9_upload.yaml |
-| webview-loadurl.yaml |
-| mongodb-exception-page.yaml |
-| android-sdk-versions.yaml |
-| exposed-pagespess-global-admin.yaml |
-| saia-pcd-panel.yaml |
-| windows-communication-foundation-detect.yaml |
-| monitor.yaml |
-| ninja-forms-xss.yaml |
-| missing-root-detection.yaml |
-| default-azure-function-app.yaml |
-| sensitive-data-clear-text.yaml |
-| broken-cryptography.yaml |
-| broadcast-receivers-url-schemes.yaml |
-| deprecated-algoritm.yaml |
-| rstudio-panel.yaml |
-| insecure-data-storage.yaml |
-| delphi-mvc-exception.yaml |
-| gitlab-explore.yaml |
-| lua-runtime-error.yaml |
-| minio_fileLeak.yaml |
-| voipmonitor-rce.yaml |
-| mako-runtime-error.yaml |
-| netdisco-default-login.yaml |
-| external-storage.yaml |
-| action-controller-exception.yaml |
-| api-telegram.yaml |
-| sap-logon-error-message.yaml |
-| exposed-content-providers.yaml |
-| obfuscation-detection.yaml |
-| expression-engine-exception.yaml |
-| exported-activities.yaml |
-| nifi-detect.yaml |
-| stored-credentials.yaml |
-| CVE-2024-8021.yaml |
-| CVE-2024-35627.yaml |
-| CVE-2024-4940.yaml |
-| CVE-2024-38816.yaml |
-| CVE-2024-3234.yaml |
+| CVE-2022-4534.yaml |
+| CVE-2023-39007.yaml |
+| CVE-2023-47105.yaml |
+| GitLab_SAML_Authentication_Bypass_CVE-2024-45409.yaml |
+| dizquetv-detect.yaml |
+| m-bus-panel.yaml |
+| ariang-debug-console.yaml |
+| minio-ssrf.yaml |
+| ruijie-EG-fileDownload.yaml |
+| loxone-web-panel.yaml |
+| macos-server-panel.yaml |
+| jenkins-stack-traces.yaml |
+| insecure-provider-path.yaml |
+| webview-javascript-enabled.yaml |
+| zenphoto-exposure.yaml |
+| apache-php-env-disclosure.yaml |
+| ivanti-epm-detect.yaml |
+| dockwatch-panel.yaml |
+| CVE-2024-4340.yaml |
+| CVE-2024-8433.yaml |
+| CVE-2024-8911.yaml |
+| CVE-2024-8629.yaml |
+| CVE-2024-9292.yaml |
+| CVE-2024-8943.yaml |
+| CVE-2024-8964.yaml |
+| CVE-2024-8482.yaml |
+| CVE-2024-8488.yaml |
+| CVE-2024-9207.yaml |
+| CVE-2024-8431.yaml |
