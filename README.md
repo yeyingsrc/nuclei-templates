@@ -20,30 +20,55 @@
 | CVE-2016 | 249 |
 | CVE-2017 | 401 |
 | CVE-2018 | 447 |
-| CVE-2019 | 516 |
-| CVE-2020 | 599 |
-| CVE-2021 | 1734 |
-| CVE-2022 | 2472 |
-| CVE-2023 | 4776 |
-| CVE-2024 | 5439 |
-| Other | 24696 |
+| CVE-2019 | 517 |
+| CVE-2020 | 595 |
+| CVE-2021 | 1732 |
+| CVE-2022 | 2473 |
+| CVE-2023 | 4775 |
+| CVE-2024 | 5461 |
+| Other | 24708 |
 ## 近几天数量变化情况
-|2024-10-04 | 2024-10-05 | 2024-10-06 | 2024-10-07 | 2024-10-08 | 2024-10-09 | 2024-10-10|
+|2024-10-05 | 2024-10-06 | 2024-10-07 | 2024-10-08 | 2024-10-09 | 2024-10-10 | 2024-10-11|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43701 | 43818 | 43868 | 43933 | 43979 | 44000 | 43051|
+|43818 | 43868 | 43933 | 43979 | 44000 | 43051 | 43080|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-7762.yaml |
-| CVE-2024-9449.yaml |
-| CVE-2024-8187.yaml |
-| CVE-2024-9451.yaml |
-| CVE-2024-7963.yaml |
-| cRlf.yaml |
-| embed-pdf-viewer.yaml |
-| cmsmasters-content-composer.yaml |
-| auctionPlugin.yaml |
-| auto-iframe.yaml |
-| blooog-v1.1.yaml |
-| wp-db-backup.php.yaml |
-| imo-rce.yaml |
+| CVE-2024-8477.yaml |
+| CVE-2024-9022.yaml |
+| CVE-2024-9457.yaml |
+| CVE-2024-9581.yaml |
+| CVE-2024-8729.yaml |
+| CVE-2024-9685.yaml |
+| CVE-2024-9520.yaml |
+| CVE-2024-9463.yaml |
+| CVE-2024-9465.yaml |
+| CVE-2024-9057.yaml |
+| CVE-2024-9519.yaml |
+| CVE-2024-9522.yaml |
+| CVE-2024-8513.yaml |
+| CVE-2024-9518.yaml |
+| CVE-2024-9377.yaml |
+| CVE-2024-9065.yaml |
+| CVE-2024-9064.yaml |
+| CVE-2024-9205.yaml |
+| CVE-2024-9072.yaml |
+| CVE-2024-9067.yaml |
+| CVE-2024-9066.yaml |
+| CVE-2024-8987.yaml |
+| CVE-2024-9074.yaml |
+| gdpr-consent-manager.yaml |
+| inline-svg-elementor.yaml |
+| marketing-and-seo-booster.yaml |
+| advanced-blocks-pro.yaml |
+| cssjockey-add-ons.yaml |
+| shortcodes-anywhere.yaml |
+| qa-heatmap-analytics.yaml |
+| maximum-products-per-user-for-woocommerce.yaml |
+| curatorio.yaml |
+| h3c-iMC-JSF-rce.yaml |
+| easy-social-share-buttons.yaml |
+| nette-rce.yaml |
+| notification-for-telegram.yaml |
+| topsec-topSAG-synRequest-rce.yaml |
+| wp-users-masquerade.yaml |
