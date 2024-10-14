@@ -20,48 +20,18 @@
 | CVE-2016 | 249 |
 | CVE-2017 | 401 |
 | CVE-2018 | 447 |
-| CVE-2019 | 517 |
-| CVE-2020 | 596 |
+| CVE-2019 | 516 |
+| CVE-2020 | 598 |
 | CVE-2021 | 1733 |
-| CVE-2022 | 2475 |
-| CVE-2023 | 4773 |
+| CVE-2022 | 2474 |
+| CVE-2023 | 4772 |
 | CVE-2024 | 5580 |
-| Other | 24749 |
+| Other | 24743 |
 ## 近几天数量变化情况
-|2024-10-07 | 2024-10-08 | 2024-10-09 | 2024-10-10 | 2024-10-11 | 2024-10-12 | 2024-10-13|
+|2024-10-08 | 2024-10-09 | 2024-10-10 | 2024-10-11 | 2024-10-12 | 2024-10-13 | 2024-10-14|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43933 | 43979 | 44000 | 43051 | 43080 | 43206 | 43242|
+|43979 | 44000 | 43051 | 43080 | 43206 | 43242 | 43235|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-9704.yaml |
-| CVE-2024-9776.yaml |
-| CVE-2024-9860.yaml |
-| CVE-2024-9778.yaml |
-| CVE-2024-9047.yaml |
-| CVE-2024-7489.yaml |
-| CVE-2024-8493.yaml |
-| CVE-2024-8902.yaml |
-| CVE-2024-9187.yaml |
-| CVE-2024-9595.yaml |
-| CVE-2024-8757.yaml |
-| CVE-2024-9696.yaml |
-| CVE-2024-8619.yaml |
-| CVE-2024-8760.yaml |
-| CVE-2024-8492.yaml |
-| CVE-2024-9824.yaml |
-| CVE-2024-9756.yaml |
-| CVE-2024-9592.yaml |
-| CVE-2024-9821.yaml |
-| CVE-2024-9670.yaml |
-| CVE-2024-9656.yaml |
-| CVE-2024-8915.yaml |
-| mynx-page-builder.yaml |
-| dvk-social-sharing.yaml |
-| order-attachments-for-woocommerce.yaml |
-| image-gallery.yaml |
-| sonicwall-shellshock.yaml |
-| 2d-tag-cloud-widget-by-sujin.yaml |
-| category-icon.yaml |
-| bot-for-telegram-on-woocommerce.yaml |
-| paypal-gift-certificate.yaml |
+| cve-2021-30462.yaml |
