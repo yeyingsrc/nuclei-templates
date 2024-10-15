@@ -51435,5 +51435,12 @@
     "category-icon.yaml": "2024-10-13 02:33:05",
     "bot-for-telegram-on-woocommerce.yaml": "2024-10-13 02:33:05",
     "paypal-gift-certificate.yaml": "2024-10-13 02:33:05",
-    "cve-2021-30462.yaml": "2024-10-14 02:31:22"
+    "cve-2021-30462.yaml": "2024-10-14 02:31:22",
+    "errsqli.yaml": "2024-10-15 02:30:34",
+    "apache_traversal.yaml": "2024-10-15 02:30:34",
+    "api-exposures.yaml": "2024-10-15 02:30:34",
+    "timesqli.yaml": "2024-10-15 02:30:34",
+    "x-forwarded.yaml": "2024-10-15 02:30:34",
+    "put.yaml": "2024-10-15 02:30:34",
+    "extendify.yaml": "2024-10-15 02:30:34"
 }
