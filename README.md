@@ -21,55 +21,71 @@
 | CVE-2017 | 404 |
 | CVE-2018 | 451 |
 | CVE-2019 | 523 |
-| CVE-2020 | 609 |
-| CVE-2021 | 1747 |
-| CVE-2022 | 2478 |
-| CVE-2023 | 4803 |
-| CVE-2024 | 5833 |
-| Other | 25022 |
+| CVE-2020 | 606 |
+| CVE-2021 | 1742 |
+| CVE-2022 | 2477 |
+| CVE-2023 | 4801 |
+| CVE-2024 | 5862 |
+| Other | 25060 |
 ## 近几天数量变化情况
-|2024-10-17 | 2024-10-18 | 2024-10-19 | 2024-10-20 | 2024-10-21 | 2024-10-22 | 2024-10-23|
+|2024-10-18 | 2024-10-19 | 2024-10-20 | 2024-10-21 | 2024-10-22 | 2024-10-23 | 2024-10-24|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43383 | 43442 | 43612 | 43800 | 43795 | 43811 | 43846|
+|43442 | 43612 | 43800 | 43795 | 43811 | 43846 | 43902|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-9231.yaml |
-| CVE-2024-10189.yaml |
-| CVE-2024-8852.yaml |
-| CVE-2024-10003.yaml |
-| CVE-2024-35584.yaml |
-| CVE-2024-9588.yaml |
-| CVE-2024-9627.yaml |
-| CVE-2024-10002.yaml |
-| CVE-2024-9591.yaml |
-| CVE-2024-22476.yaml |
-| CVE-2024-9541.yaml |
-| CVE-2024-9589.yaml |
-| CVE-2024-9590.yaml |
-| CVE-2024-48914.yaml |
-| vendure.yaml |
-| rover-idx.yaml |
-| ticket_support_script.yaml |
-| wp-custom-taxonomy-meta.yaml |
-| make_an_offer_widget.yaml |
-| wp-custom-taxonomy-image.yaml |
-| yacht_listing_script.yaml |
-| food_delivery_script.yaml |
-| doris-default-login.yaml |
-| green-wp-telegram-bot-by-teplitsa.yaml |
-| callback_widget.yaml |
-| fundraising_script.yaml |
-| salesforce-b2c-commerce-webdav.yaml |
-| news-kit-elementor-addons.yaml |
-| rce-dev.yaml |
-| CVE-2023-39560.yaml |
-| CVE-2023-40748.yaml |
-| CVE-2023-40750.yaml |
-| CVE-2023-40755.yaml |
-| CVE-2023-40751.yaml |
-| CVE-2023-40753.yaml |
-| CVE-2023-38040.yaml |
-| CVE-2023-40749.yaml |
-| CVE-2023-40752.yaml |
-| CVE-2023-43373.yaml |
+| CVE-2024-49621.yaml |
+| CVE-2024-49326.yaml |
+| CVE-2024-49605.yaml |
+| CVE-2024-49335.yaml |
+| CVE-2024-10250.yaml |
+| CVE-2024-49617.yaml |
+| CVE-2024-49324.yaml |
+| CVE-2024-8542.yaml |
+| CVE-2024-49331.yaml |
+| CVE-2024-9947.yaml |
+| CVE-2024-9927.yaml |
+| CVE-2024-49604.yaml |
+| CVE-2024-49330.yaml |
+| CVE-2024-49607.yaml |
+| CVE-2024-49327.yaml |
+| CVE-2024-49622.yaml |
+| CVE-2024-9829.yaml |
+| CVE-2024-49611.yaml |
+| CVE-2024-49328.yaml |
+| CVE-2024-10045.yaml |
+| CVE-2024-49610.yaml |
+| CVE-2024-9617.yaml |
+| CVE-2024-49629.yaml |
+| CVE-2024-9530.yaml |
+| CVE-2024-9583.yaml |
+| CVE-2024-8500.yaml |
+| CVE-2024-49332.yaml |
+| CVE-2024-49325.yaml |
+| CVE-2024-49329.yaml |
+| olympic-panel.yaml |
+| woocommerce-order-proposal.yaml |
+| photokit.yaml |
+| woostagram-connect.yaml |
+| CNVD-2024-38747.yaml |
+| danswer-panel.yaml |
+| plms.yaml |
+| apa-banner-slider.yaml |
+| rest-api-fns.yaml |
+| redpanda-console.yaml |
+| wp-dropbox-dropins.yaml |
+| TVE-2024-105272110.yaml |
+| gradio-detect.yaml |
+| apa-register-newsletter-form.yaml |
+| affiliator-lite.yaml |
+| back-link-tracker.yaml |
+| transients-manager.yaml |
+| lollms-webui-detect.yaml |
+| endless-posts-navigation.yaml |
+| nicebackgrounds.yaml |
+| product-websites-showcase.yaml |
+| googledrive-folder-list.yaml |
+| nioland.yaml |
+| sovratec-case-management.yaml |
+| profilepress-pro.yaml |
+| photo-gallery-builder.yaml |
