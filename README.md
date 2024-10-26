@@ -21,64 +21,44 @@
 | CVE-2017 | 404 |
 | CVE-2018 | 451 |
 | CVE-2019 | 522 |
-| CVE-2020 | 610 |
-| CVE-2021 | 1741 |
+| CVE-2020 | 609 |
+| CVE-2021 | 1742 |
 | CVE-2022 | 2477 |
 | CVE-2023 | 4803 |
-| CVE-2024 | 5893 |
-| Other | 25075 |
+| CVE-2024 | 5911 |
+| Other | 25087 |
 ## 近几天数量变化情况
-|2024-10-19 | 2024-10-20 | 2024-10-21 | 2024-10-22 | 2024-10-23 | 2024-10-24 | 2024-10-25|
+|2024-10-20 | 2024-10-21 | 2024-10-22 | 2024-10-23 | 2024-10-24 | 2024-10-25 | 2024-10-26|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|43612 | 43800 | 43795 | 43811 | 43846 | 43902 | 43952|
+|43800 | 43795 | 43811 | 43846 | 43902 | 43952 | 43982|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-49625.yaml |
-| CVE-2024-8959.yaml |
-| CVE-2024-49626.yaml |
-| CVE-2024-9374.yaml |
-| CVE-2024-9650.yaml |
-| CVE-2024-49608.yaml |
-| CVE-2024-8667.yaml |
-| CVE-2024-49620.yaml |
-| CVE-2024-9865.yaml |
-| CVE-2024-49609.yaml |
-| CVE-2024-9531.yaml |
-| CVE-2024-49612.yaml |
-| CVE-2024-8717.yaml |
-| CVE-2024-9864.yaml |
-| CVE-2024-49630.yaml |
-| CVE-2024-49606.yaml |
-| CVE-2024-9214.yaml |
-| CVE-2024-10050.yaml |
-| CVE-2024-9943.yaml |
-| CVE-2024-49618.yaml |
-| CVE-2024-49615.yaml |
-| CVE-2024-10176.yaml |
-| CVE-2024-49616.yaml |
-| CVE-2024-49624.yaml |
-| CVE-2024-10180.yaml |
-| CVE-2024-49614.yaml |
-| CVE-2024-49623.yaml |
-| CVE-2024-49613.yaml |
-| CVE-2024-49627.yaml |
-| CVE-2024-49628.yaml |
-| CVE-2024-49619.yaml |
-| ferma-ru-net-checkout.yaml |
-| social-link-groups.yaml |
-| cf7-repeatable-fields.yaml |
-| google-map-locations.yaml |
-| sermonaudio-widgets.yaml |
-| wp-image-seo.yaml |
-| author-discussion.yaml |
-| sw-contact-form.yaml |
-| duplicate-title-validate.yaml |
-| advanced-advertising-system.yaml |
-| safetymails-forms.yaml |
-| gerryworks-post-by-mail.yaml |
-| rate-own-post.yaml |
-| shipyaari-shipping-managment.yaml |
-| simple-code-insert-shortcode.yaml |
-| mytweetlinks.yaml |
-| CVE-2023-40931.yaml |
+| CVE-2024-9488.yaml |
+| CVE-2024-10341.yaml |
+| CVE-2024-9235.yaml |
+| CVE-2024-9628.yaml |
+| CVE-2024-10150.yaml |
+| CVE-2024-10342.yaml |
+| CVE-2024-10374.yaml |
+| CVE-2024-10016.yaml |
+| CVE-2024-9302.yaml |
+| CVE-2024-9109.yaml |
+| CVE-2024-9686.yaml |
+| CVE-2024-9607.yaml |
+| CVE-2024-10011.yaml |
+| CVE-2024-10148.yaml |
+| CVE-2024-9598.yaml |
+| CVE-2024-9630.yaml |
+| CVE-2024-8666.yaml |
+| CVE-2024-10112.yaml |
+| CVE-2024-10343.yaml |
+| bamazoo-button-generator.yaml |
+| beek-widget-extention.yaml |
+| league-of-legends-shortcodes.yaml |
+| file-upload-types.yaml |
+| wp-awesome-buttons.yaml |
+| shoutcast-icecast-html5-radio-player.yaml |
+| wps-telegram-chat.yaml |
+| order-notification-for-telegram.yaml |
+| simple-news.yaml |
