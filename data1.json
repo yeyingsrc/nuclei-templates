@@ -52723,5 +52723,13 @@
     "cyberpanel-panel.yaml": "2024-11-03 02:34:25",
     "ip-webcam.yaml": "2024-11-03 02:34:25",
     "Wifisky-7-RCE.yaml": "2024-11-04 02:33:21",
-    "wordpress-exposure.yaml": "2024-11-04 02:33:21"
+    "wordpress-exposure.yaml": "2024-11-04 02:33:21",
+    "CVE-2024-48360.yaml": "2024-11-05 02:27:19",
+    "condition-flow.yaml": "2024-11-05 02:27:19",
+    "TVE-2024-105131859.yaml": "2024-11-05 02:27:19",
+    "secret-manager-not-inuse.yaml": "2024-11-05 02:27:19",
+    "cmdi-ruby-open-rce.yaml": "2024-11-05 02:27:19",
+    "secrets-rotation-disabled.yaml": "2024-11-05 02:27:19",
+    "nexpose-panel.yaml": "2024-11-05 02:27:19",
+    "vabro-backup-file-finder.yaml": "2024-11-05 02:27:19"
 }
