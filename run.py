@@ -131,7 +131,9 @@ def process_yaml_files(temp_directory):
                     if match2:
                         target_folder = os.path.join(
                             os.getcwd(),'nuclei-templates', 'wordpress')
+                        os.makedirs(target_folder, exist_ok=True)
                         target_path = os.path.join(target_folder, file)
+
                     elif match1:
                         target_folder = os.path.join(
                             os.getcwd(),'nuclei-templates', match1.group().upper())
