@@ -87,9 +87,9 @@ def nuclei_validate(temp_directory):
 def download_extract_executable(temp_directory):
     system = platform.system()
     if system == 'Windows':
-        zip_file_path = './nuclei/nuclei_3.1.10_windows_amd64.zip'
+        zip_file_path = './nuclei/nuclei_3.3.5_windows_amd64.zip'
     else:
-        zip_file_path = './nuclei/nuclei_3.1.10_linux_amd64.zip'
+        zip_file_path = './nuclei/nuclei_3.3.5_linux_amd64.zip'
 
     # 解压压缩包
     extract_dir = os.path.join(temp_directory, "extracted")
@@ -125,10 +125,16 @@ def process_yaml_files(temp_directory):
                 # 判断文件内容是否包含关键字
                 if len([tag for tag in ['id:', 'info:', 'name:', 'author:', 'severity:', 'description:', 'tags:', 'requests:', 'matchers:'] if tag in content]) > 5:
                     # 判断文件名是否匹配CVE-\d{4}
-                    match = re.match(r'CVE-\d{4}', file, re.I)
-                    if match:
+                    match1 = re.match(r'CVE-\d{4}', file, re.I)
+                    # tags: cve,wordpress,wp-plugin
+                    match2 = re.match(r'tags:.*?(?:wordpress|wp-plugin).*?', content, re.I)
+                    if match2:
                         target_folder = os.path.join(
-                            os.getcwd(),'nuclei-templates', match.group().upper())
+                            os.getcwd(),'nuclei-templates', 'wordpress')
+                        target_path = os.path.join(target_folder, file)
+                    elif match1:
+                        target_folder = os.path.join(
+                            os.getcwd(),'nuclei-templates', match1.group().upper())
                         os.makedirs(target_folder, exist_ok=True)
                         target_path = os.path.join(target_folder, file)
                     else:
