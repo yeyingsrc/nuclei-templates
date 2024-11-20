@@ -127,7 +127,7 @@ def process_yaml_files(temp_directory):
                     # 判断文件名是否匹配CVE-\d{4}
                     match1 = re.match(r'CVE-\d{4}', file, re.I)
                     # tags: cve,wordpress,wp-plugin
-                    match2 = re.match(r'tags:.*?(?:wordpress|wp-plugin).*?', content, re.I)
+                    match2 = re.search(r'tags:.*?(?:wordpress|wp-plugin).*?', content, re.I)
                     if match2:
                         target_folder = os.path.join(
                             os.getcwd(),'nuclei-templates', 'wordpress')
