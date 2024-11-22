@@ -5,7 +5,7 @@ info:
   author: daffainfo
   severity: medium
   reference: https://packetstormsecurity.com/files/115902/WordPress-Finder-Cross-Site-Scripting.html
-  tags: wordpress,xss,wp-plugin
+ 
 
 requests:
   - method: GET
