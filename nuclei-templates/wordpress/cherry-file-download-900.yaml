@@ -8,7 +8,7 @@ info:
   reference:
     - https://wpscan.com/vulnerability/90034817-dee7-40c9-80a2-1f1cd1d033ee
     - https://github.com/CherryFramework/cherry-plugin
-  tags: wordpress,wp-plugin,lfi
+ 
 
 requests:
   - method: GET
