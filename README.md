@@ -11,118 +11,85 @@
 | CVE-2008 | 13 |
 | CVE-2009 | 16 |
 | CVE-2010 | 115 |
-| CVE-2011 | 11 |
-| CVE-2012 | 19 |
-| CVE-2013 | 12 |
-| CVE-2014 | 33 |
-| CVE-2015 | 39 |
-| CVE-2016 | 34 |
+| CVE-2011 | 10 |
+| CVE-2012 | 20 |
+| CVE-2013 | 11 |
+| CVE-2014 | 34 |
+| CVE-2015 | 38 |
+| CVE-2016 | 33 |
 | CVE-2017 | 88 |
-| CVE-2018 | 175 |
-| CVE-2019 | 163 |
+| CVE-2018 | 176 |
+| CVE-2019 | 160 |
 | CVE-2020 | 262 |
-| CVE-2021 | 355 |
-| CVE-2022 | 356 |
-| CVE-2023 | 415 |
-| CVE-2024 | 282 |
-| Other | 14200 |
-| wordpress | 30473 |
+| CVE-2021 | 354 |
+| CVE-2022 | 355 |
+| CVE-2023 | 412 |
+| CVE-2024 | 280 |
+| Other | 14208 |
+| wordpress | 30493 |
 ## 近几天数量变化情况
-|2024-11-29 | 2024-11-30 | 2024-12-01 | 2024-12-02 | 2024-12-03 | 2024-12-04 | 2024-12-05|
+|2024-11-30 | 2024-12-01 | 2024-12-02 | 2024-12-03 | 2024-12-04 | 2024-12-05 | 2024-12-06|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|46988 | 46988 | 46999 | 46998 | 47005 | 47034 | 47082|
+|46988 | 46999 | 46998 | 47005 | 47034 | 47082 | 47099|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-49380.yaml |
-| CVE-2022-31470.yaml |
-| 4194754273.yaml |
-| 625617442.yaml |
-| 593884093.yaml |
-| 1999312153.yaml |
-| 3204970294.yaml |
-| 4282269459.yaml |
-| 697695049.yaml |
-| 428285915.yaml |
-| 2696092143.yaml |
-| 2001151991.yaml |
-| 4286728146.yaml |
-| 2094980884.yaml |
-| 1451702318.yaml |
-| 564367761.yaml |
-| 3105176304.yaml |
-| 495169846.yaml |
-| 2666876809.yaml |
-| 1776522382.yaml |
-| webmail.yaml |
-| 2277887557.yaml |
-| 3519901857.yaml |
-| 4144210433.yaml |
-| 3496033951.yaml |
-| CVE-2024-11293.yaml |
-| CVE-2024-10832.yaml |
-| responsive-youtube-videos.yaml |
-| CVE-2024-11643.yaml |
-| email-address-obfuscation.yaml |
-| CVE-2011-1669-2041.yaml |
-| cve-2016-10924-2755.yaml |
-| CVE-2024-10952.yaml |
-| CVE-2024-10885.yaml |
-| mightyforms.yaml |
-| wp-job-manager-companies.yaml |
-| easy-facebook-likebox-premium.yaml |
-| dp-intro-tours.yaml |
-| CVE-2024-11897.yaml |
-| CVE-2021-24210-5644.yaml |
-| CVE-2021-39312(1).yaml |
-| listdom.yaml |
-| CVE-2024-11814.yaml |
-| CVE-2024-5020.yaml |
-| posti-shipping.yaml |
-| CVE-2024-11807.yaml |
-| CVE-2018-18069-3429.yaml |
-| cve-2020-24148-4788.yaml |
-| CVE-2024-10787.yaml |
-| CVE-2024-11747.yaml |
-| CVE-2024-10663.yaml |
-| CVE-2023-6978.yaml |
-| dollie.yaml |
-| CVE-2012-1835-2172.yaml |
-| CVE-2024-12099.yaml |
-| CVE-2016-1000138-2697.yaml |
-| CVE-2024-11903.yaml |
-| cve-2014-4592-2377.yaml |
-| CVE-2015-2807-2497.yaml |
-| CVE-2024-11880.yaml |
-| CVE-2024-11813.yaml |
-| CVE-2017-17043-2977.yaml |
-| CVE-2024-11466.yaml |
-| cve-2021-24838-5769.yaml |
-| order-status-for-woocommerce.yaml |
-| wp-ecards-invites.yaml |
-| amin-chat-button.yaml |
-| cve-2020-11738-4427.yaml |
-| CVE-2024-11952.yaml |
-| CVE-2024-10664.yaml |
-| CVE-2024-11854.yaml |
-| CVE-2017-1000170-2837.yaml |
-| cve-2011-5265-2123.yaml |
-| CVE-2016-1000152-2731.yaml |
-| CVE-2014-4544-2362.yaml |
-| cve-2019-9978-4326.yaml |
-| CVE-2016-1000149-2725.yaml |
-| CVE-2024-10587.yaml |
-| sg-helper.yaml |
-| CVE-2024-10567.yaml |
-| cve-2016-10033-2746.yaml |
-| b-testimonial.yaml |
-| allaccessible.yaml |
-| cve-2021-24235-5651.yaml |
-| cve-2021-34621-6235.yaml |
-| CVE-2019-15858-3888.yaml |
-| CVE-2014-9094-2417.yaml |
-| CVE-2024-11935.yaml |
-| CVE-2024-8962.yaml |
-| CVE-2024-11093.yaml |
-| CVE-2024-11769.yaml |
-| cve-2016-10940-2757.yaml |
+| 2966481402.yaml |
+| 15860107.yaml |
+| 217782720.yaml |
+| 194219762.yaml |
+| azure-storage-sas-leak.yaml |
+| 2171725943.yaml |
+| 2872840716.yaml |
+| smb-signing.yaml |
+| 2997345093.yaml |
+| 1967670474.yaml |
+| 3484138770.yaml |
+| 2823749786.yaml |
+| 435472831.yaml |
+| 975445134.yaml |
+| 3349134092.yaml |
+| 3274523582.yaml |
+| 2359402748.yaml |
+| 1168326164.yaml |
+| 4189446515.yaml |
+| 1884591671.yaml |
+| 1737743748.yaml |
+| 376180895.yaml |
+| 2339729697.yaml |
+| 3073955438.yaml |
+| 3132982977.yaml |
+| cve-2015-9414-2625.yaml |
+| CVE-2024-10178.yaml |
+| CVE-2018-3810-3557.yaml |
+| CVE-2014-4558-2368.yaml |
+| accounting-for-woocommerce.yaml |
+| CVE-2024-10937.yaml |
+| CVE-2024-11420.yaml |
+| newsmunch.yaml |
+| CVE-2024-11324.yaml |
+| cve-2014-5368-2394.yaml |
+| cve-2015-4694-2542.yaml |
+| CVE-2024-11341.yaml |
+| CVE-2019-11869-1.yaml |
+| cve-2020-29395-5005.yaml |
+| cve-2014-4544-2359.yaml |
+| wip-woocarousel-lite.yaml |
+| CVE-2022-1597(1).yaml |
+| cve-2021-24495-5750.yaml |
+| CVE-2024-10777.yaml |
+| cve-2016-1000148-2724.yaml |
+| cve-2022-0271-6617.yaml |
+| cve-2015-5461-2556.yaml |
+| CVE-2024-10056.yaml |
+| CVE-2016-1000135-2681.yaml |
+| eelv-redirection.yaml |
+| cve-2019-14470-3855.yaml |
+| cve-2015-5471-2561.yaml |
+| CVE-2022-0140-6603.yaml |
+| CVE-2020-35951-5109.yaml |
+| CVE-2011-4926-2089.yaml |
+| CVE-2024-11429.yaml |
+| CVE-2024-10848.yaml |
+| CVE-2024-10881.yaml |
+| CVE-2024-11779.yaml |
