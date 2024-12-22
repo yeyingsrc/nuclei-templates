@@ -5,7 +5,7 @@ info:
   author: _C0wb0y_
   severity: low
   description: Discover enabled Wordpress repair page.
- 
+  tags: wordpress,config,fpd
 
 requests:
   - method: GET

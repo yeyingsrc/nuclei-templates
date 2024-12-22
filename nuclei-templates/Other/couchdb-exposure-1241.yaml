@@ -3,7 +3,7 @@ info:
   name: couchdb exposure
   author: organiccrap
   severity: low
-  tags: panel,couchdb
+  tags: panel
 
 requests:
   - method: GET
