@@ -12,83 +12,52 @@
 | CVE-2009 | 20 |
 | CVE-2010 | 122 |
 | CVE-2011 | 14 |
-| CVE-2012 | 29 |
+| CVE-2012 | 28 |
 | CVE-2013 | 23 |
-| CVE-2014 | 42 |
+| CVE-2014 | 46 |
 | CVE-2015 | 47 |
-| CVE-2016 | 39 |
-| CVE-2017 | 93 |
-| CVE-2018 | 249 |
-| CVE-2019 | 413 |
+| CVE-2016 | 38 |
+| CVE-2017 | 95 |
+| CVE-2018 | 247 |
+| CVE-2019 | 414 |
 | CVE-2020 | 763 |
-| CVE-2021 | 840 |
-| CVE-2022 | 865 |
-| CVE-2023 | 757 |
-| CVE-2024 | 358 |
-| Other | 14329 |
-| wordpress | 31522 |
+| CVE-2021 | 852 |
+| CVE-2022 | 862 |
+| CVE-2023 | 754 |
+| CVE-2024 | 361 |
+| Other | 14333 |
+| wordpress | 31513 |
 ## 近几天数量变化情况
-|2024-12-16 | 2024-12-17 | 2024-12-18 | 2024-12-19 | 2024-12-20 | 2024-12-21 | 2024-12-22|
+|2024-12-17 | 2024-12-18 | 2024-12-19 | 2024-12-20 | 2024-12-21 | 2024-12-22 | 2024-12-23|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|50033 | 50035 | 50036 | 50099 | 50132 | 50522 | 50559|
+|50035 | 50036 | 50099 | 50132 | 50522 | 50559 | 50566|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-11682.yaml |
-| CVE-2024-11977.yaml |
-| cve-2021-24235-5652.yaml |
-| CVE-2024-12066.yaml |
-| cve-2015-1000012-2461.yaml |
-| CVE-2024-11938.yaml |
-| CVE-2018-9118-3653.yaml |
-| CVE-2024-12875.yaml |
-| CVE-2024-12635.yaml |
-| woo-one-click-upsell-funnel.yaml |
-| cve-2014-4592-2380.yaml |
-| cve-2014-5368-2395.yaml |
-| CVE-2024-12721.yaml |
-| gwebpro-store-locator.yaml |
-| CVE-2024-11722.yaml |
-| CVE-2024-9545.yaml |
-| adforest.yaml |
-| pingmeter-uptime-monitoring.yaml |
-| CVE-2021-24389-5729.yaml |
-| CVE-2024-11196.yaml |
-| wp-migrate-2-aws.yaml |
-| cve-2011-4624-2080.yaml |
-| CVE-2024-12697.yaml |
-| wb-custom-product-tabs-for-woocommerce.yaml |
-| CVE-2024-11688.yaml |
-| CVE-2024-10453.yaml |
-| CVE-2024-12588.yaml |
-| CVE-2024-12408.yaml |
-| CVE-2024-12771.yaml |
-| CVE-2024-11975.yaml |
-| CVE-2024-12591.yaml |
-| CVE-2024-11808.yaml |
-| reactflow-session-replay-heatmap.yaml |
-| smsa-shipping-official.yaml |
-| CVE-2024-11811.yaml |
-| CVE-2024-11287.yaml |
-| magicpost.yaml |
-| full-screen-menu-for-elementor.yaml |
-| CVE-2024-12558.yaml |
-| CVE-2024-11349.yaml |
-| CVE-2024-10797.yaml |
-| CVE-2024-12262.yaml |
-| 2579841761.yaml |
-| 3273535215.yaml |
-| 2495305639.yaml |
-| 2308324809.yaml |
-| 4148774194.yaml |
-| 3046318161.yaml |
-| 804323400.yaml |
-| 413250503.yaml |
-| 2360557958.yaml |
-| 735782383.yaml |
-| 1137894305.yaml |
-| 4059683456.yaml |
-| 3544388474.yaml |
-| 182021300.yaml |
-| Command-Injection.yaml |
-| 3895553108.yaml |
+| cve-2021-39320-6336.yaml |
+| CVE-2024-11852.yaml |
+| CVE-2011-4624-2078.yaml |
+| cve-2021-21389-5514.yaml |
+| CVE-2021-24340-5712.yaml |
+| CVE-2021-25063-5794.yaml |
+| cve-2017-1000170-2838.yaml |
+| 674281011.yaml |
+| api-jotform.yaml |
+| 1559456844.yaml |
+| 3886731892.yaml |
+| 3742541433.yaml |
+| 4066336974.yaml |
+| 793310164.yaml |
+| 3118163025.yaml |
+| 3757448285.yaml |
+| 1310750304.yaml |
+| 2389937585.yaml |
+| 1204339477.yaml |
+| 1529097781.yaml |
+| 372323483.yaml |
+| 4116145651.yaml |
+| 3274768380.yaml |
+| 944179109.yaml |
+| 2912151193.yaml |
+| CVE-2024-55956.yaml |
+| CVE-2024-52875.yaml |
