@@ -1,14 +1,13 @@
 id: ftp
 info:
-  name: FileZilla ftpd
+  name: vsftpd
   author: nmap,cn-kali-team
   tags: detect,tech,ftp,service
   severity: info
   metadata:
-    operating_system: Windows
-    product: filezilla_server
+    product: vsftpd
     rarity: 0
-    vendor: filezilla-project
+    vendor: vsftpd
     verified: true
     version: $1
 tcp:
@@ -21,4 +20,4 @@ tcp:
   - name: ftp
     type: regex
     regex:
-    - (?i)^220.*\r\n220[- ]FileZilla Server version (\d[-.\w ]+)\r\n
+    - ^220 vsFTPd (.*) ready\.\.\. \[charset=\w+\]\r\n
