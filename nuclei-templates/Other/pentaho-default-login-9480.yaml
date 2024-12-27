@@ -1,28 +1,25 @@
 id: pentaho-default-login
-
 info:
   name: Pentaho Default Login
   author: pussycat0x
   severity: high
   metadata:
-    shodan-query: 'pentaho'
+    shodan-query: pentaho
   tags: pentaho,default-login
-
 requests:
   - raw:
       - |
         POST /pentaho/j_spring_security_check HTTP/1.1
         Host: {{Hostname}}
         Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-        j_username={{user}}&j_password={{pass}}
 
+        j_username={{user}}&j_password={{pass}}
     attack: pitchfork
     payloads:
       user:
         - admin
       pass:
         - password
-
     matchers-condition: and
     matchers:
       - type: word
@@ -31,7 +28,6 @@ requests:
           - 'pentaho/Home'
           - 'JSESSIONID='
         condition: and
-
       - type: status
         status:
           - 302
