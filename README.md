@@ -11,53 +11,64 @@
 | CVE-2008 | 13 |
 | CVE-2009 | 20 |
 | CVE-2010 | 122 |
-| CVE-2011 | 14 |
-| CVE-2012 | 29 |
-| CVE-2013 | 23 |
-| CVE-2014 | 45 |
-| CVE-2015 | 47 |
-| CVE-2016 | 41 |
+| CVE-2011 | 15 |
+| CVE-2012 | 30 |
+| CVE-2013 | 24 |
+| CVE-2014 | 44 |
+| CVE-2015 | 48 |
+| CVE-2016 | 39 |
 | CVE-2017 | 96 |
 | CVE-2018 | 251 |
-| CVE-2019 | 433 |
+| CVE-2019 | 429 |
 | CVE-2020 | 768 |
-| CVE-2021 | 876 |
-| CVE-2022 | 888 |
-| CVE-2023 | 772 |
+| CVE-2021 | 873 |
+| CVE-2022 | 885 |
+| CVE-2023 | 774 |
 | CVE-2024 | 379 |
-| Other | 14403 |
-| wordpress | 32219 |
+| Other | 14391 |
+| wordpress | 32269 |
 ## 近几天数量变化情况
-|2025-01-05 | 2025-01-06 | 2025-01-07 | 2025-01-08 | 2025-01-09 | 2025-01-10 | 2025-01-11|
+|2025-01-06 | 2025-01-07 | 2025-01-08 | 2025-01-09 | 2025-01-10 | 2025-01-11 | 2025-01-12|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|50656 | 50879 | 50878 | 51060 | 51094 | 51438 | 51460|
+|50879 | 50878 | 51060 | 51094 | 51438 | 51460 | 51491|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-13183.yaml |
-| CVE-2024-12725.yaml |
-| CVE-2024-12587.yaml |
-| CVE-2024-13318.yaml |
-| essential-wp-real-estate.yaml |
-| CVE-2024-11267.yaml |
-| CVE-2024-12473.yaml |
-| clasify-classified-listing.yaml |
-| top-comments.yaml |
-| contact-form-master.yaml |
-| jsp-store-locator.yaml |
-| aurum.yaml |
-| CVE-2024-12606.yaml |
-| CVE-2024-10215.yaml |
-| CVE-2024-12874.yaml |
-| CVE-2024-12301.yaml |
-| 1117795039.yaml |
-| 3901540926.yaml |
-| 2366805125.yaml |
-| 1707495110.yaml |
-| 1498216431.yaml |
-| 2194252729.yaml |
-| 1686571946.yaml |
-| xss-scanner.yaml |
-| oracle-weblogic-panel.yaml |
-| CVE-2024-55218.yaml |
-| CVE-2024-50603.yaml |
+| unlimited-theme-addons.yaml |
+| clickwhale.yaml |
+| CVE-2024-12404.yaml |
+| CVE-2024-12520.yaml |
+| CVE-2024-11386.yaml |
+| CVE-2024-11915.yaml |
+| CVE-2024-12204.yaml |
+| gatormail-smart-forms.yaml |
+| CVE-2024-11892.yaml |
+| CVE-2024-11874.yaml |
+| CVE-2016-1000133-2674.yaml |
+| CVE-2024-12472.yaml |
+| CVE-2024-12527.yaml |
+| CVE-2024-11758.yaml |
+| CVE-2019-19985-4065.yaml |
+| accordion-slider-lite.yaml |
+| CVE-2024-12412.yaml |
+| internal-link-shortcode.yaml |
+| CVE-2024-11327.yaml |
+| CVE-2024-12116.yaml |
+| CVE-2024-12877.yaml |
+| CVE-2024-12519.yaml |
+| CVE-2024-12505.yaml |
+| CVE-2024-12407.yaml |
+| grid-accordion-lite.yaml |
+| tcbd-auto-refresher.yaml |
+| CVE-2024-12304.yaml |
+| CVE-2024-12627.yaml |
+| perfect-portal-widgets.yaml |
+| coupon-x-discount-pop-up.yaml |
+| dominion-domain-checker-wpbakery-addon.yaml |
+| trackserver.yaml |
+| 3739708900.yaml |
+| 158145724.yaml |
+| 2834788526.yaml |
+| 3314441675.yaml |
+| 3959102104.yaml |
+| 417074494.yaml |
