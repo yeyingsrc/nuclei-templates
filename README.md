@@ -11,64 +11,40 @@
 | CVE-2008 | 13 |
 | CVE-2009 | 20 |
 | CVE-2010 | 122 |
-| CVE-2011 | 15 |
-| CVE-2012 | 30 |
-| CVE-2013 | 24 |
-| CVE-2014 | 44 |
-| CVE-2015 | 48 |
-| CVE-2016 | 39 |
-| CVE-2017 | 96 |
-| CVE-2018 | 251 |
-| CVE-2019 | 429 |
-| CVE-2020 | 768 |
-| CVE-2021 | 873 |
-| CVE-2022 | 885 |
-| CVE-2023 | 774 |
-| CVE-2024 | 379 |
-| Other | 14391 |
-| wordpress | 32269 |
+| CVE-2011 | 14 |
+| CVE-2012 | 29 |
+| CVE-2013 | 23 |
+| CVE-2014 | 48 |
+| CVE-2015 | 52 |
+| CVE-2016 | 44 |
+| CVE-2017 | 95 |
+| CVE-2018 | 252 |
+| CVE-2019 | 427 |
+| CVE-2020 | 769 |
+| CVE-2021 | 878 |
+| CVE-2022 | 884 |
+| CVE-2023 | 773 |
+| CVE-2024 | 376 |
+| Other | 14395 |
+| wordpress | 32260 |
 ## 近几天数量变化情况
-|2025-01-06 | 2025-01-07 | 2025-01-08 | 2025-01-09 | 2025-01-10 | 2025-01-11 | 2025-01-12|
+|2025-01-07 | 2025-01-08 | 2025-01-09 | 2025-01-10 | 2025-01-11 | 2025-01-12 | 2025-01-13|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|50879 | 50878 | 51060 | 51094 | 51438 | 51460 | 51491|
+|50878 | 51060 | 51094 | 51438 | 51460 | 51491 | 51495|
 ## 最近新增文件
 | templates name | 
 | --- |
-| unlimited-theme-addons.yaml |
-| clickwhale.yaml |
-| CVE-2024-12404.yaml |
-| CVE-2024-12520.yaml |
-| CVE-2024-11386.yaml |
-| CVE-2024-11915.yaml |
-| CVE-2024-12204.yaml |
-| gatormail-smart-forms.yaml |
-| CVE-2024-11892.yaml |
-| CVE-2024-11874.yaml |
-| CVE-2016-1000133-2674.yaml |
-| CVE-2024-12472.yaml |
-| CVE-2024-12527.yaml |
-| CVE-2024-11758.yaml |
-| CVE-2019-19985-4065.yaml |
-| accordion-slider-lite.yaml |
-| CVE-2024-12412.yaml |
-| internal-link-shortcode.yaml |
-| CVE-2024-11327.yaml |
-| CVE-2024-12116.yaml |
-| CVE-2024-12877.yaml |
-| CVE-2024-12519.yaml |
-| CVE-2024-12505.yaml |
-| CVE-2024-12407.yaml |
-| grid-accordion-lite.yaml |
-| tcbd-auto-refresher.yaml |
-| CVE-2024-12304.yaml |
-| CVE-2024-12627.yaml |
-| perfect-portal-widgets.yaml |
-| coupon-x-discount-pop-up.yaml |
-| dominion-domain-checker-wpbakery-addon.yaml |
-| trackserver.yaml |
-| 3739708900.yaml |
-| 158145724.yaml |
-| 2834788526.yaml |
-| 3314441675.yaml |
-| 3959102104.yaml |
-| 417074494.yaml |
+| cve-2021-24176-5636.yaml |
+| CVE-2011-5107-2100.yaml |
+| cve-2013-4117-2264.yaml |
+| 1737297198.yaml |
+| 4162534893.yaml |
+| 1466402954.yaml |
+| 3522854037.yaml |
+| 1012136753.yaml |
+| 3734004415.yaml |
+| 3261067443.yaml |
+| 935365210.yaml |
+| 2591376936.yaml |
+| prototest.yaml |
+| 975260061.yaml |
