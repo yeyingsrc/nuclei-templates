@@ -12,91 +12,113 @@
 | CVE-2009 | 20 |
 | CVE-2010 | 122 |
 | CVE-2011 | 14 |
-| CVE-2012 | 29 |
-| CVE-2013 | 23 |
-| CVE-2014 | 45 |
+| CVE-2012 | 30 |
+| CVE-2013 | 25 |
+| CVE-2014 | 43 |
 | CVE-2015 | 46 |
-| CVE-2016 | 40 |
-| CVE-2017 | 93 |
-| CVE-2018 | 250 |
-| CVE-2019 | 414 |
-| CVE-2020 | 755 |
-| CVE-2021 | 848 |
-| CVE-2022 | 863 |
-| CVE-2023 | 759 |
-| CVE-2024 | 376 |
+| CVE-2016 | 43 |
+| CVE-2017 | 96 |
+| CVE-2018 | 255 |
+| CVE-2019 | 415 |
+| CVE-2020 | 757 |
+| CVE-2021 | 852 |
+| CVE-2022 | 865 |
+| CVE-2023 | 757 |
+| CVE-2024 | 383 |
 | CVE-2025 | 0 |
-| Other | 14409 |
-| wordpress | 32522 |
+| Other | 14454 |
+| wordpress | 32588 |
 ## 近几天数量变化情况
-|2025-01-16 | 2025-01-17 | 2025-01-18 | 2025-01-19 | 2025-01-20 | 2025-01-21 | 2025-01-22|
+|2025-01-17 | 2025-01-18 | 2025-01-19 | 2025-01-20 | 2025-01-21 | 2025-01-22 | 2025-01-23|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|51667 | 51489 | 51511 | 51598 | 51601 | 51603 | 51662|
+|51489 | 51511 | 51598 | 51601 | 51603 | 51662 | 51799|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2024-12585.yaml |
-| CVE-2024-37243.yaml |
-| wp-bibtex.yaml |
-| CVE-2024-11184.yaml |
-| mg-parallax-slider.yaml |
-| CVE-2024-13230.yaml |
-| opentracker-analytics.yaml |
-| CVE-2024-53800.yaml |
-| backlink-monitoring-manager.yaml |
-| CVE-2024-12714.yaml |
-| CVE-2024-8857.yaml |
-| course-migration-for-learndash.yaml |
-| CVE-2024-13404.yaml |
-| oz-canonical.yaml |
-| CVE-2024-37452.yaml |
-| CVE-2024-56295.yaml |
-| order-audit-log-for-woocommerce.yaml |
-| CVE-2024-37451.yaml |
-| ts-comfort-database.yaml |
-| asgard.yaml |
-| CVE-2024-51715.yaml |
-| vandana-lite.yaml |
-| cf7save-extension.yaml |
-| CVE-2013-2287-2245.yaml |
-| CVE-2024-56056.yaml |
-| CVE-2024-10936.yaml |
-| CVE-2024-12717.yaml |
-| CVE-2023-47696.yaml |
-| CVE-2024-12005.yaml |
-| CVE-2024-11226.yaml |
-| CVE-2024-56301.yaml |
-| CVE-2024-56065.yaml |
-| schema-lite.yaml |
-| aklamator-infeed.yaml |
-| wp-greet.yaml |
-| wp-map.yaml |
-| CVE-2024-13444.yaml |
-| postlists.yaml |
-| CVE-2022-47601.yaml |
-| simplecharm.yaml |
-| CVE-2024-13536.yaml |
-| CVE-2024-10151.yaml |
-| CVE-2024-12274.yaml |
-| CVE-2024-12715.yaml |
-| media-category-library.yaml |
-| opencart-product-in-wp.yaml |
-| CVE-2024-12104.yaml |
-| CVE-2024-12731.yaml |
-| tagmaker.yaml |
-| CVE-2024-8855.yaml |
-| CVE-2024-12736.yaml |
-| CVE-2024-10815.yaml |
-| wp-enable-svg.yaml |
-| CVE-2024-49649.yaml |
-| seo-bulk-editor.yaml |
-| open-redirect-9307.yaml |
-| 1816463223.yaml |
-| 3123384584.yaml |
-| 526834237.yaml |
-| 1960038292.yaml |
-| 1267919564.yaml |
-| 438216860.yaml |
-| 116911259.yaml |
-| 692438842.yaml |
-| 1973120143.yaml |
+| PHPOK-sqli.yaml |
+| 587481785.yaml |
+| 2784349373.yaml |
+| listserv-detection.yaml |
+| 672131288.yaml |
+| weblogic-servlet-xss.yaml |
+| squirrelmail.yaml |
+| google-bucket-service.yaml |
+| open-redirect-bypass.yaml |
+| 380819829.yaml |
+| 4093682535.yaml |
+| 3406277543.yaml |
+| 3337511562.yaml |
+| CVE-2024-13495.yaml |
+| user-files.yaml |
+| book-a-place.yaml |
+| background-control.yaml |
+| debt-calculator.yaml |
+| wp-load-gallery.yaml |
+| comment-emailer.yaml |
+| add-custom-google-tag-manager.yaml |
+| custom-widget-classes.yaml |
+| CVE-2024-13406.yaml |
+| custom-list-table-example.yaml |
+| easy-tynt.yaml |
+| custom-post-type-gui.yaml |
+| board-election.yaml |
+| registered-user-sync-activecampaign.yaml |
+| better-protected-pages.yaml |
+| CVE-2024-13319.yaml |
+| CVE-2024-12857.yaml |
+| graph-lite.yaml |
+| ketchup-shortcodes-pack.yaml |
+| df-draggable.yaml |
+| event-countdown-timer.yaml |
+| CVE-2024-13091.yaml |
+| custom-post-type-lockdown.yaml |
+| CVE-2024-13447.yaml |
+| cnzz51la-for-wordpress.yaml |
+| email-on-publish.yaml |
+| apply-with-linkedin-buttons.yaml |
+| paypal-promotions-and-insights.yaml |
+| goldstar.yaml |
+| emailshroud.yaml |
+| surly.yaml |
+| categorycustomfields.yaml |
+| add-rss.yaml |
+| cj-custom-content.yaml |
+| CVE-2024-13360.yaml |
+| build-private-store-for-woocommerce.yaml |
+| copy-move-posts.yaml |
+| cookie-consent-autoblock.yaml |
+| woo-tuner.yaml |
+| CVE-2024-13426.yaml |
+| CVE-2024-13361.yaml |
+| wpbot-pro.yaml |
+| salvador-ai-image-generator.yaml |
+| blogger-image-import.yaml |
+| CVE-2024-12117.yaml |
+| CVE-2024-13499.yaml |
+| team-118group-agent.yaml |
+| call-me-now.yaml |
+| xlsx-viewer.yaml |
+| ect-add-to-cart-button.yaml |
+| contact-form-7-anti-spambot.yaml |
+| gf-multi-uploader.yaml |
+| anonymize-links.yaml |
+| CVE-2024-12879.yaml |
+| smallerik-file-browser.yaml |
+| copyright-safeguard-footer-notice.yaml |
+| auto-ftp.yaml |
+| embed-ispring.yaml |
+| amr-personalise.yaml |
+| CVE-2024-13496.yaml |
+| email-capture-lead-generation.yaml |
+| content-security-policy-pro.yaml |
+| auphonic-importer.yaml |
+| envo-multipurpose.yaml |
+| admin-cleanup.yaml |
+| bible-embed.yaml |
+| cve-2014-4513-2342.yaml |
+| CVE-2024-13590.yaml |
+| snipe-nginx-cache.yaml |
+| wp-news-sliders.yaml |
+| xola-bookings-for-tours-activities.yaml |
+| error-notification.yaml |
+| CVE-2024-13584.yaml |
