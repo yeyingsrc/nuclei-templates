@@ -5,12 +5,11 @@ info:
   author: pussycat0x
   severity: low
   metadata:
-    max-request: 1
     verified: true
     shodan-query: title:"Event Debug Server"
   tags: event,exposure,debug
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}'
