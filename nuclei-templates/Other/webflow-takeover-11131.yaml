@@ -1,4 +1,5 @@
 id: webflow-takeover
+
 info:
   name: webflow takeover detection
   author: pdteam
@@ -6,11 +7,18 @@ info:
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz
   tags: takeover
+
 requests:
   - method: GET
     path:
       - "{{BaseURL}}"
+
+    matchers-condition: and
     matchers:
+      - type: dsl
+        dsl:
+          - Host != ip
+
       - type: word
         words:
           - <p class="description">The page you are looking for doesn't exist or has been moved.</p>
