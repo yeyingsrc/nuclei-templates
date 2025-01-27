@@ -1,4 +1,5 @@
 id: jenkins-detect
+
 info:
   name: Jenkins Detection
   author: philippdelteil,daffainfo,c-sh0
@@ -10,12 +11,14 @@ info:
   metadata:
     shodan-query: http.favicon.hash:81586312
   tags: tech,jenkins
+
 requests:
   - method: GET
     path:
       - "{{BaseURL}}"
       - "{{BaseURL}}/whoAmI/"
-    redirects: true
+
+    host-redirects: true
     max-redirects: 2
     stop-at-first-match: true
     matchers-condition: and
@@ -23,11 +26,13 @@ requests:
       - type: word
         part: header
         words:
-          - "x-jenkins"
+          - "x-jenkins:"
         case-insensitive: true
+
       - type: word
         words:
           - "Jenkins"
+
     extractors:
       - type: kval
         kval:

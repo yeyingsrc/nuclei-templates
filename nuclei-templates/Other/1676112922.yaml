@@ -1,13 +1,12 @@
 id: nntp
 info:
-  name: Leafnode nntpd
+  name: NNTPCache
   author: nmap,cn-kali-team
   tags: detect,tech,nntp,service
   severity: info
   metadata:
-    hostname: $2
+    info: Access denied
     rarity: 0
-    version: $1
 tcp:
 - name: 'null'
   inputs:
@@ -18,4 +17,4 @@ tcp:
   - name: nntp
     type: regex
     regex:
-    - ^200 Leafnode NNTP daemon, version ([\w.]+) at ([-\w_.]+) \r\n
+    - ^502 access denied <[-\w_.]+@[-\w_.]+>, you do not have connect permissions in the nntpcache\.access file\.\r\n
