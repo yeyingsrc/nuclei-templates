@@ -1,13 +1,11 @@
 id: xmlrpc-pingback-ssrf
-
 info:
   name: XMLRPC Pingback SSRF
   author: geeknik
   severity: high
   reference:
     - https://hackerone.com/reports/406387
-  tags: xmlrpc,hackerone,ssrf,generic
-
+  tags: ssrf,generic,xmlrpc
 requests:
   - raw:
       - |
@@ -24,7 +22,6 @@ requests:
         </param>
         </params>
         </methodCall>
-
     matchers:
       - type: word
         part: interactsh_protocol

