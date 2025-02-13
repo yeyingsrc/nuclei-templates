@@ -1,11 +1,12 @@
 id: printer
 info:
-  name: LPRng
+  name: AIX lpd
   author: nmap,cn-kali-team
   tags: detect,tech,printer,service
   severity: info
   metadata:
-    info: Not authorized
+    info: Unauthorized
+    operating_system: AIX
     rarity: 0
 tcp:
 - name: 'null'
@@ -17,4 +18,4 @@ tcp:
   - name: printer
     type: regex
     regex:
-    - ^\x01no connect permissions\n$
+    - ^\d+-202 your host does not have line printer access\.
