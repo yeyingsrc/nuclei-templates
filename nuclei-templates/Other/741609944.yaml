@@ -1,12 +1,12 @@
 id: telnet
 info:
-  name: Slirp PPP/SLIP-on-terminal emulator telnetd
+  name: Samsung Ubigate router telnetd
   author: nmap,cn-kali-team
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    device_type: router
     rarity: 0
-    version: $1
 tcp:
 - name: 'null'
   inputs:
@@ -17,4 +17,4 @@ tcp:
   - name: telnet
     type: regex
     regex:
-    - '^Slirp v([\w._-]+)(?: \(BETA\))?(?: FULL_BOLT)?\n\nCopyright \(c\) 1995,1996 Danny Gasparovski and others\.\n'
+    - '^\xff\xfb\x01\xff\xfd\x1f\r\n#-{71}\r\n# SAMSUNG ELECTRONICS CO\., LTD\. Login\r\n#-{71}\r\n\r\n\r\rlogin: '
