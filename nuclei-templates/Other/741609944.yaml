@@ -1,12 +1,14 @@
 id: telnet
 info:
-  name: Samsung Ubigate router telnetd
+  name: LinuxNode telnetd
   author: nmap,cn-kali-team
   tags: detect,tech,telnet,service
   severity: info
   metadata:
-    device_type: router
+    hostname: $2
+    operating_system: Linux
     rarity: 0
+    version: $1
 tcp:
 - name: 'null'
   inputs:
@@ -17,4 +19,4 @@ tcp:
   - name: telnet
     type: regex
     regex:
-    - '^\xff\xfb\x01\xff\xfd\x1f\r\n#-{71}\r\n# SAMSUNG ELECTRONICS CO\., LTD\. Login\r\n#-{71}\r\n\r\n\r\rlogin: '
+    - '^rsconfig: port rose not active\n\xff\xfd\"\r\nLinuxNode v([\d.]+) \(([-\w_.]+)\)\r\n\r\nlogin: '
