@@ -1,13 +1,13 @@
 id: nntp
 info:
-  name: sn nntpd
+  name: Leafnode nntpd
   author: nmap,cn-kali-team
   tags: detect,tech,nntp,service
   severity: info
   metadata:
-    info: posting ok
+    hostname: $1
+    info: misconfigured
     rarity: 0
-    version: $1
 tcp:
 - name: 'null'
   inputs:
@@ -18,4 +18,4 @@ tcp:
   - name: nntp
     type: regex
     regex:
-    - ^200 Hi, you can post \(sn version ([\w.]+)\)\r\n
+    - ^\nLeafnode must have a fully-qualified and globally unique domain name,\nnot just \"([-\w_.]+)\"\.\n

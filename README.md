@@ -15,66 +15,192 @@
 | CVE-2012 | 38 |
 | CVE-2013 | 30 |
 | CVE-2014 | 63 |
-| CVE-2015 | 71 |
+| CVE-2015 | 72 |
 | CVE-2016 | 74 |
 | CVE-2017 | 108 |
 | CVE-2018 | 272 |
 | CVE-2019 | 457 |
 | CVE-2020 | 827 |
 | CVE-2021 | 971 |
-| CVE-2022 | 939 |
-| CVE-2023 | 791 |
+| CVE-2022 | 938 |
+| CVE-2023 | 792 |
 | CVE-2024 | 420 |
 | CVE-2025 | 2 |
-| Other | 45822 |
-| wordpress | 62772 |
+| Other | 45705 |
+| wordpress | 62928 |
 ## 近几天数量变化情况
-|2025-02-12 | 2025-02-13 | 2025-02-14 | 2025-02-15 | 2025-02-16 | 2025-02-17 | 2025-02-18|
+|2025-02-13 | 2025-02-14 | 2025-02-15 | 2025-02-16 | 2025-02-17 | 2025-02-18 | 2025-02-19|
 |--- | ------ | ------ | ------ | ------ | ------ | ---|
-|53192 | 95903 | 113333 | 113686 | 113880 | 113817 | 113857|
+|95903 | 113333 | 113686 | 113880 | 113817 | 113857 | 113897|
 ## 最近新增文件
 | templates name | 
 | --- |
-| CVE-2025-0924.yaml |
-| CVE-2024-46982.yaml |
-| cardano-event-logging.yaml |
-| hyperledger fabric-gas-inefficiency.yaml |
-| cosmos sdk-gas-inefficiency.yaml |
-| polkadot-unused-variable.yaml |
-| tezos-gas-inefficiency.yaml |
-| hyperledger-missing-access-control.yaml |
-| hyperledger fabric-event-logging.yaml |
-| polkadot-redundant-code.yaml |
-| cosmos sdk-redundant-code.yaml |
-| signatures_26.yaml |
-| cosmos-unbounded-storage.yaml |
-| cardano-redundant-code.yaml |
-| tezos-event-logging.yaml |
-| cosmos sdk-unused-variable.yaml |
-| tezos-redundant-code.yaml |
-| ethereum-unused-variable.yaml |
-| solana-event-logging.yaml |
-| hyperledger fabric-redundant-code.yaml |
-| polkadot-event-logging.yaml |
-| ethereum-selfdestruct.yaml |
-| polkadot-unauthorized-runtime-upgrade.yaml |
-| solana-unchecked-signer.yaml |
-| cardano-unused-variable.yaml |
-| solana-unvalidated-cpi.yaml |
-| ethereum-integer-overflow.yaml |
-| ethereum-redundant-code.yaml |
-| ethereum-event-logging.yaml |
-| tezos-unchecked-storage-update.yaml |
-| ethereum-reentrancy.yaml |
-| ethereum-gas-inefficiency.yaml |
-| solana-redundant-code.yaml |
-| solana-gas-inefficiency.yaml |
-| ethereum-unchecked-low-level-call.yaml |
-| polkadot-gas-inefficiency.yaml |
-| hyperledger fabric-unused-variable.yaml |
-| cardano-gas-inefficiency.yaml |
-| cardano-unsafe-monad.yaml |
-| cosmos sdk-event-logging.yaml |
-| ethereum-visibility-flaws.yaml |
-| solana-unused-variable.yaml |
-| tezos-unused-variable.yaml |
+| CVE-2025-22768.yaml |
+| CVE-2024-13395.yaml |
+| CVE-2024-13438.yaml |
+| CVE-2025-23727.yaml |
+| simple-pricing-tables-vc-extension.yaml |
+| web-stories-enhancer.yaml |
+| infunding.yaml |
+| CVE-2024-13704.yaml |
+| mind3dom-ryebread-widgets.yaml |
+| simple-signup-form.yaml |
+| CVE-2025-23701.yaml |
+| CVE-2024-13718.yaml |
+| wp-query-creator.yaml |
+| CVE-2025-23610.yaml |
+| CVE-2024-13797.yaml |
+| CVE-2024-12314.yaml |
+| formatted-post.yaml |
+| CVE-2025-23733.yaml |
+| CVE-2024-13523.yaml |
+| CVE-2024-13579.yaml |
+| CVE-2025-23629.yaml |
+| CVE-2024-13609.yaml |
+| CVE-2024-13595.yaml |
+| CVE-2024-13565.yaml |
+| staging-cdn.yaml |
+| CVE-2024-13795.yaml |
+| university-quizzes-online.yaml |
+| CVE-2025-23541.yaml |
+| CVE-2024-12860.yaml |
+| gumlet-video.yaml |
+| CVE-2025-23544.yaml |
+| CVE-2025-0796.yaml |
+| CVE-2025-23634.yaml |
+| CVE-2024-13556.yaml |
+| magayo-lottery-results.yaml |
+| simple-charts.yaml |
+| CVE-2025-23695.yaml |
+| CVE-2025-0864.yaml |
+| CVE-2024-13684.yaml |
+| cyber-new-slider.yaml |
+| CVE-2024-13316.yaml |
+| CVE-2024-13464.yaml |
+| CVE-2025-23966.yaml |
+| wp-social-broadcast.yaml |
+| CVE-2025-23697.yaml |
+| actionwear-products-sync.yaml |
+| CVE-2024-12813.yaml |
+| CVE-2024-13691.yaml |
+| wp-front-end-login-and-register.yaml |
+| kumihimo.yaml |
+| reaction-buttons.yaml |
+| CVE-2024-13522.yaml |
+| CVE-2024-13587.yaml |
+| CVE-2024-13667.yaml |
+| hyp3rl0cal-city-search.yaml |
+| CVE-2024-13535.yaml |
+| speedsize-ai-image-optimizer.yaml |
+| sc-simple-zazzle.yaml |
+| CVE-2024-13540.yaml |
+| CVE-2024-13741.yaml |
+| CVE-2025-23746.yaml |
+| CVE-2025-23729.yaml |
+| CVE-2025-0521.yaml |
+| CVE-2025-0817.yaml |
+| CVE-2024-13577.yaml |
+| simplebooklet.yaml |
+| CVE-2024-13725.yaml |
+| woo-addon-uploads.yaml |
+| CVE-2025-23626.yaml |
+| CVE-2024-13578.yaml |
+| CVE-2024-11376.yaml |
+| easy-filtering.yaml |
+| CVE-2025-23696.yaml |
+| ultimate-events.yaml |
+| CVE-2025-23949.yaml |
+| CVE-2024-13573.yaml |
+| podclankova-inzerce.yaml |
+| threepress.yaml |
+| zigaform-calculator-cost-estimation-form-builder-lite.yaml |
+| CVE-2025-23768.yaml |
+| CVE-2025-23624.yaml |
+| open-hours.yaml |
+| good-old-gallery.yaml |
+| ydn-download.yaml |
+| CVE-2025-23931.yaml |
+| CVE-2024-13783.yaml |
+| CVE-2024-13689.yaml |
+| CVE-2025-23722.yaml |
+| CVE-2024-13581.yaml |
+| improved-sale-badges-free-version.yaml |
+| CVE-2025-23959.yaml |
+| my-favorite-cars.yaml |
+| CVE-2024-13315.yaml |
+| CVE-2024-13465.yaml |
+| CVE-2024-13622.yaml |
+| wpdevtool.yaml |
+| CVE-2024-13576.yaml |
+| dh-local-seo.yaml |
+| team-display.yaml |
+| CVE-2024-13681.yaml |
+| CVE-2025-23725.yaml |
+| reset.yaml |
+| shopwarden.yaml |
+| zigaform-form-builder-lite.yaml |
+| rapid-cache.yaml |
+| xtra-settings.yaml |
+| CVE-2025-22264.yaml |
+| CVE-2024-13852.yaml |
+| CVE-2025-23631.yaml |
+| CVE-2025-23636.yaml |
+| wprequal.yaml |
+| cmc-migrate.yaml |
+| CVE-2025-0805.yaml |
+| CVE-2025-23643.yaml |
+| CVE-2025-23700.yaml |
+| CVE-2025-23730.yaml |
+| CVE-2024-13740.yaml |
+| CVE-2025-23540.yaml |
+| CVE-2024-13687.yaml |
+| cats-job-listings.yaml |
+| CVE-2024-13588.yaml |
+| easy-mls-listings-import.yaml |
+| CVE-2025-23723.yaml |
+| CVE-2025-23724.yaml |
+| content-planner.yaml |
+| az-content-finder.yaml |
+| get-bookings-wp.yaml |
+| pressmart.yaml |
+| rocket-media-library-mime-type.yaml |
+| flx-dashboard-groups.yaml |
+| CVE-2024-13677.yaml |
+| CVE-2024-13538.yaml |
+| CVE-2024-13636.yaml |
+| 1-click-migration.yaml |
+| uncode.yaml |
+| CVE-2025-23628.yaml |
+| CVE-2024-13555.yaml |
+| CVE-2024-13501.yaml |
+| legal-plus.yaml |
+| CVE-2025-23545.yaml |
+| lime-developer-login.yaml |
+| toocheke-companion.yaml |
+| CVE-2025-23992.yaml |
+| CVE-2024-13575.yaml |
+| CVE-2024-11895.yaml |
+| accessibility-task-manager.yaml |
+| CVE-2024-13848.yaml |
+| CVE-2025-23630.yaml |
+| geodigs.yaml |
+| a-gateway-for-pasargad-bank-on-woocommerce.yaml |
+| ablocks.yaml |
+| CVE-2024-12525.yaml |
+| CVE-2025-23834.yaml |
+| option-editor.yaml |
+| CVE-2024-13369.yaml |
+| readme-creator.yaml |
+| CVE-2025-23709.yaml |
+| CVE-2025-23835.yaml |
+| simple-map-no-api.yaml |
+| CVE-2025-23732.yaml |
+| plestar-directory-listing.yaml |
+| bigbuy-wc-dropshipping-connector.yaml |
+| memorialday.yaml |
+| CVE-2024-13582.yaml |
+| ycyclista.yaml |
+| wp-asambleas.yaml |
+| Actuator.yaml |
+| signatures_27.yaml |
+| fastapi-1.yaml |
