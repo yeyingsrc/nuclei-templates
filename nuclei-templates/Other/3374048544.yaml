@@ -1,14 +1,14 @@
 id: ssh
 info:
-  name: ConfD sshd
+  name: Cerberus FTP Server sshd
   author: nmap,cn-kali-team
   tags: detect,tech,ssh,service
   severity: info
   metadata:
     info: protocol $1
-    product: confd
+    product: ftp_server
     rarity: 0
-    vendor: tail-f
+    vendor: cerberusftp
     verified: true
     version: $2
 tcp:
@@ -21,4 +21,4 @@ tcp:
   - name: ssh
     type: regex
     regex:
-    - ^SSH-([\d.]+)-ConfD-([\w._-]+)\r\n
+    - ^SSH-([\d.]+)-CerberusFTPServer_([\w._-]+)\r\n
