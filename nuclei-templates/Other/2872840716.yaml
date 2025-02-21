@@ -1,10 +1,11 @@
 id: pop3pw
 info:
-  name: Courierpassd pop3 password change daemon
+  name: Stalker Mail Server password change daemon
   author: nmap,cn-kali-team
   tags: detect,tech,pop3pw,service
   severity: info
   metadata:
+    operating_system: Mac OS
     rarity: 0
     version: $1
 tcp:
@@ -17,4 +18,4 @@ tcp:
   - name: pop3pw
     type: regex
     regex:
-    - ^200 courierpassd v(\d[-.\w]+) hello, who are you\?\r\n
+    - ^200 Stalker Internet Password Server ready\. V\.([\w.]+)\r\n

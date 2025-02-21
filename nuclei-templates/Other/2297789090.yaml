@@ -1,12 +1,13 @@
 id: ftp
 info:
-  name: Android ftpd
+  name: tnftpd
   author: nmap,cn-kali-team
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    hostname: $1
     rarity: 0
-    version: '2.1'
+    version: $2
 tcp:
 - name: 'null'
   inputs:
@@ -17,4 +18,4 @@ tcp:
   - name: ftp
     type: regex
     regex:
-    - ^220 FTP Server 2\.1 ready\r\n
+    - ^220 ([-\w_.]+) FTP server \(tnftpd ([\w._+-]+)\) ready\.\r\n
